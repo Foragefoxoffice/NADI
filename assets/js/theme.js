@@ -197,27 +197,28 @@
             autoplay: true,
             autoplaySpeed: 0,
             cssEase: 'linear',
-            slidesToShow: 6,
+            slidesToShow: 1,
             slidesToScroll: 1,
+            variableWidth: true,
             prevArrow: '<div class="prev"><i class="far fa-arrow-left"></i></div>',
             nextArrow: '<div class="next"><i class="far fa-arrow-right"></i></div>',
             responsive: [
                 {
                     breakpoint: 1400,
                     settings: {
-                        slidesToShow: 6,
+                        variableWidth: true,
                     }
                 },
                 {
                     breakpoint: 1200,
                     settings: {
-                        slidesToShow: 4,
+                        variableWidth: true,
                     }
                 },
                 {
                     breakpoint: 767,
                     settings: {
-                        slidesToShow: 2
+                        variableWidth: true,
                     }
                 }
             ]

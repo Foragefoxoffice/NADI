@@ -371,20 +371,97 @@
         }
 
         /* Prevent horizontal scroll from animations */
+        /* Testimonial Section Redesign */
         .nadi-case-study {
-            background: var(--nadi-card-bg);
-            border-radius: 16px;
-            padding: 35px;
-            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-            border: 1px solid var(--nadi-card-border);
-            border-left-width: 4px;
-            border-left-color: var(--nadi-primary);
-            transition: transform 0.3s;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 45px 35px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .nadi-case-study::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at top right, rgba(0, 82, 212, 0.05), transparent 70%);
+            pointer-events: none;
         }
 
         .nadi-case-study:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(0, 210, 255, 0.3);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .pillar-badge {
+            display: inline-block;
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            margin-bottom: 25px;
+            background: rgba(0, 82, 212, 0.1);
+            color: var(--nadi-accent);
+            border: 1px solid rgba(0, 210, 255, 0.2);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            font-size: 40px;
+            color: rgba(255, 255, 255, 0.05);
+            line-height: 1;
+        }
+
+        .nadi-case-study p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--nadi-text-muted);
+            margin-bottom: 30px;
+            font-style: italic;
+            position: relative;
+            z-index: 1;
+        }
+
+        .nadi-case-study .author-box {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nadi-case-study .author-info h5 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--nadi-text-main);
+        }
+
+        .nadi-case-study .author-info span {
+            font-size: 13px;
+            color: var(--nadi-primary);
+            font-weight: 600;
+        }
+
+        .nadi-case-study strong {
+            color: var(--nadi-accent) !important;
+            font-weight: 700;
         }
 
         .nadi-case-study .result-badge {
@@ -816,6 +893,11 @@
         .footer-widget .footer-content .footer-logo{
             border:none !important;
             background-color: transparent !important;
+            margin-bottom: 25px;
+        }
+        .footer-widget .footer-content .footer-logo img {
+            max-width: 140px;
+            height: auto;
         }
 
         /* Marquee / Company Slider Styles */
@@ -829,8 +911,8 @@
             display: flex !important;
             align-items: center;
             justify-content: center;
-            padding: 0 30px;
-            height: 80px;
+            padding: 0 40px;
+            height: 120px;
             outline: none;
         }
         .agk-company .agk-image {
@@ -840,9 +922,9 @@
             width: 100%;
         }
         .agk-company .agk-image img {
-            max-height: 45px;
+            max-height: 65px;
             width: auto;
-            max-width: 160px;
+            max-width: 200px;
             object-fit: contain;
             filter: none; /* Always colored */
             opacity: 1;
@@ -857,6 +939,120 @@
         .company-slider-wrapper svg {
             width: 100%;
             opacity: 0.1;
+        }
+
+        /* Mobile Responsive Fixes */
+        @media (max-width: 767px) {
+            .hero-button {
+                display: flex !important;
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 15px !important;
+            }
+            .hero-button .theme-btn {
+                margin-right: 0 !important;
+                width: 100% !important;
+                max-width: 300px !important;
+                text-align: center !important;
+            }
+            
+            /* Section Gap Reductions */
+            section, 
+            .agk-hero, 
+            .agk-company, 
+            .agk-about, 
+            .agk-services, 
+            .agk-solutions,
+            .agk-testimonial,
+            .nadi-cta-section,
+            .pt-130, .pt-120, .pt-100 {
+                padding-top: 50px !important;
+            }
+            .pb-100, .pb-90, .pb-80 {
+                padding-bottom: 40px !important;
+            }
+            
+            .hero-wrapper-three {
+                padding-top: 80px !important;
+                padding-bottom: 40px !important;
+            }
+
+            .hero-content h1 {
+                font-size: 34px !important;
+                line-height: 1.2 !important;
+            }
+
+            .hero-content h4 {
+                font-size: 17px !important;
+                line-height: 1.4 !important;
+            }
+
+            /* CTA Section Mobile Adjustments */
+            .nadi-cta-section div[style*="padding: 60px 50px"] {
+                padding: 40px 20px !important;
+                border-radius: 24px !important;
+            }
+
+            .nadi-cta-section h2 {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+
+            .nadi-cta-section .d-flex.flex-wrap {
+                flex-direction: column !important;
+                align-items: center !important;
+            }
+
+            .nadi-cta-section .theme-btn {
+                width: 100% !important;
+                max-width: 280px !important;
+                margin: 0 !important;
+            }
+
+            .nadi-case-study {
+                padding: 35px 25px !important;
+            }
+            .quote-icon {
+                top: 20px !important;
+                right: 20px !important;
+                font-size: 30px !important;
+            }
+
+            .agk-company .company-item {
+                height: 90px !important;
+                padding: 0 20px !important;
+            }
+            .agk-company .agk-image img {
+                max-height: 45px !important;
+            }
+
+            /* Reduced header logo for mobile */
+            .site-branding .brand-logo img {
+                max-width: 130px !important;
+            }
+
+            /* Fix for overlapping cards on mobile */
+            .agenko-iconic-box.style-six {
+                margin-bottom: 40px !important;
+                border: 1px solid rgba(255, 255, 255, 0.08);
+                border-radius: 12px;
+                transition: all 0.3s ease;
+            }
+            .agenko-iconic-box.style-six:hover {
+                border-color: var(--nadi-primary);
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Essential styles for iconic box */
+        .agenko-iconic-box.style-six {
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s ease;
+        }
+        .agenko-iconic-box.style-six:hover {
+            border-color: rgba(0, 210, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
         }
     </style>
 </head>
@@ -899,16 +1095,16 @@
                         </nav>
                         <div class="pf-nav-button mt-20 d-block d-md-none">
                             <a href="#nadi-contact" class="theme-btn style-one nadi-btn-primary">
-                                <span class="text-flip"><span class="text">BOOK CONSULTATION</span><span
-                                        class="text">BOOK CONSULTATION</span></span>
+                                <span class="text-flip"><span class="text" style="color: var(--nadi-text-main);" >BOOK CONSULTATION</span><span
+                                        class="text" style="color: var(--nadi-text-main);" >BOOK CONSULTATION</span></span>
                             </a>
                         </div>
                     </div>
                     <div class="nav-right-item">
                         <div class="nav-button d-none d-md-block">
                             <a href="#nadi-contact" class="theme-btn style-one nadi-btn-primary">
-                                <span class="text-flip"><span class="text">BOOK CONSULTATION</span><span
-                                        class="text">BOOK CONSULTATION</span></span>
+                                <span class="text-flip"><span class="text" style="color: var(--nadi-text-main);">BOOK CONSULTATION</span><span
+                                        class="text" style="color: var(--nadi-text-main);">BOOK CONSULTATION</span></span>
                             </a>
                         </div>
                         <div class="navbar-toggler"><span></span><span></span><span></span></div>
@@ -1171,7 +1367,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row g-4">
                             <!-- INTEGRATE -->
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="agenko-iconic-box style-six mb-40 pf_fadeup">
@@ -1203,7 +1399,7 @@
                                 </div>
                             </div>
                             <!-- IGNITE -->
-                            <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="agenko-iconic-box style-six mb-40 pf_fadeup">
                                     <div class="icon">
                                         <i class="flaticon-network" style="color:var(--nadi-primary);"></i>
@@ -1621,43 +1817,52 @@
                         <div class="row pf_fadeup">
                             <!-- Card 1: INTEGRATE -->
                             <div class="col-lg-4 col-md-6 mb-40">
-                                <div class="nadi-case-study h-100">
-                                    <div style="background:var(--nadi-gradient); color:#fff; text-align:center; padding:10px; border-radius:8px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:25px;">Integrate</div>
-                                    <div class="author-info mb-20 text-center">
-                                        <h5 style="color:var(--nadi-text-main); margin-bottom:5px;">Pn Nor Azliwati Binti Mohd Zam</h5>
-                                        <span style="color:var(--nadi-primary); font-weight:600; font-size:14px;">Awantra Sdn Bhd</span>
-                                    </div>
-                                    <p style="font-size:15px; color:rgba(255,255,255,0.8); line-height:1.7;">
+                                <div class="nadi-case-study">
+                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                                    <div class="pillar-badge">Integrate</div>
+                                    <p>
                                         "NADI Aksis has been a strategic consulting partner in the successful development of our cloud-based healthcare platform for mid-scale hospital systems. Their team provided end-to-end guidance — from system planning, workflow structuring, compliance alignment, and implementation strategy. Their deep understanding of healthcare operations and IT integration ensured that our platform was practical, scalable, and aligned with real hospital needs. We value their professionalism, technical insight, and commitment to delivering impactful digital healthcare solutions."
                                     </p>
+                                    <div class="author-box">
+                                        <div class="author-info">
+                                            <h5>Pn Nor Azliwati Binti Mohd Zam</h5>
+                                            <span>Awantra Sdn Bhd</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Card 2: INNOVATE -->
                             <div class="col-lg-4 col-md-6 mb-40">
-                                <div class="nadi-case-study h-100">
-                                    <div style="background:var(--nadi-gradient); color:#fff; text-align:center; padding:10px; border-radius:8px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:25px;">Innovate</div>
-                                    <div class="author-info mb-20 text-center">
-                                        <h5 style="color:var(--nadi-text-main); margin-bottom:5px;">Pn Yusliati Pegawai</h5>
-                                        <span style="color:var(--nadi-primary); font-weight:600; font-size:14px;">Cardiology Department, PPUM</span>
-                                    </div>
-                                    <p style="font-size:15px; color:rgba(255,255,255,0.8); line-height:1.7;">
-                                        "We have been collaborating with NADI Aksis for nearly 8 years for the supply and distribution of medical devices to our Cardiology Department. Their team has consistently demonstrated professionalism, product reliability, and efficient delivery services that support our daily clinical operations without disruption. Over the years, our total procurement has reached approximately <strong style='color:var(--nadi-primary);'>RM700,000</strong>, reflecting our continued trust and confidence in their service quality and commitment."
+                                <div class="nadi-case-study">
+                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                                    <div class="pillar-badge">Innovate</div>
+                                    <p>
+                                        "We have been collaborating with NADI Aksis for nearly 8 years for the supply and distribution of medical devices to our Cardiology Department. Their team has consistently demonstrated professionalism, product reliability, and efficient delivery services that support our daily clinical operations without disruption. Over the years, our total procurement has reached approximately <strong>RM700,000</strong>, reflecting our continued trust and confidence in their service quality and commitment."
                                     </p>
+                                    <div class="author-box">
+                                        <div class="author-info">
+                                            <h5>Pn Yusliati Pegawai</h5>
+                                            <span>Cardiology Department, PPUM</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
                             <!-- Card 3: IGNITE -->
                             <div class="col-lg-4 col-md-12 mb-40">
-                                <div class="nadi-case-study h-100">
-                                    <div style="background:var(--nadi-gradient); color:#fff; text-align:center; padding:10px; border-radius:8px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:25px;">Ignite</div>
-                                    <div class="author-info mb-20 text-center">
-                                        <h5 style="color:var(--nadi-text-main); margin-bottom:5px;">Mr Zainal Zabidi</h5>
-                                        <span style="color:var(--nadi-primary); font-weight:600; font-size:14px;">CEO of Technolyze Sdn Bhd</span>
-                                    </div>
-                                    <p style="font-size:15px; color:rgba(255,255,255,0.8); line-height:1.7;">
-                                        "NADI Aksis has been instrumental in establishing and growing Technolyze in Malaysia. They successfully guided us through regulatory registration with the Medical Device Authority (MDA), managed our product importation from China, India, Turkey, and Italy, and supported our entry into the Malaysian healthcare market. Beyond compliance, NADI Aksis helped us build and structure our sales team, implement market strategies, and accelerate revenue growth. Their expertise, professionalism, and hands-on approach make them a trusted strategic consulting partner. Within just 4 months, we successfully achieved over <strong style='color:var(--nadi-primary);'>RM100,000 in revenue</strong>, a strong testament to their effective market strategy and hands-on consulting support."
+                                <div class="nadi-case-study">
+                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+                                    <div class="pillar-badge">Ignite</div>
+                                    <p>
+                                        "NADI Aksis has been instrumental in establishing and growing Technolyze in Malaysia. They successfully guided us through regulatory registration with the Medical Device Authority (MDA), managed our product importation from various countries, and supported our entry into the Malaysian healthcare market. Beyond compliance, NADI Aksis helped us build and structure our sales team, implement market strategies, and accelerate revenue growth. Within just 4 months, we successfully achieved over <strong>RM100,000 in revenue</strong>, a strong testament to their effective market strategy and hands-on consulting support."
                                     </p>
+                                    <div class="author-box">
+                                        <div class="author-info">
+                                            <h5>Mr Zainal Zabidi</h5>
+                                            <span>CEO of Technolyze Sdn Bhd</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1745,7 +1950,7 @@
                                     <!-- Subtle Background Pattern/Glow -->
                                     <div style="position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: rgba(255,255,255,0.08); border-radius: 50%; filter: blur(80px);"></div>
                                     
-                                    <div class="row align-items-center">
+                                    <div class="row align-items-center gy-5">
                                         <div class="col-lg-7">
                                             <div class="section-title text-start mb-0">
                                                 <span class="sub-title" style="background: rgba(255,255,255,0.2); color: #fff !important; border-color: rgba(255,255,255,0.4); margin-bottom: 20px;">Modern Healthcare Transformation</span>
