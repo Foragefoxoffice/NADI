@@ -523,7 +523,105 @@
         }
 
         .nadi-nav .main-menu>ul>li>a {
-            font-weight: 500;
+            font-weight: 600;
+        }
+
+        /* Pill Header Redesign */
+        .header-navigation .primary-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            padding: 0 40px;
+            backdrop-filter: blur(12px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            color: #fff !important;
+            text-transform: capitalize;
+            letter-spacing: 0.2px;
+            opacity: 0.9;
+            transition: all 0.3s;
+            line-height: 54px; /* Pill height consistency */
+            display: block;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a:hover,
+        .pf-nav-menu.nadi-nav .main-menu ul li.active a {
+            color: var(--nadi-accent) !important;
+            opacity: 1;
+        }
+
+        .nav-right-item .nav-button .theme-btn.style-one {
+            border-radius: 100px !important;
+            padding: 12px 35px !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            letter-spacing: 0.5px;
+            background: var(--nadi-gradient) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.2);
+            white-space: nowrap !important;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 991px) {
+            .pf-nav-menu.nadi-nav .main-menu {
+                background: transparent;
+                border: none;
+                padding: 0;
+                border-radius: 0;
+                backdrop-filter: none;
+                white-space: normal;
+                width: 100%;
+                text-align: left;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li {
+                width: 100%;
+                padding: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li:last-child {
+                border-bottom: none;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li a {
+                line-height: unset;
+                padding: 12px 0;
+                font-size: 16px !important;
+                text-align: left;
+                width: 100%;
+            }
         }
 
         .nadi-cta-section {
@@ -1062,7 +1160,7 @@
     <div class="preloader">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/images/loader.png" alt=""></div>
+            <div id="loading-icon"><img src="new-assets/images/logo.png" alt=""></div>
         </div>
     </div>
     <div class="offcanvas__overlay"></div>
@@ -1072,39 +1170,28 @@
             <div class="container">
                 <div class="primary-menu">
                     <div class="site-branding">
-                        <a href="new-index.html" class="brand-logo"><img
-                                src="new-assets/images/logo.png" alt="NADI Aksis"></a>
+                        <a href="index.html" class="brand-logo"><img src="new-assets/images/logo.png"
+                                alt="NADI Aksis"></a>
                     </div>
                     <div class="pf-nav-menu nadi-nav">
-                        <div class="site-branding d-block d-lg-none text-center">
-                            <a href="new-index.html" class="brand-logo"><img
-                                    src="new-assets/images/logo.png" alt="NADI Aksis"></a>
-                        </div>
-                        <nav class="main-menu">
+                        <nav class="main-menu text-center">
                             <ul>
-                                <li class="menu-item"><a href="#nadi-hero">Home</a></li>
-                                <li class="menu-item"><a href="#nadi-about">About</a></li>
-                                <li class="menu-item"><a href="#nadi-services">Services</a></li>
-                                <li class="menu-item"><a href="#nadi-solutions">Solutions</a></li>
-                                <li class="menu-item"><a href="#nadi-products">Products</a></li>
-                                <li class="menu-item"><a href="#nadi-industries">Industries</a></li>
-                                <li class="menu-item"><a href="#nadi-partners">Partners</a></li>
-                                <li class="menu-item"><a href="#nadi-casestudies">Case Studies</a></li>
-                                <li class="menu-item"><a href="#nadi-contact">Contact</a></li>
+                                <li class="menu-item active"><a href="index.html#nadi-hero">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="services.html">Services</a></li>
+                                <li class="menu-item"><a href="solutions.html">Solutions</a></li>
+                                <li class="menu-item"><a href="products.html">Products</a></li>
+                                <li class="menu-item"><a href="partners.html">Partners</a></li>
+                                <li class="menu-item"><a href="index.html#nadi-contact">Contact</a></li>
                             </ul>
                         </nav>
-                        <div class="pf-nav-button mt-20 d-block d-md-none">
-                            <a href="#nadi-contact" class="theme-btn style-one nadi-btn-primary">
-                                <span class="text-flip"><span class="text" style="color: var(--nadi-text-main);" >BOOK CONSULTATION</span><span
-                                        class="text" style="color: var(--nadi-text-main);" >BOOK CONSULTATION</span></span>
-                            </a>
-                        </div>
                     </div>
                     <div class="nav-right-item">
                         <div class="nav-button d-none d-md-block">
-                            <a href="#nadi-contact" class="theme-btn style-one nadi-btn-primary">
-                                <span class="text-flip"><span class="text" style="color: var(--nadi-text-main);">BOOK CONSULTATION</span><span
-                                        class="text" style="color: var(--nadi-text-main);">BOOK CONSULTATION</span></span>
+                            <a href="#nadi-contact" class="theme-btn style-one"
+                                style="background: var(--nadi-gradient) !important;">
+                                <span class="text-flip" style="color:var(--nadi-accent) !important;"><span class="text">BOOK
+                                        CONSULTATION</span><span class="text">BOOK CONSULTATION</span></span>
                             </a>
                         </div>
                         <div class="navbar-toggler"><span></span><span></span><span></span></div>
@@ -1132,7 +1219,7 @@
                                             <a href="#nadi-contact" class="theme-btn style-one nadi-btn-primary mr-20">
                                                 <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span></span>
                                             </a>
-                                            <a href="#nadi-solutions" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05); border: 1px solid var(--nadi-card-border);">
+                                            <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05); border: 1px solid var(--nadi-card-border);">
                                                 <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Explore Our Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">Explore Our Solutions</span></span>
                                             </a>
                                         </div>
@@ -1378,7 +1465,7 @@
                                         <h4>Integrate</h4>
                                         <p>We connect systems, products, and processes to create seamless healthcare operations. From regulatory approvals to supply chain management, we ensure everything works together efficiently.</p>
                                         <div class="agk-button">
-                                            <a href="#nadi-solutions" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1393,7 +1480,7 @@
                                         <h4>Innovate</h4>
                                         <p>We bring advanced healthcare technologies and digital solutions to modernize organizations. Our expertise includes AI-driven tools, telehealth systems, and full-scale IT integration.</p>
                                         <div class="agk-button">
-                                            <a href="#nadi-solutions" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1408,7 +1495,7 @@
                                         <h4>Ignite</h4>
                                         <p>We accelerate business growth through strategic consulting, sales enablement, and market expansion—helping healthcare companies scale sustainably and competitively.</p>
                                         <div class="agk-button">
-                                            <a href="#nadi-solutions" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1488,7 +1575,7 @@
                                     <p style="color:rgba(255,255,255,0.85);">Our flagship integrated healthcare
                                         management platform — connecting hospitals, clinics, and healthcare providers
                                         through a unified digital ecosystem.</p>
-                                    <a href="#nadi-products" class="theme-btn style-one mt-20"
+                                    <a href="products.html" class="theme-btn style-one mt-20"
                                         style="background:rgba(255,255,255,0.2) !important;border:1px solid rgba(255,255,255,0.4) !important;">
                                         <span class="text-flip text-white"><span class="text">LEARN MORE</span><span
                                                 class="text">LEARN MORE</span></span>
@@ -1803,70 +1890,98 @@
 
                 <!--=== SECTION 8: CASE STUDIES & TESTIMONIALS ===-->
                 <!--=== SECTION 8: CASE STUDIES & TESTIMONIALS ===-->
-                <section class="agk-testimonial pt-130 pb-80" id="nadi-casestudies">
+                <section class="agenko-testimonial pt-130 pb-80" id="nadi-casestudies">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="section-title text-center mb-60 pf_fadeup">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <!--=== Section Title ===-->
+                                <div class="section-title mb-45 pf_fadeup">
                                     <span class="sub-title">Testimonials about NADI</span>
                                     <h2>Proven Strategic Partnerships</h2>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="row pf_fadeup">
-                            <!-- Card 1: INTEGRATE -->
-                            <div class="col-lg-4 col-md-6 mb-40">
-                                <div class="nadi-case-study">
-                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                                    <div class="pillar-badge">Integrate</div>
-                                    <p>
-                                        "NADI Aksis has been a strategic consulting partner in the successful development of our cloud-based healthcare platform for mid-scale hospital systems. Their team provided end-to-end guidance — from system planning, workflow structuring, compliance alignment, and implementation strategy. Their deep understanding of healthcare operations and IT integration ensured that our platform was practical, scalable, and aligned with real hospital needs. We value their professionalism, technical insight, and commitment to delivering impactful digital healthcare solutions."
-                                    </p>
-                                    <div class="author-box">
-                                        <div class="author-info">
-                                            <h5>Pn Nor Azliwati Binti Mohd Zam</h5>
-                                            <span>Awantra Sdn Bhd</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card 2: INNOVATE -->
-                            <div class="col-lg-4 col-md-6 mb-40">
-                                <div class="nadi-case-study">
-                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                                    <div class="pillar-badge">Innovate</div>
-                                    <p>
-                                        "We have been collaborating with NADI Aksis for nearly 8 years for the supply and distribution of medical devices to our Cardiology Department. Their team has consistently demonstrated professionalism, product reliability, and efficient delivery services that support our daily clinical operations without disruption. Over the years, our total procurement has reached approximately <strong>RM700,000</strong>, reflecting our continued trust and confidence in their service quality and commitment."
-                                    </p>
-                                    <div class="author-box">
-                                        <div class="author-info">
-                                            <h5>Pn Yusliati Pegawai</h5>
-                                            <span>Cardiology Department, PPUM</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Card 3: IGNITE -->
-                            <div class="col-lg-4 col-md-12 mb-40">
-                                <div class="nadi-case-study">
-                                    <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
-                                    <div class="pillar-badge">Ignite</div>
-                                    <p>
-                                        "NADI Aksis has been instrumental in establishing and growing Technolyze in Malaysia. They successfully guided us through regulatory registration with the Medical Device Authority (MDA), managed our product importation from various countries, and supported our entry into the Malaysian healthcare market. Beyond compliance, NADI Aksis helped us build and structure our sales team, implement market strategies, and accelerate revenue growth. Within just 4 months, we successfully achieved over <strong>RM100,000 in revenue</strong>, a strong testament to their effective market strategy and hands-on consulting support."
-                                    </p>
-                                    <div class="author-box">
-                                        <div class="author-info">
-                                            <h5>Mr Zainal Zabidi</h5>
-                                            <span>CEO of Technolyze Sdn Bhd</span>
-                                        </div>
-                                    </div>
+                            <div class="col-lg-6">
+                                <!--=== Text Box ===-->
+                                <div class="text-box mb-45 pf_fadeup">
+                                    <p>Discover how NADI Aksis delivers impactful results through our commitment to <span>Integration, Innovation, and Ignition</span> across the healthcare landscape.</p>
                                 </div>
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <!--=== Agk Image Box ===-->
+                                <div class="agenko-image-box agenko-rotate-image mb-50 pf_fadeup">
+                                    <div class="agenko-image">
+                                        <img src="assets/images/marketing-agency/testimonial/testimonial1.jpg" alt="Partner Testimonials">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!--=== Testimonial Slider ===-->
+                                <div class="testimonial-slider mb-50 pf_fadeup">
+                                    <!--=== Agk Testimonial Item ===-->
+                                    <div class="agenko-testimonial-item style-three">
+                                        <div class="testimonial-content">
+                                            <div class="pillar-badge" style="margin-bottom: 15px;">Integrate</div>
+                                            <ul class="ratings">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p style="font-size: 18px;">"NADI Aksis has been a strategic consulting partner in the successful development of our cloud-based healthcare platform for mid-scale hospital systems. Their team provided end-to-end guidance — from system planning, workflow structuring, compliance alignment, and implementation strategy. Their deep understanding of healthcare operations and IT integration ensured that our platform was practical, scalable, and aligned with real hospital needs. We value their professionalism, technical insight, and commitment to delivering impactful digital healthcare solutions."</p>
+                                            <div class="author-item">
+                                                <div class="author-info">
+                                                    <h4>Pn Nor Azliwati Binti Mohd Zam</h4>
+                                                    <span class="position">Awantra Sdn Bhd</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--=== Agk Testimonial Item ===-->
+                                    <div class="agenko-testimonial-item style-three">
+                                        <div class="testimonial-content">
+                                            <div class="pillar-badge" style="margin-bottom: 15px;">Innovate</div>
+                                            <ul class="ratings">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p style="font-size: 18px;">"We have been collaborating with NADI Aksis for nearly 8 years for the supply and distribution of medical devices to our Cardiology Department. Their team has consistently demonstrated professionalism, product reliability, and efficient delivery services that support our daily clinical operations without disruption. Over the years, our total procurement has reached approximately <strong>RM700,000</strong>, reflecting our continued trust and confidence in their service quality and commitment."</p>
+                                            <div class="author-item">
+                                                <div class="author-info">
+                                                    <h4>Pn Yusliati Pegawai</h4>
+                                                    <span class="position">Cardiology Department, PPUM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--=== Agk Testimonial Item ===-->
+                                    <div class="agenko-testimonial-item style-three">
+                                        <div class="testimonial-content">
+                                            <div class="pillar-badge" style="margin-bottom: 15px;">Ignite</div>
+                                            <ul class="ratings">
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                                <li><i class="fas fa-star"></i></li>
+                                            </ul>
+                                            <p style="font-size: 18px;">"NADI Aksis has been instrumental in establishing and growing Technolyze in Malaysia. They successfully guided us through regulatory registration with the Medical Device Authority (MDA), managed our product importation from various countries, and supported our entry into the Malaysian healthcare market. Beyond compliance, NADI Aksis helped us build and structure our sales team, implement market strategies, and accelerate revenue growth. Within just 4 months, we successfully achieved over <strong>RM100,000</strong> in revenue, a strong testament to their effective market strategy and hands-on consulting support."</p>
+                                            <div class="author-item">
+                                                <div class="author-info">
+                                                    <h4>Mr Zainal Zabidi</h4>
+                                                    <span class="position">CEO of Technolyze Sdn Bhd</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -1960,11 +2075,11 @@
                                         </div>
                                         <div class="col-lg-5">
                                             <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-end">
-                                                <a href="#nadi-contact" class="theme-btn style-one" style="background: #fff; color: var(--nadi-primary) !important; border: 1px solid #fff; padding: 16px 35px; min-width: 220px; text-align: center;">
-                                                    <span class="text-flip" style="color: var(--nadi-text-main) !important;"><span class="text">Book a Consultation</span><span class="text">Book a Consultation</span></span>
+                                                <a href="#nadi-contact" class="theme-btn style-one" style="background: #ffffff !important; color: var(--nadi-primary) !important; border: 1px solid #ffffff; padding: 16px 35px; min-width: 220px; text-align: center;">
+                                                    <span class="text-flip" style="color: var(--nadi-primary) !important;"><span class="text">Book a Consultation</span><span class="text">Book a Consultation</span></span>
                                                 </a>
-                                                <a href="#nadi-contact" class="theme-btn style-one" style="background: transparent; border: 2px solid rgba(255,255,255,0.6); color: #fff !important; padding: 16px 35px; min-width: 220px; text-align: center;">
-                                                    <span class="text-flip" style="color: #fff !important;"><span class="text">Contact Us Today</span><span class="text">Contact Us Today</span></span>
+                                                <a href="#nadi-contact" class="theme-btn style-one" style="background: rgba(11, 15, 19, 0.4) !important; border: 2px solid #ffffff !important; color: #ffffff !important; padding: 16px 35px; min-width: 220px; text-align: center;">
+                                                    <span class="text-flip" style="color: #ffffff !important;"><span class="text">Contact Us Today</span><span class="text">Contact Us Today</span></span>
                                                 </a>
                                             </div>
                                         </div>
@@ -2121,11 +2236,12 @@
                                     <div class="footer-content mb-35">
                                         <h4 class="widget-title">Quick Links</h4>
                                         <ul class="footer-nav">
-                                            <li><a href="#nadi-about" style="color:var(--nadi-text-muted);">About Us</a></li>
-                                            <li><a href="#nadi-services" style="color:var(--nadi-text-muted);">Services</a></li>
-                                            <li><a href="#nadi-solutions" style="color:var(--nadi-text-muted);">Solutions</a></li>
-                                            <li><a href="#nadi-products" style="color:var(--nadi-text-muted);">Products</a></li>
-                                            <li><a href="#nadi-contact" style="color:var(--nadi-text-muted);">Contact Us</a></li>
+                                            <li><a href="about.html" style="color:var(--nadi-text-muted);">About Us</a></li>
+                                            <li><a href="services.html" style="color:var(--nadi-text-muted);">Services</a></li>
+                                            <li><a href="solutions.html" style="color:var(--nadi-text-muted);">Solutions</a></li>
+                                            <li><a href="products.html" style="color:var(--nadi-text-muted);">Products</a></li>
+                                            <li><a href="partners.html" style="color:var(--nadi-text-muted);">Partners</a></li>
+                                            <li><a href="index.html#nadi-contact" style="color:var(--nadi-text-muted);">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div>

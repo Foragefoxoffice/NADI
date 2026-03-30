@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="NADI Aksis - Integrated Healthcare Solutions. Transforming healthcare through modernization, workflow optimization, and the OmniCare platform.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Solutions | NADI Aksis - Guiding the Pulse of Progress</title>
+    <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        :root {
+            --nadi-primary: #0052D4;
+            --nadi-secondary: #28A745;
+            --nadi-accent: #00D2FF;
+            --nadi-dark: #0B0F13;
+            --nadi-light: rgba(0, 82, 212, 0.1);
+            --nadi-blue: #0052D4;
+            --nadi-gradient: linear-gradient(135deg, #0052D4 0%, #28A745 100%);
+            --nadi-gradient-dark: linear-gradient(135deg, #0B0F13 0%, #111827 100%);
+            --nadi-card-bg: rgba(255, 255, 255, 0.04);
+            --nadi-card-border: rgba(255, 255, 255, 0.1);
+            --nadi-text-main: #F1F5F9;
+            --nadi-text-muted: #CBD5E1;
+            --primary-color: #0052D4;
+        }
+
+        body {
+            background: var(--nadi-dark) !important;
+            color: var(--nadi-text-main) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
+        p { color: var(--nadi-text-muted) !important; }
+
+        .gray-dark { background: #0E1217 !important; }
+        section { background: var(--nadi-dark); overflow: hidden; }
+
+        .sub-title, .sub-heading {
+            display: inline-block;
+            padding: 10px 28px !important;
+            line-height: 1.2;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--nadi-accent) !important;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid rgba(0, 210, 255, 0.25);
+            margin-bottom: 25px;
+            backdrop-filter: blur(4px);
+            vertical-align: middle;
+        }
+
+        /* NADI Custom Card Styles */
+        .nadi-solution-card {
+            background: var(--nadi-card-bg);
+            border: 1px solid var(--nadi-card-border);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.4s;
+            height: 100%;
+        }
+
+        .nadi-solution-card:hover {
+            border-color: var(--nadi-accent);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        /* Stats Card from index-3 style */
+        .agenko-counter-box.style-stats {
+            text-align: center;
+            padding: 30px;
+            background: rgba(0, 82, 212, 0.05);
+            border-radius: 20px;
+            border: 1px solid rgba(0, 210, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .agenko-counter-box.style-stats:hover {
+            background: rgba(0, 82, 212, 0.1);
+            border-color: var(--nadi-accent);
+        }
+
+        .agenko-counter-box.style-stats h2 {
+            color: var(--nadi-accent) !important;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        /* Step Process from index-2 style */
+        .agenko-iconic-box.style-two {
+            position: relative;
+            padding: 40px 30px;
+            background: var(--nadi-card-bg);
+            border-radius: 20px;
+            border: 1px solid var(--nadi-card-border);
+            margin-bottom: 30px;
+            height: 100%; /* Fix height issue */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .agenko-iconic-box.style-two .step {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--nadi-accent);
+            background: rgba(0, 210, 255, 0.1);
+            padding: 4px 12px;
+            border-radius: 20px;
+            opacity: 1; /* Make visible */
+            border: 1px solid rgba(0, 210, 255, 0.2);
+        }
+
+        /* New Process Section Styles (from index-1.html) */
+        .agk-process-wrapper { position: relative; z-index: 1; margin-top: 50px; }
+        .agk-process-wrapper .process-line { position: absolute; top: 15px; left: 0; right: 0; width: 100%; border-top: 2px dashed rgba(0, 210, 255, 0.3); z-index: -1; }
+        
+        .agenko-step {
+            display: inline-block;
+            padding: 4px 15px;
+            background: var(--nadi-accent);
+            color: #fff;
+            font-weight: 700;
+            font-size: 12px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 210, 255, 0.3);
+        }
+
+        .agenko-iconic-box.style-five {
+            padding: 30px;
+            background: var(--nadi-card-bg);
+            border: 1px solid var(--nadi-card-border);
+            border-radius: 20px;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .agenko-iconic-box.style-five:hover {
+            border-color: var(--nadi-accent);
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-5px);
+        }
+
+        .agenko-iconic-box.style-five .icon {
+            font-size: 40px;
+            color: var(--nadi-accent);
+            margin-bottom: 20px;
+        }
+
+        .nadi-nav .main-menu>ul>li>a {
+            font-weight: 600;
+        }
+
+        /* Pill Header Redesign */
+        .header-navigation .primary-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            padding: 0 40px;
+            backdrop-filter: blur(12px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            color: #fff !important;
+            text-transform: capitalize;
+            letter-spacing: 0.2px;
+            opacity: 0.9;
+            transition: all 0.3s;
+            line-height: 54px; /* Pill height consistency */
+            display: block;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a:hover,
+        .pf-nav-menu.nadi-nav .main-menu ul li.active a {
+            color: var(--nadi-accent) !important;
+            opacity: 1;
+        }
+
+        .nav-right-item .nav-button .theme-btn.style-one {
+            border-radius: 100px !important;
+            padding: 12px 35px !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            letter-spacing: 0.5px;
+            background: var(--nadi-gradient) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.2);
+            white-space: nowrap !important;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header-navigation .site-branding {
+            background-color: transparent !important;
+            border: none !important;
+        }
+
+        @media (max-width: 991px) {
+            .pf-nav-menu.nadi-nav .main-menu {
+                background: transparent;
+                border: none;
+                padding: 0;
+                border-radius: 0;
+                backdrop-filter: none;
+                white-space: normal;
+                width: 100%;
+                text-align: left;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li {
+                width: 100%;
+                padding: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li:last-child {
+                border-bottom: none;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li a {
+                line-height: unset;
+                padding: 12px 0;
+                font-size: 16px !important;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .site-branding .brand-logo img {
+                max-width: 130px !important;
+            }
+        }
+
+        .header-navigation .pf-nav-menu{
+            border: none !important;
+        }
+
+        /* Navbar Layout Fixes - Desktop Only */
+        @media (min-width: 992px) {
+            .header-navigation .container {
+                max-width: 1400px;
+            }
+
+            .main-menu ul {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                gap: 12px;
+            }
+
+            .main-menu ul li {
+                white-space: nowrap !important;
+                display: inline-block !important;
+            }
+
+            .nadi-nav .main-menu>ul>li {
+                margin-right: 0px !important;
+            }
+
+            .nadi-nav .main-menu>ul>li>a {
+                padding: 10px 4px !important;
+                font-size: 20px !important;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        .nadi-btn-primary {
+            white-space: nowrap !important;
+        }
+
+        .pf-nav-button .theme-btn {
+            padding: 12px 20px !important;
+        }
+
+        .nav-button .theme-btn {
+            padding: 12px 25px !important;
+        }
+
+        .theme-btn.style-one .text-flip{
+            color: var(--nadi-accent);
+        }
+
+        /* Footer Style Overrides */
+        .agenko-footer .shape.shape-blur_one span { background-color: var(--nadi-accent) !important; }
+        .footer-widget .footer-content .footer-logo { border: none !important; background-color: transparent !important; margin-bottom: 25px; padding: 0 !important; display: block; }
+        .footer-widget .footer-content .footer-logo img { max-width: 140px; height: auto; display: block; }
+        .theme-btn.style-two { background: var(--nadi-gradient) !important; border: none !important; color: #fff !important; transition: all 0.3s ease; }
+
+        /* Mobile Responsive Fixes */
+        @media (max-width: 767px) {
+            section, 
+            .pt-130, .pt-120, .pt-100 {
+                padding-top: 50px !important;
+            }
+            .pb-100, .pb-90, .pb-80 {
+                padding-bottom: 40px !important;
+            }
+            .pt-200 {
+                padding-top: 120px !important;
+            }
+            h1 {
+                font-size: 34px !important;
+                line-height: 1.2 !important;
+            }
+            h2 {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+            .agenko-iconic-box.style-five {
+                margin-bottom: 30px !important;
+                padding: 30px 20px !important;
+            }
+            .site-branding .brand-logo img {
+                max-width: 130px !important;
+            }
+            .pf-solutions-item {
+                margin-bottom: 40px !important;
+            }
+            .agk-solutions-hero {
+                padding-top: 150px !important;
+                padding-bottom: 100px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--====== Preloader ======-->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="new-assets/images/logo.png" alt=""></div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!--=== Header ===-->
+    <header class="header-area header-three transparent-header">
+        <div class="header-navigation">
+            <div class="container">
+                <div class="primary-menu">
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="new-assets/images/logo.png"
+                                alt="NADI Aksis"></a>
+                    </div>
+                    <div class="pf-nav-menu nadi-nav">
+                        <nav class="main-menu text-center">
+                            <ul>
+                                <li class="menu-item"><a href="index.html#nadi-hero">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="services.html">Services</a></li>
+                                <li class="menu-item active"><a href="solutions.html">Solutions</a></li>
+                                <li class="menu-item"><a href="products.html">Products</a></li>
+                                <li class="menu-item"><a href="partners.html">Partners</a></li>
+                                <li class="menu-item"><a href="index.html#nadi-contact">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-right-item">
+                        <div class="nav-button d-none d-md-block">
+                            <a href="#nadi-contact" class="theme-btn style-one"
+                                style="background: var(--nadi-gradient) !important;">
+                                <span class="text-flip" style="color:var(--nadi-accent) !important;"><span class="text">BOOK
+                                        CONSULTATION</span><span class="text">BOOK CONSULTATION</span></span>
+                            </a>
+                        </div>
+                        <div class="navbar-toggler"><span></span><span></span><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!--=== SOLUTIONS HERO (Overview) ===-->
+                <section class="agk-hero agk-solutions-hero" style="background: var(--nadi-gradient-dark); padding: 200px 0 120px; position: relative;">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-8">
+                                <div class="hero-content pf_fadeup">
+                                    <span class="sub-heading"><i class="fas fa-stethoscope"></i> Transforming Healthcare Through Integrated Solutions</span>
+                                    <h1 style="font-size: 64px; line-height: 1.1; margin-bottom: 30px;">Solutions – NADI Aksis</h1>
+                                    <p style="font-size: 20px; max-width: 700px; margin-bottom: 40px;">At NADI Aksis, we deliver comprehensive, end-to-end solutions designed to modernize healthcare operations, improve efficiency, and accelerate business growth.</p>
+                                    <p style="font-size: 18px; max-width: 700px;">By combining consulting, technology, and execution, we help healthcare organizations transition from fragmented systems to fully integrated, scalable ecosystems.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 mt-5 mt-lg-0">
+                                <div class="hero-image-box pf_fadeup text-center">
+                                    <img src="https://placehold.co/500x500/0B0F13/00D2FF?text=Healthcare+Integration" alt="Healthcare Solutions" style="border-radius: 30px; box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== CORE MODERNIZATION ===-->
+                <section class="agk-modernization pt-130 pb-100" id="healthcare-modernization">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-xl-6">
+                                <div class="agk-content-box style-one mb-50 pf_fadeup">
+                                    <div class="section-title mb-25">
+                                        <span class="sub-title"><i class="fas fa-hospital-alt"></i> Healthcare Core Modernization</span>
+                                        <h2>Reimagine Your Healthcare Operations</h2>
+                                    </div>
+                                    <p class="mb-30">Many healthcare organizations face challenges such as disconnected systems, manual processes, limited scalability, and lack of actionable insights. NADI Aksis addresses these challenges through a holistic modernization approach:</p>
+                                    
+                                    <div class="nadi-outcome-box" style="background: rgba(0, 82, 212, 0.1); border-left: 4px solid var(--nadi-accent); padding: 30px; border-radius: 0 20px 20px 0;">
+                                        <h5 style="color:var(--nadi-accent); margin-bottom: 10px;">Outcome</h5>
+                                        <p style="margin-bottom: 0;">A streamlined, intelligent, and scalable healthcare environment that enhances both operational performance and patient satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="agk-image-box style-one mb-50 pf_fadeup">
+                                    <div class="agk-image">
+                                        <img src="https://placehold.co/600x600/0B0F13/00D2FF?text=Modernization+Process" alt="Modernization" style="border-radius: 20px;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-60 gy-4">
+                            <div class="col-lg-6">
+                                <div class="nadi-solution-card pf_fadeup mb-30" style="border-radius: 24px;">
+                                    <h4 style="color:var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-exclamation-triangle"></i> Key Challenges We Solve</h4>
+                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Disconnected and siloed systems</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Complex and rigid workflows</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Data integrity and visibility issues</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Limited scalability for growing operations</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Increasing compliance and security risks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="nadi-solution-card pf_fadeup mb-30" style="border-radius: 24px;">
+                                    <h4 style="color:var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-layer-group"></i> Our Modernization Approach</h4>
+                                    <p class="mb-20">We unify your entire healthcare ecosystem by integrating:</p>
+                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-secondary);"></i> Clinical systems (HIS, EMR, telemedicine)</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-secondary);"></i> Operational workflows and automation</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-secondary);"></i> Supply chain and distribution channels</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-secondary);"></i> Data management and analytics platforms</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-secondary);"></i> Regulatory and compliance frameworks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== WORKFLOW SECTION ===-->
+                <section class="agk-workflow pt-130 pb-100 gray-dark" id="workflow">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="section-title text-center mb-60 pf_fadeup">
+                                    <span class="sub-title"><i class="fas fa-sync-alt"></i> End-to-End Workflow</span>
+                                    <h2>From Strategy to Execution—Seamlessly Delivered</h2>
+                                    <p class="mt-20">We provide a structured, step-by-step engagement model to ensure successful implementation and long-term value.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agk-process-wrapper pf_fadeup">
+                            <div class="process-line"></div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 01</div>
+                                        <div class="agenko-iconic-box style-five mb-40">
+                                            <div class="icon">
+                                                <i class="fas fa-search"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>Discovery & Assessment</h5>
+                                                <p style="font-size: 14px; color: var(--nadi-accent);">(2–4 Weeks)</p>
+                                                <p>Analyze current workflows, systems, infrastructure, and operational gaps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 02</div>
+                                        <div class="agenko-iconic-box style-five mb-40">
+                                            <div class="icon">
+                                                <i class="fas fa-pencil-ruler"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>Solution Design</h5>
+                                                <p style="font-size: 14px; color: var(--nadi-accent);">(2–3 Weeks)</p>
+                                                <p>Develop blueprint, define architecture, and align with regulatory needs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 03</div>
+                                        <div class="agenko-iconic-box style-five mb-40">
+                                            <div class="icon">
+                                                <i class="fas fa-tools"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>Deployment & Implementation</h5>
+                                                <p style="font-size: 14px; color: var(--nadi-accent);">(2–8 Weeks)</p>
+                                                <p>System installation, configuration, integration, and staff training.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-12">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 04</div>
+                                        <div class="agenko-iconic-box style-five mb-40">
+                                            <div class="icon">
+                                                <i class="fas fa-headset"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h5>Post-Sales Support</h5>
+                                                <p style="font-size: 14px; color: var(--nadi-accent);">(Ongoing)</p>
+                                                <p>Performance monitoring, optimization, and cybersecurity management.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-40 pf_fadeup">
+                            <div class="col-lg-12">
+                                <div class="nadi-workflow-footer text-center" style="background: var(--nadi-gradient); border-radius: 20px; padding: 40px;">
+                                    <h4 style="color: #fff !important; margin-bottom: 30px;">What This Means for You</h4>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-user-check"></i> One partner managing the entire lifecycle</p></div>
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-toggle-on"></i> Smooth transition from manual to digital</p></div>
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-fast-forward"></i> Faster implementation with minimal disruption</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== OMNICARE PLATFORM ===-->
+                <section class="agk-omnicare pt-130 pb-100" id="omnicare">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7 order-lg-2">
+                                <div class="agk-content-box style-one mb-50 pf_fadeup">
+                                    <div class="section-title mb-25">
+                                        <span class="sub-title"><i class="fas fa-microchip"></i> OmniCare Platform</span>
+                                        <h2>A Unified Platform for Modern Healthcare Management</h2>
+                                    </div>
+                                    <p class="mb-40">NADI OmniCare is a comprehensive solution designed to streamline operations, enhance patient engagement, and support data-driven decision-making.</p>
+                                    
+                                    <div class="omnicare-features">
+                                        <h5 style="color:var(--nadi-accent); margin-bottom: 20px;"><i class="fas fa-check-double"></i> Core Capabilities</h5>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-20">
+                                                <div class="feature-item h-100" style="background: var(--nadi-card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--nadi-card-border); display: flex; align-items: center; gap: 10px;">
+                                                    <i class="fas fa-chevron-right" style="color:var(--nadi-accent);"></i>
+                                                    <p style="margin-bottom: 0; font-size: 14px;">Omnichannel customer engagement</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-20">
+                                                <div class="feature-item h-100" style="background: var(--nadi-card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--nadi-card-border); display: flex; align-items: center; gap: 10px;">
+                                                    <i class="fas fa-chevron-right" style="color:var(--nadi-accent);"></i>
+                                                    <p style="margin-bottom: 0; font-size: 14px;">Integrated healthcare workflows</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-20">
+                                                <div class="feature-item h-100" style="background: var(--nadi-card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--nadi-card-border); display: flex; align-items: center; gap: 10px;">
+                                                    <i class="fas fa-chevron-right" style="color:var(--nadi-accent);"></i>
+                                                    <p style="margin-bottom: 0; font-size: 14px;">Cloud-based data management</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-20">
+                                                <div class="feature-item h-100" style="background: var(--nadi-card-bg); padding: 15px; border-radius: 12px; border: 1px solid var(--nadi-card-border); display: flex; align-items: center; gap: 10px;">
+                                                    <i class="fas fa-chevron-right" style="color:var(--nadi-accent);"></i>
+                                                    <p style="margin-bottom: 0; font-size: 14px;">Real-time analytics and reporting</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 order-lg-1">
+                                <div class="omnicare-visual pf_fadeup">
+                                    <div class="nadi-solution-card" style="background: var(--nadi-gradient-dark); border-radius: 30px; text-align: center; padding: 50px;">
+                                        <img src="https://placehold.co/400x300/0B0F13/00D2FF?text=OmniCare+Dashboard" alt="OmniCare" style="max-width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                                        <div class="row mt-40">
+                                            <div class="col-4">
+                                                <i class="fas fa-hospital" style="font-size: 30px; color: var(--nadi-accent);"></i>
+                                                <p style="font-size: 12px; margin-top: 10px;">Hospitals</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fas fa-truck-moving" style="font-size: 30px; color: var(--nadi-accent);"></i>
+                                                <p style="font-size: 12px; margin-top: 10px;">Distributors</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <i class="fas fa-clinic-medical" style="font-size: 30px; color: var(--nadi-accent);"></i>
+                                                <p style="font-size: 12px; margin-top: 10px;">Clinics</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-60 pf_fadeup">
+                            <div class="col-lg-6 mb-30">
+                                <div class="nadi-solution-card">
+                                    <h5 style="color:var(--nadi-secondary); margin-bottom: 20px;"><i class="fas fa-lightbulb"></i> Why OmniCare</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-secondary);"></i> Centralized control across operations</li>
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-secondary);"></i> Improved efficiency and coordination</li>
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-secondary);"></i> Enhanced patient experience</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-30">
+                                <div class="nadi-solution-card">
+                                    <h5 style="color:var(--nadi-accent); margin-bottom: 20px;"><i class="fas fa-hospital-user"></i> Use Cases</h5>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Hospitals and multi-specialty clinics</li>
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Healthcare distributors and suppliers</li>
+                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Mid-scale healthcare systems</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== IMPACT & BENEFITS ===-->
+                <section class="agk-impact pt-130 pb-100 gray-dark" id="business-impact">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="section-title text-center mb-60 pf_fadeup">
+                                    <span class="sub-title"><i class="fas fa-chart-line"></i> Business Impact & Benefits</span>
+                                    <h2>Delivering Measurable Results</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 mb-40">
+                                <div class="agenko-counter-box style-stats pf_fadeup">
+                                    <div class="content">
+                                        <h2 class="mb-10"><i class="fas fa-rocket"></i> 50%</h2>
+                                        <h5 style="margin-bottom: 15px;">Revenue Growth</h5>
+                                        <p style="font-size: 14px;">Improved market reach and sales efficiency. Faster product adoption.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-40">
+                                <div class="agenko-counter-box style-stats pf_fadeup">
+                                    <div class="content">
+                                        <h2 class="mb-10"><i class="fas fa-coins"></i> 25%</h2>
+                                        <h5 style="margin-bottom: 15px;">Cost Reduction</h5>
+                                        <p style="font-size: 14px;">Optimized workflows and automation. Reduced inefficiencies and waste.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-40">
+                                <div class="agenko-counter-box style-stats pf_fadeup">
+                                    <div class="content">
+                                        <h2 class="mb-10"><i class="fas fa-users-cog"></i> <i class="fas fa-chart-line" style="font-size: 0.6em; vertical-align: middle; opacity: 0.7;"></i></h2>
+                                        <h5 style="margin-bottom: 15px;">Manpower Efficiency</h5>
+                                        <p style="font-size: 14px;">Streamlined processes. Automation of repetitive tasks. Improved productivity.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-40">
+                                <div class="agenko-counter-box style-stats pf_fadeup">
+                                    <div class="content">
+                                        <h2 class="mb-10"><i class="fas fa-hand-holding-heart"></i> <i class="fas fa-check-circle" style="font-size: 0.6em; vertical-align: middle; opacity: 0.7;"></i></h2>
+                                        <h5 style="margin-bottom: 15px;">Patient Satisfaction</h5>
+                                        <p style="font-size: 14px;">Faster service delivery. Better care coordination. Improved data accuracy.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== WHY OUR SOLUTIONS WORK & CTA ===-->
+                <section class="agk-why-cta pt-130 pb-120">
+                    <div class="container">
+                        <div class="row align-items-center mb-80">
+                            <div class="col-lg-6">
+                                <div class="section-title pf_fadeup">
+                                    <span class="sub-title"><i class="fas fa-shield-alt"></i> Why Our Solutions Work</span>
+                                    <h2>End-to-end ownership—from strategy to execution</h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="agk-content-box pf_fadeup">
+                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="background: rgba(40, 167, 69, 0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                                            <i class="fas fa-check-circle" style="color:var(--nadi-secondary); font-size: 20px;"></i> 
+                                            <span style="font-weight: 600;">Deep healthcare domain expertise</span>
+                                        </li>
+                                        <li class="mb-15" style="background: rgba(40, 167, 69, 0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                                            <i class="fas fa-check-circle" style="color:var(--nadi-secondary); font-size: 20px;"></i> 
+                                            <span style="font-weight: 600;">Integration of business, technology, and compliance</span>
+                                        </li>
+                                        <li class="mb-15" style="background: rgba(40, 167, 69, 0.1); padding: 15px; border-radius: 12px; display: flex; align-items: center; gap: 15px;">
+                                            <i class="fas fa-check-circle" style="color:var(--nadi-secondary); font-size: 20px;"></i> 
+                                            <span style="font-weight: 600;">Scalable solutions tailored to real-world needs</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row pf_fadeup">
+                            <div class="col-lg-12">
+                                <div class="nadi-cta-banner text-center" style="background: var(--nadi-gradient); border-radius: 40px; padding: 100px 50px; position: relative; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.4);">
+                                    <div style="position: absolute; bottom: -20%; left: -10%; width: 400px; height: 400px; background: rgba(255,255,255,0.05); border-radius: 50%; filter: blur(60px);"></div>
+                                    <div class="section-title mb-40">
+                                        <span class="sub-title" style="background: rgba(255,255,255,0.2); color: #fff !important; border-color: rgba(255,255,255,0.4);"><i class="fas fa-calendar-check"></i> Book Consultation</span>
+                                        <h2 style="color: #fff !important; font-size: 48px; margin-bottom: 20px;">Ready to modernize your healthcare operations?</h2>
+                                        <p style="color: rgba(255,255,255,0.9) !important; font-size: 20px; max-width: 800px; margin: 0 auto;">Book a Consultation with NADI Aksis Today</p>
+                                    </div>
+                                    <a href="index.html#nadi-contact" class="theme-btn style-one" style="background: #ffffff !important; color: var(--nadi-primary) !important; padding: 22px 55px; font-size: 18px; font-weight: 700;">
+                                        <span class="text-flip" style="color: var(--nadi-primary) !important;"><span class="text">BOOK CONSULTATION</span><span class="text">BOOK CONSULTATION</span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!--=== Footer ===-->
+            <footer class="agenko-footer gray-dark pt-130 primary-black-bg">
+                <div class="shape shape-blur_one"><span></span></div>
+                <div class="shape shape-blur_two"><span></span></div>
+                <div class="footer-widget-area pb-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-widget footer-about-widget mb-40 pf_fadeup">
+                                    <div class="footer-content">
+                                        <div class="footer-logo">
+                                            <a href="index.html"><img src="new-assets/images/logo.png" alt="NADI Aksis"></a>
+                                        </div>
+                                        <p>Guiding the pulse of progress — your trusted partner for end-to-end healthcare solutions in Malaysia and beyond.</p>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form_control" placeholder="Email Address" name="email" required>
+                                                <label><i class="far fa-envelope"></i></label>
+                                                <button class="theme-btn style-two">Subscribe</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget footer-nav-widget mb-40 pf_fadeup">
+                                    <div class="footer-content mb-35">
+                                        <h4 class="widget-title">Quick Links</h4>
+                                        <ul class="footer-nav">
+                                            <li><a href="about.html" style="color:var(--nadi-text-muted);">About Us</a></li>
+                                            <li><a href="services.html" style="color:var(--nadi-text-muted);">Services</a></li>
+                                            <li><a href="solutions.html" style="color:var(--nadi-text-muted);">Solutions</a></li>
+                                            <li><a href="products.html" style="color:var(--nadi-text-muted);">Products</a></li>
+                                            <li><a href="partners.html" style="color:var(--nadi-text-muted);">Partners</a></li>
+                                            <li><a href="index.html#nadi-contact" style="color:var(--nadi-text-muted);">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="footer-widget footer-contact-widget mb-40 pf_fadeup">
+                                            <div class="footer-content">
+                                                <h4 class="widget-title">Contact</h4>
+                                                <div class="agenko-iconic-box style-three mb-30">
+                                                    <div class="icon"><i class="far fa-envelope"></i></div>
+                                                    <div class="content">
+                                                        <h6>Email</h6>
+                                                        <p><a href="mailto:info@nadiaksis.com">info@nadiaksis.com</a></p>
+                                                    </div>
+                                                </div>
+                                                <div class="agenko-iconic-box style-three">
+                                                    <div class="icon"><i class="far fa-phone-alt"></i></div>
+                                                    <div class="content">
+                                                        <h6>Phone</h6>
+                                                        <p><a href="tel:+60123456789">+60 12-345 6789</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="footer-widget footer-contact-info-widget mb-40 pf_fadeup">
+                                            <div class="footer-content mb-25">
+                                                <h4 class="widget-title">Headquarters</h4>
+                                                <p>Kuala Lumpur, Malaysia</p>
+                                            </div>
+                                            <div class="footer-content mb-25">
+                                                <h4 class="widget-title">Follow Us</h4>
+                                                <ul class="social-link" style="display:flex;gap:10px;margin-top:10px;">
+                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="copyright-text">
+                                    <p>&copy; 2026 <span>NADI Aksis</span> - All Rights Reserved.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="copyright-nav">
+                                    <ul>
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="index.html#nadi-contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+    <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
