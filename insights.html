@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="NADI Aksis - Insights That Drive Healthcare Innovation. Stay ahead in the evolving healthcare landscape.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Insights & Blog | NADI Aksis - Guiding the Pulse of Progress</title>
+    <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        :root {
+            --nadi-primary: #0052D4;
+            --nadi-secondary: #28A745;
+            --nadi-accent: #00D2FF;
+            --nadi-dark: #0B0F13;
+            --nadi-light: rgba(0, 82, 212, 0.1);
+            --nadi-blue: #0052D4;
+            --nadi-gradient: linear-gradient(135deg, #0052D4 0%, #28A745 100%);
+            --nadi-gradient-dark: linear-gradient(135deg, #0B0F13 0%, #111827 100%);
+            --nadi-card-bg: rgba(255, 255, 255, 0.04);
+            --nadi-card-border: rgba(255, 255, 255, 0.1);
+            --nadi-text-main: #F1F5F9;
+            --nadi-text-muted: #CBD5E1;
+            --primary-color: #0052D4;
+        }
+
+        body {
+            background: var(--nadi-dark) !important;
+            color: var(--nadi-text-main) !important;
+        }
+
+
+
+        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
+        p { color: var(--nadi-text-muted) !important; }
+
+        .gray-dark { background: #0E1217 !important; }
+        section { background: var(--nadi-dark); overflow: hidden; }
+
+        .sub-title, .sub-heading {
+            display: inline-block;
+            padding: 10px 28px !important;
+            line-height: 1.2;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--nadi-accent) !important;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid rgba(0, 210, 255, 0.25);
+            margin-bottom: 25px;
+            backdrop-filter: blur(4px);
+            vertical-align: middle;
+        }
+
+        .nadi-nav .main-menu>ul>li>a { font-weight: 600; }
+
+        /* Pill Header Redesign */
+        .header-navigation .primary-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            padding: 0 40px;
+            backdrop-filter: blur(12px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            color: #fff !important;
+            text-transform: capitalize;
+            letter-spacing: 0.2px;
+            opacity: 0.9;
+            transition: all 0.3s;
+            line-height: 54px; /* Pill height consistency */
+            display: block;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a:hover,
+        .pf-nav-menu.nadi-nav .main-menu ul li.active a {
+            color: var(--nadi-accent) !important;
+            opacity: 1;
+        }
+
+        .nav-right-item .nav-button .theme-btn.style-one {
+            border-radius: 100px !important;
+            padding: 12px 35px !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            letter-spacing: 0.5px;
+            background: var(--nadi-gradient) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.2);
+            white-space: nowrap !important;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 991px) {
+            .pf-nav-menu.nadi-nav .main-menu {
+                background: transparent;
+                border: none;
+                padding: 0;
+                border-radius: 0;
+                backdrop-filter: none;
+                white-space: normal;
+                width: 100%;
+                text-align: left;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li {
+                width: 100%;
+                padding: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li:last-child {
+                border-bottom: none;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li a {
+                line-height: unset;
+                padding: 12px 0;
+                font-size: 16px !important;
+                text-align: left;
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            .site-branding .brand-logo img {
+                max-width: 130px !important;
+            }
+            .agenko-page-banner {
+                padding-top: 100px !important;
+                padding-bottom: 60px !important;
+            }
+        }
+
+        .header-navigation .pf-nav-menu {
+            border: none !important;
+        }
+
+        /* Navbar Layout Fixes - Desktop Only */
+        @media (min-width: 992px) {
+            .header-navigation .container {
+                max-width: 1400px;
+            }
+
+            .main-menu ul {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                gap: 12px;
+            }
+
+            .main-menu ul li {
+                white-space: nowrap !important;
+                display: inline-block !important;
+            }
+
+            .nadi-nav .main-menu>ul>li {
+                margin-right: 0px !important;
+            }
+
+            .nadi-nav .main-menu>ul>li>a {
+                padding: 10px 4px !important;
+                font-size: 20px !important;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        .nadi-btn-primary {
+            white-space: nowrap !important;
+        }
+
+        .pf-nav-button .theme-btn {
+            padding: 12px 20px !important;
+        }
+
+        .nav-button .theme-btn {
+            padding: 12px 25px !important;
+        }
+
+        .header-navigation .site-branding { background-color: transparent !important; border: none !important; }
+        .theme-btn.style-one .text-flip{
+            color: var(--nadi-accent);
+        }
+
+        /* Blog Grid Custom Styling */
+        .agenko-blog-item {
+            background: var(--nadi-card-bg);
+            border: 1px solid var(--nadi-card-border);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all 0.4s;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .agenko-blog-item:hover {
+            border-color: var(--nadi-accent);
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .agenko-blog-item .post-thumbnail img {
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .agenko-blog-item .post-content {
+            padding: 25px 5px 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .agenko-blog-item .post-meta span {
+            color: var(--nadi-text-muted);
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        .agenko-blog-item .post-meta span i {
+            color: var(--nadi-primary);
+            margin-right: 5px;
+        }
+
+        .agenko-blog-item .title a {
+            color: var(--nadi-text-main) !important;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.4;
+            transition: color 0.3s;
+        }
+
+        .agenko-blog-item:hover .title a {
+            color: var(--nadi-accent) !important;
+        }
+
+
+        @media (max-width: 991px) {
+            .agenko-page-banner {
+                padding-top: 150px !important;
+                padding-bottom: 60px !important;
+            }
+            .results-box{
+                padding: 20px !important;
+            }
+            .cta-wrapper{
+                padding: 30px !important;
+            }
+        }
+
+        .theme-btn.style-two {
+            background: var(--nadi-gradient) !important;
+            border: none !important;
+            color: #fff !important;
+        }
+
+        .theme-btn.style-two:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+            color: #fff !important;
+        }
+
+        .agenko-footer .shape.shape-blur_one span{
+            background-color: var(--nadi-accent);
+        }
+        .footer-widget .footer-content .footer-logo{
+            border:none !important;
+            background-color: transparent !important;
+            margin-bottom: 25px;
+        }
+        .footer-widget .footer-content .footer-logo img {
+            max-width: 140px;
+            height: auto;
+        }
+        .agenko-iconic-box .icon i {
+            color: var(--nadi-primary);
+        }
+    </style>
+</head>
+
+<body>
+    <!--====== Preloader ======-->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="new-assets/images/logo.png" alt=""></div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!--=== Header ===-->
+    <header class="header-area header-three transparent-header">
+        <div class="header-navigation">
+            <div class="container">
+                <div class="primary-menu">
+                    <div class="site-branding">
+                        <a href="index.html" class="brand-logo"><img src="new-assets/images/logo.png"
+                                alt="NADI Aksis"></a>
+                    </div>
+                    <div class="pf-nav-menu nadi-nav">
+                        <nav class="main-menu text-center">
+                            <ul>
+                                <li class="menu-item"><a href="index.html#nadi-hero">Home</a></li>
+                                <li class="menu-item"><a href="about.html">About</a></li>
+                                <li class="menu-item"><a href="services.html">Services</a></li>
+                                <li class="menu-item"><a href="solutions.html">Solutions</a></li>
+                                <li class="menu-item"><a href="products.html">Products</a></li>
+                                <li class="menu-item"><a href="partners.html">Partners</a></li>
+                                <li class="menu-item"><a href="case-studies.html">Case Studies</a></li>
+                                <li class="menu-item"><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-right-item">
+                        <div class="nav-button d-none d-md-block">
+                            <a href="contact-us.html" class="theme-btn style-one"
+                                style="background: var(--nadi-gradient) !important;">
+                                <span class="text-flip" style="color:var(--nadi-accent) !important;"><span class="text">BOOK
+                                        CONSULTATION</span><span class="text">BOOK CONSULTATION</span></span>
+                            </a>
+                        </div>
+                        <div class="navbar-toggler"><span></span><span></span><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!--=== PAGE BANNER ===-->
+                <section class="agenko-page-banner"
+                    style="background: var(--nadi-gradient-dark); padding: 160px 0 100px; position: relative;">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-12 text-center">
+                                <span class="sub-heading pf_fadeup">Insights & Blog</span>
+                                <h1 class="page-title pf_fadeup" style="font-size: 56px; margin-bottom: 25px; line-height: 1.1;">Insights That Drive Healthcare Innovation</h1>
+                                <p class="pf_fadeup" style="max-width: 800px; margin: 0 auto; font-size: 18px;">Stay ahead in the evolving healthcare landscape with expert insights from NADI Aksis. From regulatory updates to digital transformation and AI-driven healthcare, our content helps you make informed decisions and unlock growth opportunities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="agenko-blog-grid pt-130 pb-80">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            
+                            <!-- Blog 1 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="blog-medical-device-regulations.html"><img src="assets/images/pages/blog/blog1.jpg" alt="Post Thumbnail"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(0, 82, 212, 0.1); color: var(--nadi-primary); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">Healthcare Regulations</span>
+                                        </div>
+                                        <h4 class="title mb-15"><a href="blog-medical-device-regulations.html">Navigating Medical Device Regulations in Malaysia: A Complete Guide</a></h4>
+                                        <p>Entering Malaysia’s healthcare market requires a strong understanding of regulatory frameworks. Compliance is essential for long-term success.</p>
+                                        <a href="blog-medical-device-regulations.html" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blog 2 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="blog-ai-in-healthcare.html"><img src="assets/images/pages/blog/blog2.jpg" alt="Post Thumbnail"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(0, 210, 255, 0.1); color: var(--nadi-accent); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">AI in Healthcare</span>
+                                        </div>
+                                        <h4 class="title mb-15"><a href="blog-ai-in-healthcare.html">How AI is Transforming Healthcare: From Diagnostics to Decision-Making</a></h4>
+                                        <p>Artificial Intelligence is revolutionizing healthcare by enabling faster diagnoses, improving patient outcomes, and optimizing operational efficiency.</p>
+                                        <a href="blog-ai-in-healthcare.html" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Blog 3 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="blog-digital-transformation.html"><img src="assets/images/pages/blog/blog3.jpg" alt="Post Thumbnail"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(40, 167, 69, 0.1); color: var(--nadi-secondary); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">Digital Transformation</span>
+                                        </div>
+                                        <h4 class="title mb-15"><a href="blog-digital-transformation.html">Digital Transformation in Healthcare: Turning Challenges into Opportunities</a></h4>
+                                        <p>Healthcare organizations are under increasing pressure to modernize operations, improve patient experience, and manage growing data volumes.</p>
+                                        <a href="blog-digital-transformation.html" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>Read Article</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!--=== Footer ===-->
+            <footer class="agenko-footer gray-dark pt-130 primary-black-bg">
+                <div class="shape shape-blur_one"><span></span></div>
+                <div class="shape shape-blur_two"><span></span></div>
+                <div class="footer-widget-area pb-80">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-widget footer-about-widget mb-40 pf_fadeup">
+                                    <div class="footer-content">
+                                        <div class="footer-logo">
+                                            <a href="index.html"><img
+                                                    src="new-assets/images/logo.png"
+                                                    alt="NADI Aksis"></a>
+                                        </div>
+                                        <p>Guiding the pulse of progress — your trusted partner for end-to-end
+                                            healthcare solutions in Malaysia and beyond.</p>
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form_control" placeholder="Email Address"
+                                                    name="email" required>
+                                                <label><i class="far fa-envelope"></i></label>
+                                                <button class="theme-btn style-two">Subscribe</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="footer-widget footer-nav-widget mb-40 pf_fadeup">
+                                    <div class="footer-content mb-35">
+                                        <h4 class="widget-title">Quick Links</h4>
+                                        <ul class="footer-nav">
+                                            <li><a href="about.html" style="color:var(--nadi-text-muted);">About Us</a></li>
+                                            <li><a href="services.html" style="color:var(--nadi-text-muted);">Services</a></li>
+                                            <li><a href="solutions.html" style="color:var(--nadi-text-muted);">Solutions</a></li>
+                                            <li><a href="products.html" style="color:var(--nadi-text-muted);">Products</a></li>
+                                            <li><a href="partners.html" style="color:var(--nadi-text-muted);">Partners</a></li>
+                                            <li><a href="contact-us.html" style="color:var(--nadi-text-muted);">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="footer-widget footer-contact-widget mb-40 pf_fadeup">
+                                            <div class="footer-content">
+                                                <h4 class="widget-title">Contact</h4>
+                                                <div class="agenko-iconic-box style-three mb-30">
+                                                    <div class="icon"><i class="far fa-envelope"></i></div>
+                                                    <div class="content">
+                                                        <h6>Email</h6>
+                                                        <p><a href="mailto:info@nadiaksis.com">info@nadiaksis.com</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="agenko-iconic-box style-three">
+                                                    <div class="icon"><i class="far fa-phone-alt"></i></div>
+                                                    <div class="content">
+                                                        <h6>Phone</h6>
+                                                        <p><a href="tel:+60123456789">+60 12-345 6789</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="footer-widget footer-contact-info-widget mb-40 pf_fadeup">
+                                            <div class="footer-content mb-25">
+                                                <h4 class="widget-title">Headquarters</h4>
+                                                <p>Kuala Lumpur, Malaysia</p>
+                                            </div>
+                                            <div class="footer-content mb-25">
+                                                <h4 class="widget-title">Follow Us</h4>
+                                                <ul class="social-link" style="display:flex;gap:10px;margin-top:10px;">
+                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="copyright-text">
+                                    <p>&copy; 2026 <span>NADI Aksis</span> - All Rights Reserved.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="copyright-nav">
+                                    <ul>
+                                        <li><a href="#">Terms & Condition</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="contact-us.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+    <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#nadi-"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+            });
+        });
+    </script>
+</body>
+
+</html>
+
