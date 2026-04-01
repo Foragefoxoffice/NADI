@@ -62,8 +62,10 @@
         });
         navMenu.on('click', '.dd-trigger', function(e) {
             e.preventDefault();
-            $(this).parent().parent().siblings().children('ul.sub-menu').slideUp();
-            $(this).parent().next('ul.sub-menu').stop(true, true).slideToggle(350);
+            // Close other open menus
+            $(this).parent().parent().siblings().find('ul.sub-menu, div.mega-menu').slideUp();
+            // Toggle current menu
+            $(this).parent().next('ul.sub-menu, div.mega-menu').stop(true, true).slideToggle(350);
             $(this).toggleClass('sub-menu-open');
         });
 
@@ -95,6 +97,16 @@
                 .catch(err => console.error('Error loading header:', err));
         }
     }
+
+    //===== Sticky Header & Scroll Listener
+    $(window).on('scroll', function() {
+        var scroll = $(window).scrollTop();
+        if (scroll < 100) {
+            $(".header-navigation").removeClass("sticky");
+        } else {
+            $(".header-navigation").addClass("sticky");
+        }
+    });
 
     //===== Offcanvas Overlay
 

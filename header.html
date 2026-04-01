@@ -10,6 +10,41 @@
             margin: 0 !important;
         }
     }
+    /* Mobile connectivity button adjustment */
+    @media (max-width: 991px) {
+        .header-navigation .nav-button .theme-btn.style-one {
+            padding: 8px 20px !important;
+            font-size: 11px !important;
+            border-radius: 100px !important;
+        }
+        .header-navigation .primary-menu {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+        }
+        .header-navigation .nav-right-item {
+            display: flex !important;
+            align-items: center !important;
+            gap: 15px;
+        }
+    }
+    /* Sticky Header Styling */
+    .header-navigation.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(14, 15, 17, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        padding: 5px 0;
+        animation: sticky-nav 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 9999;
+    }
+    @keyframes sticky-nav {
+        from { transform: translateY(-100%); }
+        to { transform: translateY(0); }
+    }
 </style>
 <header class="header-area transparent-header">
     <div class="header-navigation">
@@ -68,7 +103,7 @@
                                                     <div class="mega-content">
                                                         <span class="mega-title">Ignite</span>
                                                         <span class="mega-desc">Accelerating business growth</span>
-                                                    </div>
+                                                     </div>
                                                 </a>
                                             </div>
                                         </div>
@@ -214,7 +249,7 @@
                     </nav>
                 </div>
                 <div class="nav-right-item">
-                    <div class="nav-button d-none d-md-block">
+                    <div class="nav-button">
                         <a href="contact-us.html" class="theme-btn style-one" style="background: var(--nadi-gradient) !important;">
                             <span class="text-flip" style="color:var(--nadi-accent) !important;"><span class="text" style="color: #fff;">CONNECT US</span><span class="text" style="color: #fff;">CONNECT US</span></span>
                         </a>
