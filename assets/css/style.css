@@ -1068,7 +1068,7 @@ label {
   position: absolute;
   left: 0;
   top: 120%;
-  width: 250px;
+  width: 300px;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: all 0.2s;
@@ -1138,8 +1138,162 @@ label {
 .header-navigation .main-menu ul > li:hover > .sub-menu {
   opacity: 1;
   visibility: visible;
-  top: 115%;
+  top: 100%;
 }
+
+/* Mega Menu Styling */
+.header-navigation .main-menu ul > li.has-mega-menu {
+    position: static;
+}
+
+.header-navigation .main-menu ul > li .mega-menu {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 95vw;
+    background: #0E0F11;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 40px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.header-navigation .main-menu ul > li:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.header-navigation .main-menu ul > li:hover .mega-item {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.mega-item:nth-child(1) { transition-delay: 0.1s; }
+.mega-item:nth-child(2) { transition-delay: 0.15s; }
+.mega-item:nth-child(3) { transition-delay: 0.2s; }
+.mega-item:nth-child(4) { transition-delay: 0.25s; }
+.mega-item:nth-child(5) { transition-delay: 0.3s; }
+
+.mega-menu-container {
+    display: flex;
+    gap: 40px;
+}
+
+.mega-menu-column {
+    flex: 1;
+}
+
+.mega-menu-title {
+    font-size: 14px !important;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--nadi-accent) !important;
+    margin-bottom: 25px;
+    font-weight: 700 !important;
+    opacity: 0.8;
+}
+
+.mega-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.mega-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 15px;
+    padding: 15px !important;
+    border-radius: 12px;
+    background: transparent !important;
+    text-align: left !important;
+    text-transform: none !important;
+    line-height: 1.4 !important;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease, background 0.3s ease !important;
+}
+
+.mega-item:hover {
+    background: rgba(255, 255, 255, 0.03) !important;
+    transform: translateY(-5px) scale(1.02) !important;
+}
+
+.mega-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 82, 212, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nadi-primary);
+    font-size: 18px;
+    flex-shrink: 0;
+    transition: all 0.3s;
+}
+
+.mega-item:hover .mega-icon {
+    background: var(--nadi-gradient);
+    color: #fff;
+}
+
+.mega-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-title {
+    font-weight: 700 !important;
+    font-size: 16px !important;
+    color: var(--white-color) !important;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.mega-desc {
+    font-size: 13px !important;
+    color: var(--nadi-text-muted) !important;
+    font-weight: 400 !important;
+    opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+    .header-navigation .main-menu ul > li .mega-menu {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding: 10px 0 !important;
+        display: none;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    
+    .mega-menu-container {
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    
+    .mega-menu-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .mega-item {
+        padding: 10px 0 !important;
+    }
+}
+
 .header-navigation .navbar-toggler {
   padding: 11px 7px;
   border: 1px solid rgba(255, 255, 255, 0.7);

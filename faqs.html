@@ -26,6 +26,128 @@
         <link rel="stylesheet" href="assets/css/default.css">
         <!--====== Style css ======-->
         <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        :root {
+            --nadi-primary: #0052D4;
+            --nadi-secondary: #28A745;
+            --nadi-accent: #00D2FF;
+            --nadi-dark: #0B0F13;
+            --nadi-light: rgba(0, 82, 212, 0.1);
+            --nadi-blue: #0052D4;
+            --nadi-gradient: linear-gradient(135deg, #0052D4 0%, #28A745 100%);
+            --nadi-gradient-dark: linear-gradient(135deg, #0B0F13 0%, #111827 100%);
+            --nadi-card-bg: rgba(255, 255, 255, 0.04);
+            --nadi-card-border: rgba(255, 255, 255, 0.1);
+            --nadi-text-main: #F1F5F9;
+            --nadi-text-muted: #CBD5E1;
+            --primary-color: #0052D4;
+        }
+
+        body {
+            background: var(--nadi-dark) !important;
+            color: var(--nadi-text-main) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
+        p { color: var(--nadi-text-muted) !important; }
+
+        .gray-dark { background: #0E1217 !important; }
+        section { background: var(--nadi-dark); overflow: hidden; }
+
+        .pf-nav-menu.nadi-nav .main-menu {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 100px;
+            padding: 0 40px;
+            backdrop-filter: blur(12px);
+            display: inline-block;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li {
+            padding: 0 20px;
+            margin: 0;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a {
+            font-weight: 600 !important;
+            font-size: 14px !important;
+            color: #fff !important;
+            text-transform: capitalize;
+            letter-spacing: 0.2px;
+            opacity: 0.9;
+            transition: all 0.3s;
+            line-height: 54px;
+            display: block;
+        }
+
+        .pf-nav-menu.nadi-nav .main-menu ul li a:hover,
+        .pf-nav-menu.nadi-nav .main-menu ul li.active a {
+            color: var(--nadi-accent) !important;
+            opacity: 1;
+        }
+
+        .nav-right-item .nav-button .theme-btn.style-one {
+            border-radius: 100px !important;
+            padding: 12px 35px !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            letter-spacing: 0.5px;
+            background: var(--nadi-gradient) !important;
+            border: none !important;
+            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.2);
+            white-space: nowrap !important;
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 991px) {
+            .pf-nav-menu.nadi-nav .main-menu {
+                background: transparent;
+                border: none;
+                padding: 0;
+                border-radius: 0;
+                backdrop-filter: none;
+                white-space: normal;
+                width: 100%;
+                text-align: left;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li {
+                width: 100%;
+                padding: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li:last-child {
+                border-bottom: none;
+            }
+            .pf-nav-menu.nadi-nav .main-menu ul li a {
+                line-height: unset;
+                padding: 12px 0;
+                font-size: 16px !important;
+                text-align: left;
+                width: 100%;
+            }
+        }
+        
+        .header-navigation .site-branding { background-color: transparent !important; border: none !important; }
+        .agenko-footer .shape.shape-blur_one span{ background-color: var(--nadi-accent); }
+    </style>
     </head>
     <body>
         <!--====== Preloader ======-->
@@ -37,103 +159,8 @@
         </div>
         <!--====== Start Overlay ======-->
         <div class="offcanvas__overlay"></div>
-        <!--=== Start  Header Area  ===-->
-        <header class="header-area header-one  transparent-header">
-            <!--====  Header Navigation  ===-->
-            <div class="header-navigation">
-                <!--====  Header Nav Inner  ===-->
-                <div class="container">
-                    <!--====  Primary Menu  ===-->
-                    <div class="primary-menu">
-                        <!--====  Site Branding  ===-->
-                        <div class="site-branding">
-                            <a href="index.html" class="brand-logo"><img src="assets/images/marketing-agency/logo/logo-main.png" alt="Brand Logo"></a>
-                        </div>
-                        <!--=== Sasly Main Menu===-->
-                        <div class="pf-nav-menu">
-                            <!--====  Site Branding  ===-->
-                            <div class="site-branding d-block d-lg-none text-center">
-                                <a href="index.html" class="brand-logo"><img src="assets/images/creative-agency/logo/logo-main.png" alt="Brand Logo"></a>
-                            </div>
-                            <!--=== Main Menu ===-->
-                            <nav class="main-menu">
-                                <ul>
-                                    <li class="menu-item has-children"><a href="index.html">Home</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="index.html">Creative Agency</a></li>
-                                            <li><a href="index-2.html">Digital Agency</a></li>
-                                            <li><a href="index-3.html">Marketing Agency</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item has-children"><a href="#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="services.html">Our Services</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                            <li><a href="team.html">Our Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faqs.html">Faqs</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item has-children"><a href="#">Portfolio</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="projects.html">Projects</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item has-children"><a href="#">Blog</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li><a href="blog-standard.html">Blog Standard</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a href="contact.html">Contact</a></li>
-                                </ul>
-                            </nav>
-                            <!--=== PF Nav Button ===-->
-                            <div class="pf-nav-button mt-20 d-block d-md-none">
-                                <a href="contact.html" class="theme-btn style-one">
-                                    <span class="text-flip">
-                                        <span class="text">LETS TALK</span>
-                                        <span class="text">LETS TALK</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <!--=== PF Menu Bottom ===-->
-                            <div class="pf-menu-bottom mt-50 d-block d-lg-none">
-                                <h5>Follow Us</h5>
-                                <ul class="social-link">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!--=== Header Nav Right ===-->
-                        <div class="nav-right-item">
-                            <div class="nav-button d-none d-md-block">
-                                <a href="contact.html" class="theme-btn style-one">
-                                    <span class="text-flip">
-                                        <span class="text">LETS TALK</span>
-                                        <span class="text">LETS TALK</span>
-                                    </span>
-                                </a>
-                            </div>
-                            <div class="navbar-toggler">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </header><!--=== End  Header Area  ===-->
+        <!--=== Header ===-->
+        <div id="header-load"></div>
         <!--======  Smooth Wrapper  ======-->
         <div id="smooth-wrapper">
             <div id="smooth-content">
@@ -461,7 +488,7 @@
                                                             <a href="faqs.html">FAQ</a>
                                                         </li>
                                                         <li>
-                                                            <a href="contact.html">Contact us</a>
+                                                            <a href="contact-us.html">Contact us</a>
                                                         </li>
                                                     </ul>
                                                 </div>

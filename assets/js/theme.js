@@ -39,6 +39,12 @@
         navMenu = $('.pf-nav-menu'),
         navMenuLi = $('.pf-nav-menu ul li ul li'),
         closeIcon = $('.navbar-close');
+        
+        // Remove existing listeners to avoid duplicates on re-init
+        navbarToggler.off('click');
+        closeIcon.off('click');
+        navMenu.off('click', '.dd-trigger');
+
         navbarToggler.on('click', function() {
             navbarToggler.toggleClass('active');
             navMenu.toggleClass('menu-on');
@@ -62,6 +68,33 @@
         });
 
     };
+
+    //===== Header Loader
+    function loadHeader() {
+        const headerPlaceholder = $('#header-load');
+        if (headerPlaceholder.length) {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    headerPlaceholder.replaceWith(data);
+                    
+                    // Highlight active menu item
+                    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+                    $('.main-menu ul li a').each(function() {
+                        const href = $(this).attr('href');
+                        if (href && href !== '#' && href === currentPath) {
+                            $(this).closest('li').addClass('active');
+                            $(this).parents('li.menu-item').addClass('active');
+                        }
+                    });
+
+                    // Re-initialize menu
+                    mainMenu();
+                    offCanvas();
+                })
+                .catch(err => console.error('Error loading header:', err));
+        }
+    }
 
     //===== Offcanvas Overlay
 
@@ -381,8 +414,12 @@
 
     // Document Ready
     $(function() {
-        mainMenu();
-        offCanvas();
+        if ($('#header-load').length) {
+            loadHeader();
+        } else {
+            mainMenu();
+            offCanvas();
+        }
     });
 
 })(window.jQuery);
