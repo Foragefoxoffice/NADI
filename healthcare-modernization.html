@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description"
+        content="NADI Aksis - Healthcare Core Modernization. Reimagine your healthcare operations through holistic integration and intelligent ecosystems.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Healthcare Core Modernization | NADI Aksis - Guiding the Pulse of Progress</title>
+    <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/slick.css">
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        body {
+            background: var(--nadi-dark) !important;
+            color: var(--nadi-text-main) !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
+        p { color: var(--nadi-text-muted) !important; }
+
+        .gray-dark { background: #0E1217 !important; }
+        section { background: var(--nadi-dark); overflow: hidden; }
+
+        .sub-title, .sub-heading {
+            display: inline-block;
+            padding: 10px 28px !important;
+            line-height: 1.2;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--nadi-accent) !important;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            border: 1px solid rgba(0, 210, 255, 0.25);
+            margin-bottom: 25px;
+            backdrop-filter: blur(4px);
+            vertical-align: middle;
+        }
+
+        .nadi-solution-card {
+            background: var(--nadi-card-bg);
+            border: 1px solid var(--nadi-card-border);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.4s;
+            height: 100%;
+        }
+
+        .nadi-solution-card:hover {
+            border-color: var(--nadi-accent);
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .agk-process-wrapper { position: relative; z-index: 1; margin-top: 50px; }
+        .agk-process-wrapper .process-line { position: absolute; top: 15px; left: 0; right: 0; width: 100%; border-top: 2px dashed rgba(0, 210, 255, 0.3); z-index: -1; }
+        
+        .agenko-step {
+            display: inline-block;
+            padding: 4px 15px;
+            background: var(--nadi-accent);
+            color: #fff;
+            font-weight: 700;
+            font-size: 12px;
+            border-radius: 30px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 210, 255, 0.3);
+        }
+
+        .agenko-iconic-box.style-five {
+            padding: 30px;
+            background: var(--nadi-card-bg);
+            border: 1px solid var(--nadi-card-border);
+            border-radius: 20px;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .agenko-iconic-box.style-five:hover {
+            border-color: var(--nadi-accent);
+            background: rgba(255, 255, 255, 0.06);
+            transform: translateY(-5px);
+        }
+
+        .agenko-iconic-box.style-five .icon {
+            font-size: 40px;
+            color: var(--nadi-accent);
+            margin-bottom: 20px;
+        }
+
+        /* Mobile Responsive Fixes */
+        @media (max-width: 767px) {
+            section, .pt-130, .pt-120, .pt-100 { padding-top: 50px !important; }
+            .pb-100, .pb-90, .pb-80 { padding-bottom: 40px !important; }
+            .pt-200 { padding-top: 120px !important; }
+            h2 { font-size: 28px !important; line-height: 1.3 !important; }
+            .agenko-iconic-box.style-five { margin-bottom: 30px !important; padding: 30px 20px !important; }
+            .agk-process-wrapper .process-line { display: none; }
+            .hero-content{
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--====== Preloader ======-->
+    <div class="preloader">
+        <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-icon"><img src="new-assets/images/logo.png" alt=""></div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!--=== Header ===-->
+    <div id="header-load"></div>
+
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <main>
+                <!--=== PAGE HERO ===-->
+                <section class="agk-hero agk-solutions-hero" style="background: var(--nadi-gradient-dark); padding: 200px 0 100px; position: relative;">
+                    <div class="container text-center">
+                        <div class="hero-content pf_fadeup">
+                            <span class="sub-heading"><i class="fas fa-hospital-alt"></i> Healthcare Core Modernization</span>
+                            <h1 style="font-size: 64px; line-height: 1.1; margin-bottom: 30px;">Reimagine Your Healthcare Operations</h1>
+                            <p style="font-size: 20px; max-width: 850px; margin: 0 auto;">Many healthcare organizations face challenges such as disconnected systems, manual processes, limited scalability, and lack of actionable insights. NADI Aksis addresses these challenges through a holistic modernization approach.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== KEY CHALLENGES & APPROACH ===-->
+                <section class="agk-modernization-details pt-120 pb-100">
+                    <div class="container">
+                        <div class="row gy-4">
+                            <div class="col-lg-6">
+                                <div class="nadi-solution-card pf_fadeup">
+                                    <h4 style="color:var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-exclamation-triangle"></i> Key Challenges We Solve</h4>
+                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Disconnected and siloed systems</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Complex and rigid workflows</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Data integrity and visibility issues</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Limited scalability for growing operations</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Increasing compliance and security risks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="nadi-solution-card pf_fadeup">
+                                    <h4 style="color:var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-layer-group"></i> Our Modernization Approach</h4>
+                                    <p class="mb-20">We unify your entire healthcare ecosystem by integrating:</p>
+                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-accent);"></i> Clinical systems (HIS, EMR, telemedicine)</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-accent);"></i> Operational workflows and automation</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-accent);"></i> Supply chain and distribution channels</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-accent);"></i> Data management and analytics platforms</li>
+                                        <li class="mb-15" style="display: flex; gap: 15px;"><i class="fas fa-link" style="color:var(--nadi-accent);"></i> Regulatory and compliance frameworks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-60 justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="nadi-outcome-box pf_fadeup text-center" style="background: rgba(0, 210, 255, 0.05); border: 1px solid rgba(0, 210, 255, 0.2); padding: 50px; border-radius: 30px;">
+                                    <span class="sub-heading">The Result</span>
+                                    <h2 style="margin-bottom: 20px;">Streamlined, Intelligent, and Scalable</h2>
+                                    <p style="font-size: 20px; line-height: 1.6;">Our holistic approach results in a healthcare environment that enhances both operational performance and patient satisfaction, allowing your organization to focus on what matters most: care.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== WORKFLOW SECTION ===-->
+                <section class="agk-workflow pt-120 pb-100 gray-dark">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <div class="section-title text-center mb-60 pf_fadeup">
+                                    <span class="sub-title"><i class="fas fa-sync-alt"></i> End-to-End Workflow</span>
+                                    <h2>From Strategy to Execution—Seamlessly Delivered</h2>
+                                    <p class="mt-20">We provide a structured, step-by-step engagement model to ensure successful implementation and long-term value.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="agk-process-wrapper pf_fadeup">
+                            <div class="process-line"></div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 mb-40">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 01</div>
+                                        <div class="agenko-iconic-box style-five">
+                                            <div class="icon"><i class="fas fa-search"></i></div>
+                                            <div class="content">
+                                                <h5>Discovery & Assessment</h5>
+                                                <p>Analyze current workflows, systems, infrastructure, and operational gaps.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-40">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 02</div>
+                                        <div class="agenko-iconic-box style-five">
+                                            <div class="icon"><i class="fas fa-pencil-ruler"></i></div>
+                                            <div class="content">
+                                                <h5>Solution Design</h5>
+                                                <p>Develop blueprint, define architecture, and align with regulatory needs.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-40">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 03</div>
+                                        <div class="agenko-iconic-box style-five">
+                                            <div class="icon"><i class="fas fa-tools"></i></div>
+                                            <div class="content">
+                                                <h5>Deployment & Implementation</h5>
+                                                <p>System installation, configuration, integration, and staff training.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-40">
+                                    <div class="agk-process-box text-center">
+                                        <div class="agenko-step">Step 04</div>
+                                        <div class="agenko-iconic-box style-five">
+                                            <div class="icon"><i class="fas fa-headset"></i></div>
+                                            <div class="content">
+                                                <h5>Post-Sales Support</h5>
+                                                <p>Performance monitoring, optimization, and cybersecurity management.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-40 pf_fadeup">
+                            <div class="col-lg-12">
+                                <div class="nadi-workflow-footer text-center" style="background: var(--nadi-gradient); border-radius: 20px; padding: 40px;">
+                                    <h4 style="color: #fff !important; margin-bottom: 30px;">What This Means for You</h4>
+                                    <div class="row">
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-user-check"></i> One partner managing the entire lifecycle</p></div>
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-toggle-on"></i> Smooth transition from manual to digital</p></div>
+                                        <div class="col-md-4 mb-20"><p style="color: #fff !important; font-weight: 600;"><i class="fas fa-fast-forward"></i> Faster implementation with minimal disruption</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== UNIVERSAL CTA SECTION ===-->
+                <section class="cta-area pb-130 pt-100">
+                    <div class="container">
+                        <div class="nadi-partner-cta pf_fadeup">
+                            <div class="container-inner">
+                                <span class="badge-text">Book a Consultation</span>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to modernize your healthcare operations?</h2>
+                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Take the first step towards a fully integrated, scalable healthcare ecosystem. Book a consultation with NADI Aksis today.</p>
+                                <div class="cta-btns">
+                                    <a href="contact-us.html" class="theme-btn style-one">
+                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book a Consultation Today</span><span class="text">Book a Consultation Today</span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!--=== Footer ===-->
+            <div id="footer-load"></div>
+
+        </div>
+    </div>
+
+    <!--====== Jquery js ======-->
+    <script src="assets/js/plugins/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/plugins/popper.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/gsap/gsap.min.js"></script>
+    <script src="assets/js/plugins/gsap/SplitText.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollSmoother.min.js"></script>
+    <script src="assets/js/plugins/gsap/ScrollTrigger.min.js"></script>
+    <script src="assets/js/plugins/slick.min.js"></script>
+    <script src="assets/js/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugins/jquery.waypoints.js"></script>
+    <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

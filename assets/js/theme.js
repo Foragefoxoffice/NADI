@@ -55,17 +55,23 @@
         });
         navMenu.find("li a").each(function() {
             if ($(this).children('.dd-trigger').length < 1) {
-                if ($(this).next().length > 0) {
+                // Modified to ONLY add trigger if next element is a valid menu container
+                if ($(this).next('ul, .sub-menu, .mega-menu').length > 0) {
                     $(this).append('<span class="dd-trigger"><i class="far fa-angle-down"></i></span>')
                 }
             }
         });
         navMenu.on('click', '.dd-trigger', function(e) {
             e.preventDefault();
-            // Close other open menus
-            $(this).parent().parent().siblings().find('ul.sub-menu, div.mega-menu').slideUp();
+            e.stopImmediatePropagation(); // Ensure no other listeners (like close-menu) catch this
+            
             // Toggle current menu
-            $(this).parent().next('ul.sub-menu, div.mega-menu').stop(true, true).slideToggle(350);
+            var $target = $(this).parent().next('ul, .sub-menu, .mega-menu');
+            
+            // Close other open submenus at the same level
+            $(this).parent().parent().siblings().find('ul.sub-menu, div.mega-menu, ul').not($target).slideUp(350);
+            
+            $target.stop(true, true).slideToggle(350);
             $(this).toggleClass('sub-menu-open');
         });
 
@@ -95,6 +101,19 @@
                     offCanvas();
                 })
                 .catch(err => console.error('Error loading header:', err));
+        }
+    }
+
+    //===== Footer Loader
+    function loadFooter() {
+        const footerPlaceholder = $('#footer-load');
+        if (footerPlaceholder.length) {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    footerPlaceholder.replaceWith(data);
+                })
+                .catch(err => console.error('Error loading footer:', err));
         }
     }
 
@@ -154,6 +173,22 @@
     }
 
     //===== Slick slider js
+
+    if ($('.hero-slider-active').length) {
+        $('.hero-slider-active').slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 1000,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 5000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<div class="prev"><i class="far fa-angle-left"></i></div>',
+            nextArrow: '<div class="next"><i class="far fa-angle-right"></i></div>'
+        });
+    }
 
     if ($('.testimonial-slider').length) {
         $('.testimonial-slider').slick({
@@ -431,6 +466,10 @@
         } else {
             mainMenu();
             offCanvas();
+        }
+        
+        if ($('#footer-load').length) {
+            loadFooter();
         }
     });
 

@@ -20,21 +20,7 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-        :root {
-            --nadi-primary: #0052D4;
-            --nadi-secondary: #28A745;
-            --nadi-accent: #00D2FF;
-            --nadi-dark: #0B0F13;
-            --nadi-light: rgba(0, 82, 212, 0.1);
-            --nadi-blue: #0052D4;
-            --nadi-gradient: linear-gradient(135deg, #0052D4 0%, #28A745 100%);
-            --nadi-gradient-dark: linear-gradient(135deg, #0B0F13 0%, #111827 100%);
-            --nadi-card-bg: rgba(255, 255, 255, 0.04);
-            --nadi-card-border: rgba(255, 255, 255, 0.1);
-            --nadi-text-main: #F1F5F9;
-            --nadi-text-muted: #CBD5E1;
-            --primary-color: #0052D4;
-        }
+
 
         body {
             background: var(--nadi-dark) !important;
@@ -197,172 +183,7 @@
             font-size: 15px;
         }
 
-        .nadi-nav .main-menu>ul>li>a {
-            font-weight: 600;
-        }
 
-        /* Pill Header Redesign */
-        .header-navigation .primary-menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .pf-nav-menu.nadi-nav .main-menu {
-            background: rgba(255, 255, 255, 0.04);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 100px;
-            padding: 0 40px;
-            backdrop-filter: blur(12px);
-            display: inline-block;
-            transition: all 0.3s ease;
-            white-space: nowrap;
-        }
-
-        .pf-nav-menu.nadi-nav .main-menu ul {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .pf-nav-menu.nadi-nav .main-menu ul li {
-            padding: 0 20px;
-            margin: 0;
-        }
-
-        .pf-nav-menu.nadi-nav .main-menu ul li a {
-            font-weight: 600 !important;
-            font-size: 14px !important;
-            color: #fff !important;
-            text-transform: capitalize;
-            letter-spacing: 0.2px;
-            opacity: 0.9;
-            transition: all 0.3s;
-            line-height: 54px; /* Pill height consistency */
-            display: block;
-        }
-
-        .pf-nav-menu.nadi-nav .main-menu ul li a:hover,
-        .pf-nav-menu.nadi-nav .main-menu ul li.active a {
-            color: var(--nadi-accent) !important;
-            opacity: 1;
-        }
-
-        .nav-right-item .nav-button .theme-btn.style-one {
-            border-radius: 100px !important;
-            padding: 12px 35px !important;
-            font-weight: 700 !important;
-            font-size: 13px !important;
-            letter-spacing: 0.5px;
-            background: var(--nadi-gradient) !important;
-            border: none !important;
-            box-shadow: 0 4px 15px rgba(0, 82, 212, 0.2);
-            white-space: nowrap !important;
-            display: inline-flex !important;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .header-navigation .site-branding {
-            background-color: transparent !important;
-            border: none !important;
-        }
-
-        @media (max-width: 991px) {
-            .pf-nav-menu.nadi-nav .main-menu {
-                background: transparent;
-                border: none;
-                padding: 0;
-                border-radius: 0;
-                backdrop-filter: none;
-                white-space: normal;
-                width: 100%;
-                text-align: left;
-            }
-            .pf-nav-menu.nadi-nav .main-menu ul {
-                flex-direction: column;
-                align-items: flex-start;
-                width: 100%;
-            }
-            .pf-nav-menu.nadi-nav .main-menu ul li {
-                width: 100%;
-                padding: 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-            }
-            .pf-nav-menu.nadi-nav .main-menu ul li:last-child {
-                border-bottom: none;
-            }
-            .pf-nav-menu.nadi-nav .main-menu ul li a {
-                line-height: unset;
-                padding: 12px 0;
-                font-size: 16px !important;
-                text-align: left;
-                width: 100%;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .site-branding .brand-logo img {
-                max-width: 130px !important;
-            }
-        }
-
-        .header-navigation .pf-nav-menu{
-            border: none !important;
-        }
-
-        /* Navbar Layout Fixes - Desktop Only */
-        @media (min-width: 992px) {
-            .header-navigation .container {
-                max-width: 1400px;
-            }
-
-            .main-menu ul {
-                display: flex !important;
-                flex-wrap: nowrap !important;
-                gap: 12px;
-            }
-
-            .main-menu ul li {
-                white-space: nowrap !important;
-                display: inline-block !important;
-            }
-
-            .nadi-nav .main-menu>ul>li {
-                margin-right: 0px !important;
-            }
-
-            .nadi-nav .main-menu>ul>li>a {
-                padding: 10px 4px !important;
-                font-size: 20px !important;
-                letter-spacing: -0.2px;
-            }
-        }
-
-        .nadi-btn-primary {
-            white-space: nowrap !important;
-        }
-
-        .pf-nav-button .theme-btn {
-            padding: 12px 20px !important;
-        }
-
-        .nav-button .theme-btn {
-            padding: 12px 25px !important;
-        }
-
-        .theme-btn.style-one .text-flip{
-            color: var(--nadi-accent);
-        }
-
-        /* Footer Style Overrides */
-        .agenko-footer .shape.shape-blur_one span { background-color: var(--nadi-accent) !important; }
-        .footer-widget .footer-content .footer-logo { border: none !important; background-color: transparent !important; margin-bottom: 25px; padding: 0 !important; display: block; }
-        .footer-widget .footer-content .footer-logo img { max-width: 140px; height: auto; display: block; }
-        .theme-btn.style-two { background: var(--nadi-gradient) !important; border: none !important; color: #fff !important; transition: all 0.3s ease; }
 
         /* Mobile Responsive Fixes */
         @media (max-width: 767px) {
@@ -375,10 +196,6 @@
             }
             .pt-200 {
                 padding-top: 120px !important;
-            }
-            h1 {
-                font-size: 34px !important;
-                line-height: 1.2 !important;
             }
             h2 {
                 font-size: 28px !important;
@@ -397,6 +214,10 @@
             .nadi-flag-item {
                 padding: 8px 18px !important;
                 font-size: 13px !important;
+            }
+            .pf_fadeup {
+                opacity: 1 !important;
+                visibility: visible !important;
             }
             .agk-products-hero {
                 padding-top: 150px !important;
@@ -718,62 +539,52 @@
                         <div class="row">
                             <!-- NADI Omnicare -->
                             <div class="col-xl-3 col-md-6 mb-30">
-                                <div class="agk-platform-item pf_fadeup h-100" id="omnicare" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
+                                <a href="omnicare-platform.html" class="agk-platform-item pf_fadeup h-100 d-block" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
                                     <div class="icon mb-25" style="font-size: 45px; color: var(--nadi-accent);"><i class="fas fa-hospital-user"></i></div>
                                     <h4 class="mb-15" style="color: #fff;">NADI Omnicare</h4>
                                     <p style="color: rgba(255,255,255,0.7); font-size: 14px;">A comprehensive Hospital Information Management System (HIMS) designed for seamless patient tracking and administrative efficiency.</p>
-                                </div>
+                                </a>
                             </div>
                             <!-- SCM sales platform -->
                             <div class="col-xl-3 col-md-6 mb-30">
-                                <div class="agk-platform-item pf_fadeup h-100" id="scm" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
+                                <a href="scm-sales-platform.html" class="agk-platform-item pf_fadeup h-100 d-block" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
                                     <div class="icon mb-25" style="font-size: 45px; color: var(--nadi-accent);"><i class="fas fa-shopping-cart"></i></div>
                                     <h4 class="mb-15" style="color: #fff;">SCM sales platform</h4>
                                     <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Advanced supply chain and sales management platform tailored for medical distributors, ensuring real-time inventory tracking.</p>
-                                </div>
+                                </a>
                             </div>
                             <!-- Healthcare IT -->
                             <div class="col-xl-3 col-md-6 mb-30">
-                                <div class="agk-platform-item pf_fadeup h-100" id="it" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
+                                <a href="healthcare-it.html" class="agk-platform-item pf_fadeup h-100 d-block" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
                                     <div class="icon mb-25" style="font-size: 45px; color: var(--nadi-accent);"><i class="fas fa-microchip"></i></div>
                                     <h4 class="mb-15" style="color: #fff;">Healthcare IT</h4>
                                     <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Specialized IT infrastructure support and managed services for medical centers, ensuring high availability and integration.</p>
-                                </div>
+                                </a>
                             </div>
                             <!-- Healthcare AI -->
                             <div class="col-xl-3 col-md-6 mb-30">
-                                <div class="agk-platform-item pf_fadeup h-100" id="ai" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
+                                <a href="healthcare-ai.html" class="agk-platform-item pf_fadeup h-100 d-block" style="background: rgba(255,255,255,0.03); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); transition: 0.3s; backdrop-filter: blur(10px);">
                                     <div class="icon mb-25" style="font-size: 45px; color: var(--nadi-accent);"><i class="fas fa-brain"></i></div>
                                     <h4 class="mb-15" style="color: #fff;">Healthcare AI</h4>
                                     <p style="color: rgba(255,255,255,0.7); font-size: 14px;">Cutting-edge AI solutions for diagnostics assistance and predictive analytics in personalized patient care pathways.</p>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!--=== CTA BANNER ===-->
-                <section class="agk-cta pt-130 pb-130">
+                <!--=== UNIVERSAL CTA SECTION ===-->
+                <section class="cta-area pb-130 pt-100">
                     <div class="container">
-                        <div class="row pf_fadeup">
-                            <div class="col-lg-12">
-                                <div style="background: var(--nadi-gradient); border-radius: 40px; padding: 80px 50px; position: relative; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3); text-align: center;">
-                                    <div style="position: absolute; top: -50%; right: -20%; width: 500px; height: 500px; background: rgba(255,255,255,0.08); border-radius: 50%; filter: blur(80px);"></div>
-                                    
-                                    <div class="section-title text-center mb-40">
-                                        <span class="sub-title" style="background: rgba(255,255,255,0.2); color: #fff !important; border-color: rgba(255,255,255,0.4);">Delivering Quality Healthcare Products</span>
-                                        <h2 style="color: #fff !important; font-size: 42px; margin-top:10px;">Looking for reliable medical products and distribution support?</h2>
-                                        <p style="color: rgba(255,255,255,0.9) !important; font-size: 19px; max-width: 800px; margin: 20px auto 0;">With NADI Aksis, you gain more than a supplier—you gain a strategic partner committed to your success.</p>
-                                    </div>
-                                    
-                                    <div class="d-flex flex-wrap gap-3 justify-content-center">
-                                        <a href="contact-us.html" class="theme-btn style-one" style="background: #ffffff !important; color: var(--nadi-primary) !important; border: 1px solid #ffffff; padding: 18px 45px; min-width: 240px;">
-                                            <span class="text-flip" style="color: var(--nadi-primary) !important;"><span class="text">Contact Us Today</span><span class="text">Contact Us Today</span></span>
-                                        </a>
-                                        <a href="contact-us.html" class="theme-btn style-one" style="background: rgba(11, 15, 19, 0.4) !important; border: 2px solid #ffffff !important; color: #ffffff !important; padding: 18px 45px; min-width: 240px;">
-                                            <span class="text-flip" style="color: #ffffff !important;"><span class="text">Request Product Info</span><span class="text">Request Product Info</span></span>
-                                        </a>
-                                    </div>
+                        <div class="nadi-partner-cta pf_fadeup">
+                            <div class="container-inner">
+                                <span class="badge-text">Book a Consultation</span>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to build the future of healthcare?</h2>
+                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Partner with NADI Aksis to streamline operations, adopt cutting-edge technology, and unlock new growth opportunities.</p>
+                                <div class="cta-btns">
+                                    <a href="contact-us.html" class="theme-btn style-one">
+                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book a Consultation Today</span><span class="text">Book a Consultation Today</span></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -782,110 +593,8 @@
             </main>
 
             <!--=== Footer ===-->
-            <footer class="agenko-footer gray-dark pt-130 primary-black-bg">
-                <div class="shape shape-blur_one"><span></span></div>
-                <div class="shape shape-blur_two"><span></span></div>
-                <div class="footer-widget-area pb-80">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="footer-widget footer-about-widget mb-40 pf_fadeup">
-                                    <div class="footer-content">
-                                        <div class="footer-logo">
-                                            <a href="index.html"><img src="new-assets/images/logo.png" alt="NADI Aksis"></a>
-                                        </div>
-                                        <p>Guiding the pulse of progress — your trusted partner for end-to-end healthcare solutions in Malaysia and beyond.</p>
-                                        <form>
-                                            <div class="form-group">
-                                                <input type="email" class="form_control" placeholder="Email Address" name="email" required>
-                                                <label><i class="far fa-envelope"></i></label>
-                                                <button class="theme-btn style-two">Subscribe</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="footer-widget footer-nav-widget mb-40 pf_fadeup">
-                                    <div class="footer-content mb-35">
-                                        <h4 class="widget-title">Quick Links</h4>
-                                        <ul class="footer-nav">
-                                            <li><a href="about.html" style="color:var(--nadi-text-muted);">About Us</a></li>
-                                            <li><a href="services.html" style="color:var(--nadi-text-muted);">Services</a></li>
-                                            <li><a href="solutions.html" style="color:var(--nadi-text-muted);">Solutions</a></li>
-                                            <li><a href="products.html" style="color:var(--nadi-text-muted);">Products</a></li>
-                                            <li><a href="partners.html" style="color:var(--nadi-text-muted);">Partners</a></li>
-                                            <li><a href="contact-us.html" style="color:var(--nadi-text-muted);">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 col-md-12">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="footer-widget footer-contact-widget mb-40 pf_fadeup">
-                                            <div class="footer-content">
-                                                <h4 class="widget-title">Contact</h4>
-                                                <div class="agenko-iconic-box style-three mb-30">
-                                                    <div class="icon"><i class="far fa-envelope"></i></div>
-                                                    <div class="content">
-                                                        <h6>Email</h6>
-                                                        <p><a href="mailto:info@nadiaksis.com">info@nadiaksis.com</a></p>
-                                                    </div>
-                                                </div>
-                                                <div class="agenko-iconic-box style-three">
-                                                    <div class="icon"><i class="far fa-phone-alt"></i></div>
-                                                    <div class="content">
-                                                        <h6>Phone</h6>
-                                                        <p><a href="tel:+60123456789">+60 12-345 6789</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="footer-widget footer-contact-info-widget mb-40 pf_fadeup">
-                                            <div class="footer-content mb-25">
-                                                <h4 class="widget-title">Headquarters</h4>
-                                                <p>Kuala Lumpur, Malaysia</p>
-                                            </div>
-                                            <div class="footer-content mb-25">
-                                                <h4 class="widget-title">Follow Us</h4>
-                                                <ul class="social-link" style="display:flex;gap:10px;margin-top:10px;">
-                                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-copyright">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="copyright-text">
-                                    <p>&copy; 2026 <span>NADI Aksis</span> - All Rights Reserved.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="copyright-nav">
-                                    <ul>
-                                        <li><a href="#">Terms & Condition</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="contact-us.html">Contact</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            <div id="footer-load"></div>
+
         </div>
     </div>
 
