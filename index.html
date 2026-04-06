@@ -892,7 +892,7 @@
             }
             
             .hero-wrapper-three {
-                padding-top: 80px !important;
+                padding-top: 150px !important;
                 padding-bottom: 40px !important;
             }
 
@@ -1043,6 +1043,64 @@
                 display: none !important;
             }
         }
+
+        /* Hero Split Layout Refinements */
+        .hero-content h1 {
+            font-size: 64px !important;
+            line-height: 1.1 !important;
+            margin-bottom: 25px !important;
+        }
+        @media (max-width: 1199px) {
+            .hero-content h1 {
+                font-size: 48px !important;
+            }
+        }
+        @media (max-width: 767px) {
+            .hero-content h1 {
+                font-size: 36px !important;
+            }
+        }
+
+        .hero-image-box img {
+            height: 560px !important;
+            width: 100% !important;
+            object-fit: cover !important;
+            border-radius: 30px;
+        }
+        @media (max-width: 991px) {
+            .hero-image-box img {
+                height: 400px !important;
+                margin-top: 30px;
+            }
+        }
+
+        .agk-hero {
+            position: relative;
+            overflow: hidden;
+            background: var(--nadi-gradient-dark) !important;
+        }
+
+        .agk-hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                linear-gradient(rgba(0, 210, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 210, 255, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+            -webkit-mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-slider-active {
+            position: relative;
+            z-index: 2;
+        }
     </style>
 </head>
 
@@ -1068,35 +1126,30 @@
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
-                                            <div class="hero-content mb-70 pf_fadeup text-center">
+                                            <div class="hero-content mb-30 pf_fadeup text-start">
                                                 <h1 class="mb-20">Guiding the Pulse of <span>Progress</span></h1>
-                                                <h4 class="mb-30" style="color:var(--nadi-text-muted); font-weight: 500; max-width: 800px; margin-left: auto; margin-right: auto;">End-to-end healthcare solutions that integrate systems, innovate with technology, and ignite business growth.</h4>
-                                                <p class="mb-25" style="max-width: 700px; margin-left: auto; margin-right: auto;">From regulatory compliance and market entry to digital transformation and sales acceleration, NADI Aksis empowers healthcare organizations to scale efficiently and sustainably.</p>
+                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">End-to-end healthcare solutions that integrate systems, innovate with technology, and ignite business growth.</h4>
+                                                <p class="mb-35">From regulatory compliance and market entry to digital transformation and sales acceleration, NADI Aksis empowers healthcare organizations to scale efficiently.</p>
                                                 <div class="hero-button">
-                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-20">
+                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-15">
                                                         <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span></span>
                                                     </a>
-                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05); border: 1px solid var(--nadi-card-border);">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Explore Our Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">Explore Our Solutions</span></span>
+                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
+                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">Solutions</span></span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6">
+                                            <!--=== Hero Image ===-->
+                                            <div class="hero-image-box text-end pf_fadeup">
+                                                <img src="new-assets/images/banner1.jpg" alt="NADI Aksis Healthcare Solutions" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <!--=== Hero Image ===-->
-                                <div class="hero-image-box text-center pf_fadeup">
-                                    <img src="assets/images/marketing-agency/hero/hero-img1.jpg"
-                                        alt="NADI Aksis Healthcare Solutions">
-                                    <svg width="835" height="172" viewBox="0 0 835 172" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M42 92V41.5C42 18.5802 23.4198 0 0.5 0H834.5V171.999C834.5 149.907 816.591 132 794.5 132H82C59.9086 132 42 114.091 42 92Z"
-                                            fill="#0E0F11" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -1105,35 +1158,30 @@
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
-                                            <div class="hero-content mb-70 text-center">
+                                            <div class="hero-content mb-30 text-start">
                                                 <h1 class="mb-20">Integrate. Innovate. <span>Ignite.</span></h1>
-                                                <h4 class="mb-30" style="color:var(--nadi-text-muted); font-weight: 500; max-width: 800px; margin-left: auto; margin-right: auto;">Transforming healthcare operations with intelligent platforms and AI-driven diagnostics.</h4>
-                                                <p class="mb-25" style="max-width: 700px; margin-left: auto; margin-right: auto;">From our NADI Omnicare HIMS to smart supply chain management platforms, we provide the digital backbone for modern medical excellence.</p>
+                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">Transforming healthcare operations with intelligent platforms and AI-driven diagnostics.</h4>
+                                                <p class="mb-35">From our NADI Omnicare HIMS to smart supply chain management platforms, we provide the digital backbone for modern medical excellence.</p>
                                                 <div class="hero-button">
-                                                    <a href="products.html" class="theme-btn style-one nadi-btn-primary mr-20">
+                                                    <a href="products.html" class="theme-btn style-one nadi-btn-primary mr-15">
                                                         <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">View Our Platforms</span><span class="text" style="color: var(--nadi-text-main) !important;">View Our Platforms</span></span>
                                                     </a>
-                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05); border: 1px solid var(--nadi-card-border);">
+                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
                                                         <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">AI Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">AI Solutions</span></span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6">
+                                            <!--=== Hero Image ===-->
+                                            <div class="hero-image-box text-end">
+                                                <img src="new-assets/images/banner2.jpg" alt="NADI Aksis Digital Health" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <!--=== Hero Image ===-->
-                                <div class="hero-image-box text-center">
-                                    <img src="assets/images/marketing-agency/hero/hero-img1.jpg"
-                                        alt="NADI Aksis Digital Health">
-                                    <svg width="835" height="172" viewBox="0 0 835 172" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M42 92V41.5C42 18.5802 23.4198 0 0.5 0H834.5V171.999C834.5 149.907 816.591 132 794.5 132H82C59.9086 132 42 114.091 42 92Z"
-                                            fill="#0E0F11" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -1142,35 +1190,30 @@
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
                                 <div class="container">
-                                    <div class="row">
-                                        <div class="col-lg-12">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
-                                            <div class="hero-content mb-70 text-center">
+                                            <div class="hero-content mb-30 text-start">
                                                 <h1 class="mb-20">Gateway to <span>Global Markets</span></h1>
-                                                <h4 class="mb-30" style="color:var(--nadi-text-muted); font-weight: 500; max-width: 800px; margin-left: auto; margin-right: auto;">Specialized regulatory compliance and strategic market entry for medical manufacturers.</h4>
-                                                <p class="mb-25" style="max-width: 700px; margin-left: auto; margin-right: auto;">Mastering MDA registration, GDPMD compliance, and tender procurement to help your healthcare innovations reach those who need them most.</p>
+                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">Specialized regulatory compliance and strategic market entry for medical manufacturers.</h4>
+                                                <p class="mb-35">Mastering MDA registration, GDPMD compliance, and tender procurement to help your healthcare innovations reach those who need them most.</p>
                                                 <div class="hero-button">
-                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-20">
+                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-15">
                                                         <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Get Regulatory Support</span><span class="text" style="color: var(--nadi-text-main) !important;">Get Regulatory Support</span></span>
                                                     </a>
-                                                    <a href="about.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05); border: 1px solid var(--nadi-card-border);">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">About NADI Aksis</span><span class="text" style="color: var(--nadi-text-main) !important;">About NADI Aksis</span></span>
+                                                    <a href="about.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
+                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">About</span><span class="text" style="color: var(--nadi-text-main) !important;">About</span></span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6">
+                                            <!--=== Hero Image ===-->
+                                            <div class="hero-image-box text-end">
+                                                <img src="new-assets/images/banner3.jpg" alt="NADI Aksis Regulatory Compliance" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <!--=== Hero Image ===-->
-                                <div class="hero-image-box text-center">
-                                    <img src="assets/images/marketing-agency/hero/hero-img1.jpg"
-                                        alt="NADI Aksis Regulatory Compliance">
-                                    <svg width="835" height="172" viewBox="0 0 835 172" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M42 92V41.5C42 18.5802 23.4198 0 0.5 0H834.5V171.999C834.5 149.907 816.591 132 794.5 132H82C59.9086 132 42 114.091 42 92Z"
-                                            fill="#0E0F11" />
-                                    </svg>
                                 </div>
                             </div>
                         </div>
@@ -1313,7 +1356,7 @@
                             <div class="col-xl-5">
                                 <div class="agk-image-box style-one mb-50 pf_fadeup">
                                     <div class="agk-image">
-                                        <img src="assets/images/digital-agency/about/about1.jpg"
+                                        <img src="new-assets/images/about-img.jpg"
                                             alt="NADI Aksis Healthcare Solutions">
                                     </div>
                                     <div class="agenko-experince-box style-one">
@@ -1825,7 +1868,6 @@
                 </section> -->
 
                 <!--=== SECTION 8: CASE STUDIES & TESTIMONIALS ===-->
-                <!--=== SECTION 8: CASE STUDIES & TESTIMONIALS ===-->
                 <section class="agenko-testimonial pt-130 pb-80" id="nadi-casestudies">
                     <div class="container">
                         <div class="row align-items-center">
@@ -1848,7 +1890,7 @@
                                 <!--=== Agk Image Box ===-->
                                 <div class="agenko-image-box agenko-rotate-image mb-50 pf_fadeup">
                                     <div class="agenko-image">
-                                        <img src="assets/images/marketing-agency/testimonial/testimonial1.jpg" alt="Partner Testimonials">
+                                        <img style="width: 70%;" src="new-assets/images/testimonial.jpg" alt="Partner Testimonials">
                                     </div>
                                 </div>
                             </div>
@@ -1993,7 +2035,7 @@
                 </section> -->
 
                 <!--=== UNIVERSAL CTA SECTION ===-->
-                <section class="cta-area pb-130 pt-100">
+                <section class="cta-area pb-130 pt-30">
                     <div class="container">
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">

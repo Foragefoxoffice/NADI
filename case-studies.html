@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description"
-        content="NADI Aksis - Case Studies & Testimonials. Real results, trusted partnerships, and proven impact across the healthcare ecosystem.">
+        content="NADI Aksis - Insights That Drive Healthcare Innovation. Stay ahead in the evolving healthcare landscape.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Case Studies & Testimonials | NADI Aksis - Guiding the Pulse of Progress</title>
+    <title>Blog | NADI Aksis - Guiding the Pulse of Progress</title>
     <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
@@ -22,188 +22,62 @@
     <style>
 
 
-        body {
-            background: var(--nadi-dark) !important;
-            color: var(--nadi-text-main) !important;
-        }
-
-
-
-        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
-        p { color: var(--nadi-text-muted) !important; }
-
-        .gray-dark { background: #0E1217 !important; }
-        section { background: var(--nadi-dark); overflow: hidden; }
-
-        .sub-title, .sub-heading {
-            display: inline-block;
-            padding: 10px 28px !important;
-            line-height: 1.2;
-            background: rgba(0, 210, 255, 0.1);
-            color: var(--nadi-accent) !important;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border: 1px solid rgba(0, 210, 255, 0.25);
-            margin-bottom: 25px;
-            backdrop-filter: blur(4px);
-            vertical-align: middle;
-        }
-
-        .nadi-pillar-card {
-            border-radius: 16px;
-            padding: 40px 30px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
+        /* Blog Grid Custom Styling */
+        .agenko-blog-item {
+            background: var(--nadi-card-bg);
             border: 1px solid var(--nadi-card-border);
-            background: var(--nadi-card-bg);
-            backdrop-filter: blur(10px);
-            height: 100%;
-            z-index: 1;
-        }
-
-        .nadi-pillar-card::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: var(--nadi-gradient);
-            transition: height 0.4s ease;
-            z-index: -1;
-        }
-
-        .nadi-pillar-card:hover::before { height: 100%; }
-        .nadi-pillar-card:hover { transform: translateY(-8px); }
-        .nadi-pillar-card:hover h4,
-        .nadi-pillar-card:hover p,
-        .nadi-pillar-card:hover .icon i,
-        .nadi-pillar-card:hover .pillar-icon i { color: #fff !important; }
-        .nadi-pillar-card:hover .pillar-icon {
-            background: rgba(255, 255, 255, 0.18);
-            box-shadow: 0 0 0 2px rgba(255,255,255,0.3);
-        }
-        .nadi-pillar-card:hover li,
-        .nadi-pillar-card:hover li i { color: #fff !important; }
-
-        .pillar-icon {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            background: var(--nadi-light);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            color: var(--nadi-primary);
-            margin-bottom: 25px;
-            transition: all 0.4s;
-        }
-
-        .agenko-iconic-box.style-six {
             border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 35px 30px;
-            background: var(--nadi-card-bg);
+            padding: 20px;
             transition: all 0.4s;
             height: 100%;
             display: flex;
             flex-direction: column;
         }
-
-        .agenko-iconic-box.style-six:hover {
+        
+        .agenko-blog-item:hover {
             border-color: var(--nadi-accent);
-            transform: translateY(-5px);
+            transform: translateY(-8px);
             background: rgba(255, 255, 255, 0.06);
         }
 
-        .agenko-iconic-box.style-six .icon i {
-            color: var(--nadi-accent);
-            font-size: 36px;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .nadi-stat-box {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid var(--nadi-card-border);
-            border-radius: 20px;
-            padding: 30px 20px;
-            text-align: center;
-            transition: all 0.4s;
-            height: 100%;
-        }
-
-        .nadi-stat-box:hover {
-            border-color: var(--nadi-accent);
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-
-        .nadi-btn-primary {
-            white-space: nowrap !important;
-        }
-        .theme-btn.style-one .text-flip{
-            color: var(--nadi-accent);
-        }
-
-        .testimonial-quote {
-            position: relative;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            margin-top: 30px;
-            font-style: italic;
-        }
-
-        .testimonial-quote::before {
-            content: '\f10d';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            font-size: 40px;
-            color: rgba(255, 255, 255, 0.05);
-        }
-
-        .result-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
-            padding: 15px;
-            background: rgba(0, 82, 212, 0.05);
+        .agenko-blog-item .post-thumbnail img {
             border-radius: 12px;
-            border: 1px solid rgba(0, 210, 255, 0.1);
+            width: 100%;
         }
 
-        .result-item i {
-            color: var(--nadi-accent);
-            font-size: 20px;
+        .agenko-blog-item .post-content {
+            padding: 25px 5px 10px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
         }
 
-        .result-item span {
-            font-weight: 600;
-            color: var(--nadi-text-main);
+        .agenko-blog-item .post-meta span {
+            color: var(--nadi-text-muted);
+            font-size: 14px;
+            margin-right: 15px;
+        }
+        .agenko-blog-item .post-meta span i {
+            color: var(--nadi-primary);
+            margin-right: 5px;
+        }
+
+        .agenko-blog-item .title a {
+            color: var(--nadi-text-main) !important;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.4;
+            transition: color 0.3s;
+        }
+
+        .agenko-blog-item:hover .title a {
+            color: var(--nadi-accent) !important;
         }
 
         @media (max-width: 991px) {
             .agenko-page-banner {
                 padding-top: 150px !important;
                 padding-bottom: 60px !important;
-            }
-            .results-box{
-                padding: 20px !important;
-            }
-            .cta-wrapper{
-                padding: 30px !important;
             }
         }
 
@@ -221,6 +95,10 @@
 
         .agenko-iconic-box .icon i {
             color: var(--nadi-primary);
+        }
+        .post-thumbnail img{
+            min-height: 250px;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -247,216 +125,74 @@
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-12 text-center">
-                                <span class="sub-heading pf_fadeup">Real Results. Trusted Partnerships.</span>
-                                <h1 class="page-title pf_fadeup" style="font-size: 56px; margin-bottom: 25px; line-height: 1.1;">Case Studies & Testimonials</h1>
-                                <p class="pf_fadeup" style="max-width: 800px; margin: 0 auto; font-size: 18px;">At NADI Aksis, we measure success by the results we deliver. From market entry and regulatory compliance to digital transformation and sales growth, our clients trust us to solve complex challenges and drive measurable outcomes.</p>
+                                <span class="sub-heading pf_fadeup">Case Studies</span>
+                                <h1 class="page-title pf_fadeup" style="font-size: 56px; margin-bottom: 25px; line-height: 1.1;">Success Stories</h1>
+                                <p class="pf_fadeup" style="max-width: 800px; margin: 0 auto; font-size: 18px;">Real results, trusted partnerships, and proven impact across the healthcare ecosystem. Discover how NADI Aksis empowers healthcare providers with innovative solutions and strategic growth.</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!--=== CASE STUDY 1: Technolyze (Split Layout) ===-->
-                <section class="agk-integrate pt-130 pb-130" id="case-technolyze">
+                <section class="agenko-blog-grid pt-130 pb-80">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6">
-                                <div class="agenko-content-box style-one mb-50 pf_fadeup">
-                                    <div class="section-title mb-25">
-                                        <span class="sub-title">Medical Device Distribution</span>
-                                        <h2>Market Entry & Business Growth</h2>
-                                        <h4 class="mt-15" style="color:var(--nadi-primary);">Technolyze Sdn Bhd</h4>
+                        <div class="row justify-content-center">
+                            
+                            <!-- Case Study 1 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img src="new-assets/images/blog1.jpg" alt="Post Thumbnail"></a>
                                     </div>
-                                    <div class="content-block mb-30">
-                                        <h5 style="color:var(--nadi-accent); margin-bottom:10px;"><i class="fas fa-exclamation-circle"></i> Problem</h5>
-                                        <p>Technolyze aimed to establish and grow its presence in Malaysia’s healthcare market but faced multiple challenges: complex regulatory requirements (MDA approval), lack of local market knowledge, need for structured sales operations, and importation coordination across multiple countries.</p>
-                                    </div>
-                                    <div class="content-block mb-30">
-                                        <h5 style="color:var(--nadi-secondary); margin-bottom:10px;"><i class="fas fa-check-circle"></i> Solution</h5>
-                                        <p>NADI Aksis provided end-to-end support including MDA regulatory registration, product importation from China, India, Turkey, and Italy, market entry strategy, sales team setup, and hands-on execution support.</p>
-                                    </div>
-                                    <div class="testimonial-quote">
-                                        <p>“NADI Aksis has been instrumental in establishing and growing our business in Malaysia. Their expertise and hands-on approach make them a trusted strategic partner.”</p>
-                                        <div class="author mt-15">
-                                            <span style="font-weight: 700; color: var(--nadi-accent);">— CEO, Technolyze Sdn Bhd</span>
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(0, 82, 212, 0.1); color: var(--nadi-primary); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">Regulatory & Market Strategy</span>
                                         </div>
+                                        <h4 class="title mb-15"><a href="#">Navigating Market Entry: Technolyze’s Strategic Growth in Malaysia</a></h4>
+                                        <p>A comprehensive look at how we supported Technolyze from MDA registration and importation to full-scale sales team establishment.</p>
+                                        <a href="#" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>View Case Study</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="results-box pf_fadeup" style="background: var(--nadi-card-bg); padding: 50px; border-radius: 30px; border: 1px solid var(--nadi-card-border);">
-                                    <h3 class="mb-30"><i class="fas fa-chart-line" style="color:var(--nadi-primary);"></i> Impact Results</h3>
-                                    <div class="result-item">
-                                        <i class="fas fa-arrow-up"></i>
-                                        <span>RM100,000+ revenue within 4 months</span>
+
+                            <!-- Case Study 2 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img src="new-assets/images/blog2.jpg" alt="Post Thumbnail"></a>
                                     </div>
-                                    <div class="result-item">
-                                        <i class="fas fa-building"></i>
-                                        <span>Successfully established operations in Malaysia</span>
-                                    </div>
-                                    <div class="result-item">
-                                        <i class="fas fa-users-cog"></i>
-                                        <span>Built a scalable sales and distribution model</span>
-                                    </div>
-                                    <div class="result-item">
-                                        <i class="fas fa-rocket"></i>
-                                        <span>Accelerated market penetration</span>
-                                    </div>
-                                    <div class="mt-40 text-center">
-                                        <img src="assets/images/marketing-agency/about/about1.jpg" alt="Growth" style="border-radius: 20px; max-width: 100%;">
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(0, 210, 255, 0.1); color: var(--nadi-accent); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">Supply Chain Management</span>
+                                        </div>
+                                        <h4 class="title mb-15"><a href="#">Excellence in Continuity: 8 Years of Uninterrupted Supply for PPUM</a></h4>
+                                        <p>How our team ensured zero operational disruptions for one of Malaysia's busiest cardiology departments through resilient logistics.</p>
+                                        <a href="#" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>View Case Study</a>
                                     </div>
                                 </div>
                             </div>
+
+                            <!-- Case Study 3 -->
+                            <div class="col-xl-4 col-md-6 col-sm-12">
+                                <div class="agenko-blog-item mb-40 pf_fadeup">
+                                    <div class="post-thumbnail">
+                                        <a href="#"><img src="new-assets/images/blog3.jpg" alt="Post Thumbnail"></a>
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta mb-15">
+                                            <span style="background: rgba(40, 167, 69, 0.1); color: var(--nadi-secondary); padding: 5px 15px; border-radius: 50px; font-weight: 600; font-size: 12px; text-transform: uppercase;">Digital Healthcare</span>
+                                        </div>
+                                        <h4 class="title mb-15"><a href="#">Transforming Clinical Workflows: The Awantra Digital Platform</a></h4>
+                                        <p>Consulting and design for a scalable hospital management platform bridging the gap between clinical needs and technical architecture.</p>
+                                        <a href="#" class="read-more mt-auto" style="color: var(--nadi-accent); display: inline-block; font-weight: 600; margin-top: 15px;"><i class="fas fa-arrow-right" style="margin-right: 8px;"></i>View Case Study</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </section>
-
-                <!--=== CASE STUDY 2: PPUM (Card Grid Style) ===-->
-                <section class="agk-solutions gray-dark pt-130 pb-100" id="case-ppum">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="section-title text-center mb-65 pf_fadeup">
-                                    <span class="sub-title">Hospital / Clinical Services</span>
-                                    <h2>Supply & Distribution Excellence</h2>
-                                    <h4 style="color:var(--nadi-primary);">PPUM – Cardiology Department</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup">
-                                <div class="nadi-pillar-card">
-                                    <div class="pillar-icon"><i class="fas fa-exclamation-triangle"></i></div>
-                                    <h4 style="color:var(--nadi-accent);">The Challenge</h4>
-                                    <p>The Cardiology Department required constant, reliable supply of medical devices, consistent product quality, and efficient delivery without operational disruption.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup">
-                                <div class="nadi-pillar-card">
-                                    <div class="pillar-icon"><i class="fas fa-hand-holding-medical"></i></div>
-                                    <h4 style="color:var(--nadi-secondary);">Our Solution</h4>
-                                    <p>NADI Aksis delivered long-term supply support, high-quality devices, reliable logistics, and ongoing relationship management spanning 8+ years.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup">
-                                <div class="nadi-pillar-card">
-                                    <div class="pillar-icon"><i class="fas fa-medal"></i></div>
-                                    <h4 style="color:var(--nadi-primary);">The Results</h4>
-                                    <ul style="list-style: none; padding: 0;">
-                                        <li class="mb-10"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> ~RM700,000 procurement value</li>
-                                        <li class="mb-10"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Consistent support (8+ years)</li>
-                                        <li class="mb-10"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Zero operational disruptions</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center pf_fadeup">
-                            <div class="col-lg-8">
-                                <div class="testimonial-quote text-center">
-                                    <p>“Their professionalism, product reliability, and efficient delivery have consistently supported our clinical operations.”</p>
-                                    <div class="author mt-15">
-                                        <span style="font-weight: 700; color: var(--nadi-accent);">— Cardiology Department, PPUM</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--=== CASE STUDY 3: Awantra (Iconic Box Style) ===-->
-                <section class="agk-innovate pt-130 pb-130" id="case-awantra">
-                    <div class="container">
-                        <div class="row align-items-center mb-60 pf_fadeup">
-                            <div class="col-lg-8">
-                                <div class="section-title">
-                                    <span class="sub-title">Healthcare Technology</span>
-                                    <h2>Digital Platform Development</h2>
-                                    <h4 style="color:var(--nadi-primary);">Awantra Sdn Bhd</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row g-4 pf_fadeup">
-                            <div class="col-lg-4">
-                                <div class="agenko-iconic-box style-six">
-                                    <div class="icon"><i class="fas fa-clipboard-list"></i></div>
-                                    <h4>The Need</h4>
-                                    <p>Awantra required a scalable healthcare platform for mid-sized hospitals, aligned with real clinical workflows and healthcare regulations.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="agenko-iconic-box style-six">
-                                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
-                                    <h4>Consulting & Design</h4>
-                                    <p>NADI Aksis provided end-to-end consulting for platform architecture, workflow structuring, and regulatory alignment.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="agenko-iconic-box style-six">
-                                    <div class="icon"><i class="fas fa-cubes"></i></div>
-                                    <h4>Impact & Scale</h4>
-                                    <p>Successfully developed a compliant, future-ready cloud healthcare platform with improved system usability and efficiency.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row mt-60 pf_fadeup justify-content-center">
-                            <div class="col-lg-10">
-                                <div class="nadi-pillar-card text-center" style="padding: 60px 40px; position: relative; border-radius: 24px;">
-                                    <i class="fas fa-quote-left" style="font-size: 60px; color: rgba(255, 255, 255, 0.05); position: absolute; top: -15px; left: 50%; transform: translateX(-50%); z-index: 0;"></i>
-                                    <p style="font-size: 24px; font-style: italic; font-weight: 300; line-height: 1.6; color: var(--nadi-text-main) !important; position: relative; z-index: 2;">
-                                        “Their deep understanding of healthcare operations and IT integration ensured our platform was practical, scalable, and impactful.”
-                                    </p>
-                                    <div class="author mt-30" style="position: relative; z-index: 2;">
-                                        <!-- <div class="mb-15" style="width: 50px; height: 3px; background: var(--nadi-gradient); margin: 0 auto;"></div> -->
-                                        <h5 style="color: var(--nadi-accent); font-weight: 700; margin-bottom: 5px; font-size: 18px;">Awantra Sdn Bhd</h5>
-                                        <span style="color: var(--nadi-text-muted); font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Healthcare Technology Partner</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!--=== SUMMARY SECTION ===-->
-                <section class="agk-summary gray-dark pt-100 pb-100">
-                    <div class="container">
-                        <div class="row justify-content-center pf_fadeup">
-                            <div class="col-lg-10">
-                                <div class="section-title text-center mb-60">
-                                    <span class="sub-title">The NADI Advantage</span>
-                                    <h2>What These Success Stories Show</h2>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 col-6 mb-30">
-                                        <div class="nadi-stat-box">
-                                            <i class="fas fa-bolt" style="color:var(--nadi-accent); font-size:30px; margin-bottom:15px; display:block;"></i>
-                                            <h6 style="color:var(--nadi-text-main);">Fast Revenue Growth</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-30">
-                                        <div class="nadi-stat-box">
-                                            <i class="fas fa-handshake" style="color:var(--nadi-accent); font-size:30px; margin-bottom:15px; display:block;"></i>
-                                            <h6 style="color:var(--nadi-text-main);">Long-term Relationships</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-30">
-                                        <div class="nadi-stat-box">
-                                            <i class="fas fa-microchip" style="color:var(--nadi-accent); font-size:30px; margin-bottom:15px; display:block;"></i>
-                                            <h6 style="color:var(--nadi-text-main);">Multi-domain Expertise</h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3 col-6 mb-30">
-                                        <div class="nadi-stat-box">
-                                            <i class="fas fa-check-double" style="color:var(--nadi-accent); font-size:30px; margin-bottom:15px; display:block;"></i>
-                                            <h6 style="color:var(--nadi-text-main);">End-to-End Execution</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
                 <!--=== UNIVERSAL CTA SECTION ===-->
-                <section class="cta-area pb-130 pt-100">
+                <section class="cta-area pb-130 pt-30">
                     <div class="container">
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
@@ -472,7 +208,6 @@
                         </div>
                     </div>
                 </section>
-
             </main>
             <!--=== Footer ===-->
             <div id="footer-load"></div>
@@ -493,16 +228,6 @@
     <script src="assets/js/plugins/jquery.waypoints.js"></script>
     <script src="assets/js/plugins/jquery.counterup.min.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script>
-        document.querySelectorAll('a[href^="#nadi-"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-            });
-        });
-    </script>
 </body>
 
 </html>
-

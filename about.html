@@ -230,6 +230,94 @@
                 padding-top: 0 !important;
             }
         }
+
+        /* Experience Section Redesign */
+        .nadi-check-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            background: rgba(0, 210, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid rgba(0, 210, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .nadi-check-item:hover {
+            background: rgba(0, 210, 255, 0.1);
+            border-color: var(--nadi-accent);
+            transform: translateX(5px);
+        }
+
+        .nadi-check-item i {
+            color: var(--nadi-accent);
+            font-size: 20px;
+        }
+
+        .nadi-check-item span {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--nadi-text-main);
+        }
+
+        .nadi-milestone-card {
+            position: relative;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+            border-radius: 30px;
+            padding: 100px 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .nadi-milestone-card .massive-text {
+            font-size: 180px;
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(180deg, var(--nadi-accent) 0%, transparent 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -55%);
+            z-index: 0;
+        }
+
+        .nadi-milestone-card .massive-text span {
+            font-size: 100px;
+        }
+
+        .nadi-milestone-card .card-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .nadi-milestone-card .milestone-info h4 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: var(--nadi-accent) !important;
+        }
+
+        .nadi-milestone-card .milestone-info p {
+            font-size: 18px;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .nadi-milestone-card .card-glow {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: var(--nadi-accent);
+            filter: blur(100px);
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+        }
     </style>
 </head>
 
@@ -284,8 +372,7 @@
                             <div class="col-xl-5">
                                 <div class="agk-image-box style-one mb-50 pf_fadeup">
                                     <div class="agk-image">
-                                        <img src="assets/images/digital-agency/about/about1.jpg"
-                                            alt="NADI Aksis Overview">
+                                        <img src="new-assets/images/about-img.jpg" alt="NADI Aksis Overview">
                                     </div>
                                     <div class="agenko-experince-box style-one"
                                         style="background: var(--nadi-gradient) !important;">
@@ -329,38 +416,53 @@
                     </div>
                 </section>
 
-                <!--=== 10+ YEARS OF EXPERIENCE ===-->
+                <!--=== A DECADE OF EXCELLENCE ===-->
                 <section class="experience-section pt-130 pb-130">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 pf_fadeup">
-                                <div class="section-title mb-30">
+                                <div class="section-title mb-35">
                                     <span class="sub-title">10+ Years of Experience</span>
                                     <h2>A Decade of Proven Excellence</h2>
+                                    <p class="mt-20" style="font-size: 18px;">With over a decade of dedication, NADI Aksis has built a strong track record in delivering measurable business results for healthcare clients across Asia.</p>
                                 </div>
-                                <p class="mb-30">With over a decade of proven experience, NADI Aksis has built a strong
-                                    track record in delivering measurable business results for healthcare clients.</p>
-                                <ul style="list-style: none; padding: 0;">
-                                    <li class="mb-15" style="display:flex; align-items:center; gap:10px;"><i
-                                            class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Medical
-                                        device sales and distribution</li>
-                                    <li class="mb-15" style="display:flex; align-items:center; gap:10px;"><i
-                                            class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> Tender
-                                        and procurement management</li>
-                                    <li class="mb-15" style="display:flex; align-items:center; gap:10px;"><i
-                                            class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
-                                        Regulatory compliance and product registration</li>
-                                    <li class="mb-15" style="display:flex; align-items:center; gap:10px;"><i
-                                            class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
-                                        Healthcare consulting and business strategy</li>
-                                </ul>
+                                <div class="row g-4">
+                                    <div class="col-sm-6">
+                                        <div class="nadi-check-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Medical device sales & distribution</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="nadi-check-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Tender & procurement management</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="nadi-check-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Regulatory & product registration</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="nadi-check-item">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Consulting & business strategy</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-6 text-center pf_fadeup">
-                                <div
-                                    style="background: var(--nadi-card-bg); padding: 50px; border-radius: 24px; border: 1px solid var(--nadi-card-border);">
-                                    <h2 style="font-size: 80px; color: var(--nadi-primary); margin-bottom: 10px;">10+
-                                    </h2>
-                                    <h5 style="text-transform: uppercase; letter-spacing: 2px;">Years of Success</h5>
+                            <div class="col-lg-6 pf_fadeup">
+                                <div class="nadi-milestone-card mt-5 mt-lg-0">
+                                    <div class="card-content">
+                                        <div class="massive-text">10<span>+</span></div>
+                                        <div class="milestone-info">
+                                            <h4>Years of Innovation</h4>
+                                            <p style="max-width: 450px;">At NADI Aksis, we have spent over 10 years driving sustainable growth and operational efficiency through global strategic partnerships and a steadfast commitment to healthcare excellence. Our expertise empowers clients to navigate complex markets and deliver superior outcomes across the healthcare value chain.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-glow"></div>
                                 </div>
                             </div>
                         </div>
@@ -527,7 +629,7 @@
                     </div>
                 </section>
                 <!--=== UNIVERSAL CTA SECTION ===-->
-                <section class="cta-area pb-130 pt-100">
+                <section class="cta-area pb-130 pt-30">
                     <div class="container">
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">

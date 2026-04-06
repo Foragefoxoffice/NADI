@@ -346,6 +346,22 @@
         smoothTouch: 0.1,
     });
 
+    // Sticky Sidebar fix for ScrollSmoother (Desktop Only)
+    if ($('.sidebar-widget-area').length) {
+        ScrollTrigger.matchMedia({
+            "(min-width: 992px)": function() {
+                ScrollTrigger.create({
+                    trigger: ".sidebar-widget-area",
+                    start: "top 10px", 
+                    endTrigger: ".agenko-blog-detils",
+                    end: () => "bottom " + ($(".sidebar-widget-area").outerHeight() + 110) + "px",
+                    pin: true,
+                    pinSpacing: false
+                });
+            }
+        });
+    }
+
     // Gsap SplitText
 
     if ($('.split').length > 0) {

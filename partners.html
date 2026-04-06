@@ -20,6 +20,34 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <style>
+        .company-slider-wrapper {
+            position: relative;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 30px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .company-slider .company-item {
+            text-align: center;
+            padding: 0 15px;
+        }
+        .company-slider .company-item img {
+            max-height: 50px;
+            width: auto;
+            max-width: 150px;
+            margin: 0 auto;
+            transition: all 0.3s ease;
+        }
+        .company-slider .company-item:hover img {
+            transform: scale(1.05);
+        }
+        .slick-track{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -53,6 +81,24 @@
                         </div>
                     </div>
                 </section>
+
+                <div class="company-slider-wrapper pf_fadeup mb-60">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <!--=== Company Slider ===-->
+                                    <div class="company-slider pt-10 pb-10">
+                                        <!--=== Company Item ===-->
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part1.png" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part2.png" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part3.png" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part4.png" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part5.jpg" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part6.jpg" alt="Company"></div></div>
+                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part7.png" alt="Company"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                 <!--=== GLOBAL ECOSYSTEM ===-->
                 <section class="agk-ecosystem pt-130 pb-100" style="background: var(--nadi-dark);">
@@ -362,33 +408,175 @@
                     </div>
                 </section>
 
-                <!--=== PARTNER CATEGORIES OVERVIEW ===-->
-                <section class="agk-partner-categories gray-dark pt-130 pb-100">
+                <!--=== TECHNOLOGY PARTNERS ===-->
+                <section id="tech-partners" class="agk-tech gray-dark pt-130 pb-100">
                     <div class="container">
+                        <div class="row justify-content-center mb-50 pf_fadeup">
+                            <div class="col-lg-8 text-center">
+                                <span class="badge-text"><i class="fas fa-laptop-code"></i> Technology Partners</span>
+                                <h2 style="margin-top: 15px;">Driving Digital Transformation</h2>
+                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">We collaborate with leading technology providers to deliver cutting-edge digital health solutions and integrated IT systems, ensuring healthcare providers are future-ready.</p>
+                            </div>
+                        </div>
+                        <div class="row gy-4 pf_fadeup mb-80">
+                            <div class="col-lg-4">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-hospital-alt"></i></div>
+                                    <h4 style="margin-bottom: 15px;">Healthcare IT</h4>
+                                    <p>Comprehensive systems (HIS, EMR, Telemedicine) built for modern hospital operations and integrated patient care.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-microchip"></i></div>
+                                    <h4 style="margin-bottom: 15px;">AI Solutions</h4>
+                                    <p>AI-driven healthcare tools for enhanced diagnostics, clinical decision support, and operational automation.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-cloud"></i></div>
+                                    <h4 style="margin-bottom: 15px;">Cloud Infrastructure</h4>
+                                    <p>Scalable cloud platforms and secure data management ensuring high availability and regulatory compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="row pf_fadeup">
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <a href="technology-partners.html" class="nadi-solution-card text-center" style="display: block; text-decoration: none;">
-                                    <div class="icon" style="font-size: 40px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-laptop-code"></i></div>
-                                    <h4 style="margin-bottom:15px;">Technology Partners</h4>
-                                    <p>Driving digital transformation through refined healthcare IT and intelligence solutions.</p>
-                                    <span class="read-more style-one mt-20" style="color:var(--nadi-accent) !important;">Learn More</span>
-                                </a>
+                            <div class="col-lg-12">
+                                <div class="nadi-highlight-box" style="background: rgba(0, 210, 255, 0.05); border-radius: 30px; border: 1px solid rgba(0, 210, 255, 0.2); padding: 60px;">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-8">
+                                            <h3 style="color:var(--nadi-accent); margin-bottom: 20px;">The Strategic Advantage</h3>
+                                            <p style="font-size: 18px; line-height: 1.8;">By partnering with global tech leaders, NADI Aksis provides healthcare providers with future-ready infrastructure. Our collective expertise ensures faster deployment, minimal disruption, and maximum scalability for growing operations.</p>
+                                        </div>
+                                        <div class="col-lg-4 text-center">
+                                            <i class="fas fa-rocket" style="font-size: 120px; color: rgba(0, 210, 255, 0.1);"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <a href="manufacture-partners.html" class="nadi-solution-card text-center" style="display: block; text-decoration: none;">
-                                    <div class="icon" style="font-size: 40px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-industry"></i></div>
-                                    <h4 style="margin-bottom:15px;">Manufacture Partners</h4>
-                                    <p>Strategic medical product distributions and world-class healthcare manufacturing network.</p>
-                                    <span class="read-more style-one mt-20" style="color:var(--nadi-accent) !important;">Learn More</span>
-                                </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== MANUFACTURE PARTNERS ===-->
+                <section id="mfg-partners" class="agk-mfg pt-130 pb-100">
+                    <div class="container">
+                        <div class="row justify-content-center mb-60 pf_fadeup">
+                            <div class="col-lg-8 text-center">
+                                <span class="badge-text"><i class="fas fa-industry"></i> Manufacture Partners</span>
+                                <h2 style="margin-top: 15px;">World-Class Medical Excellence</h2>
+                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">Bringing cutting-edge medical products to market through strategic distributorship, global sourcing, and technical training.</p>
                             </div>
-                            <div class="col-lg-4 col-md-6 mb-30">
-                                <a href="logistics-partners.html" class="nadi-solution-card text-center" style="display: block; text-decoration: none;">
-                                    <div class="icon" style="font-size: 40px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-truck"></i></div>
-                                    <h4 style="margin-bottom:15px;">Logistics & Channel</h4>
-                                    <p>Reliable supply chain networks ensuring prompt hospital and clinic distribution nationwide.</p>
-                                    <span class="read-more style-one mt-20" style="color:var(--nadi-accent) !important;">Learn More</span>
-                                </a>
+                        </div>
+
+                        <div class="row align-items-center mb-80 pf_fadeup">
+                            <div class="col-lg-6">
+                                <div class="nadi-image-box" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.4);">
+                                    <img src="new-assets/images/strategic-sourcing.png" alt="Strategic Sourcing & Distribution">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="manufacture-content" style="padding-left: 40px;">
+                                    <h2 style="margin-bottom: 25px;">Strategic Sourcing & Distribution</h2>
+                                    <p class="mb-30" style="font-size: 18px;">At NADI Aksis, we align with top-tier manufacturers to bridge the gap between global innovations and local healthcare providers. We don't just distribute—we enable growth by providing product training and technical support.</p>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Exclusive and Strategic Distributorship</span></li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Global Product Sourcing and Procurement</span></li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Technical Knowledge Transfer and Training</span></li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Full Lifecycle After-Sales Support</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pf_fadeup">
+                            <div class="col-lg-4 mb-30">
+                                <div class="nadi-solution-card" style="padding: 40px; border-radius: 20px; height: 100%;">
+                                    <h5 style="color:var(--nadi-accent); margin-bottom: 25px;">Key Product Categories</h5>
+                                    <ul style="list-style:none; padding:0;">
+                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Catheters and procedural sets</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Hemostats and suction tubes</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Hospital beds and monitoring systems</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Precision Infusion pumps</li>
+                                        <li><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Surgical and diagnostic instruments</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 mb-30">
+                                <div style="background: var(--nadi-gradient); border-radius: 30px; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 50px; box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);">
+                                    <h3 style="color: #fff !important; margin-bottom: 25px;">Empowering Local Providers</h3>
+                                    <p style="color: #fff !important; font-size: 18px; line-height: 1.8;">Access to certified, high-quality medical products is non-negotiable. Through our manufacture partnerships, local clinics and hospitals gain access to world-class diagnostics at competitive prices, backed by technical excellence and consistent supply chains.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== LOGISTICS PARTNERS ===-->
+                <section id="logistics-partners" class="agk-logistics gray-dark pt-130 pb-100">
+                    <div class="container">
+                        <div class="row justify-content-center mb-60 pf_fadeup">
+                            <div class="col-lg-8 text-center">
+                                <span class="badge-text"><i class="fas fa-truck"></i> Logistics & Channel Partners</span>
+                                <h2 style="margin-top: 15px;">Efficient Delivery Systems</h2>
+                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">Ensuring the seamless flow of medical technologies from global manufacturers to bedside clinics through high-efficiency distribution networks.</p>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-center mb-60 pf_fadeup">
+                            <div class="col-lg-8 text-center">
+                                <h3 style="margin-bottom: 20px;">Synchronized Supply Chain Management</h3>
+                                <p style="font-size: 18px;">Our logistics strategy is built on reliability, regulatory compliance, and speed, ensuring every product arrives in perfect condition, exactly when it's needed.</p>
+                            </div>
+                        </div>
+
+                        <div class="row gy-4 pf_fadeup mb-100">
+                            <div class="col-lg-3 col-md-6">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">01</div>
+                                    <h5 style="margin-bottom: 15px;">Importation & Customs</h5>
+                                    <p>Handling regulatory compliance and clear customs clearance.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">02</div>
+                                    <h5 style="margin-bottom: 15px;">Freight Coordination</h5>
+                                    <p>Optimized air, sea, and land logistics for sensitive cargo.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">03</div>
+                                    <h5 style="margin-bottom: 15px;">Secure Warehousing</h5>
+                                    <p>Advanced inventory management in strategic regional hubs.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="nadi-solution-card text-center" style="height: 100%;">
+                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">04</div>
+                                    <h5 style="margin-bottom: 15px;">Nationwide Delivery</h5>
+                                    <p>Point-to-point delivery ensuring reach across Malaysia.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pf_fadeup align-items-center">
+                            <div class="col-lg-6">
+                                <div class="nadi-image-box" style="border-radius: 25px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.5);">
+                                    <img src="new-assets/images/partners2.jpg" alt="Distribution Network">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="logistic-content-box" style="padding-left: 40px;">
+                                    <h3 style="margin-bottom: 25px;">Why Channel Partners Trust Us</h3>
+                                    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px;">We remove the complexity of healthcare logistics. Local distributors and providers gain a reliable partner with deep regulatory knowledge, ensuring that the critical last-mile delivery is as smooth as the first.</p>
+                                    <div style="background: rgba(0, 210, 255, 0.05); border-left: 4px solid var(--nadi-accent); padding: 25px; border-radius: 0 15px 15px 0;">
+                                        <p style="margin-bottom: 0; font-weight: 600; color: #fff !important;">"Seamlessly delivering value from manufacturer to patient—where reliability meets efficiency."</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -430,7 +618,7 @@
                 </section>
 
                 <!--=== UNIVERSAL CTA SECTION ===-->
-                <section class="cta-area pb-130 pt-100">
+                <section class="cta-area pb-130 pt-30">
                     <div class="container">
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
