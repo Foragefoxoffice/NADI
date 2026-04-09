@@ -4400,9 +4400,10 @@ label {
 
 .hero-wrapper-three .hero-content h1 span {
   position: relative;
-  padding: 5px 20px;
+  padding: 3px 11px;
   color: var(--nadi-text-main);
   z-index: 1;
+  font-size: 35px;
 }
 
 .hero-wrapper-three .hero-content h1 span:after {
@@ -6057,7 +6058,7 @@ label {
        CTA SECTION MOBILE
     ================================================ */
   .nadi-partner-cta .container-inner {
-    padding: 40px 20px !important;
+    padding: 40px 0px !important;
   }
 
   .nadi-partner-cta h2 {
