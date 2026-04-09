@@ -20,18 +20,32 @@
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-
-
-        body { 
-            background: var(--nadi-dark) !important; 
-            color: var(--nadi-text-main) !important; 
+        body {
+            background: var(--nadi-dark) !important;
+            color: var(--nadi-text-main) !important;
         }
 
-        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
-        p { color: var(--nadi-text-muted) !important; }
-        
-        .gray-dark { background: #0E1217 !important; } /* Alternate dark section */
-        section { background: var(--nadi-dark); }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--nadi-text-main) !important;
+        }
+
+        p {
+            color: var(--nadi-text-muted) !important;
+        }
+
+        .gray-dark {
+            background: #0E1217 !important;
+        }
+
+        /* Alternate dark section */
+        section {
+            background: var(--nadi-dark);
+        }
 
         .nadi-hero-bg {
             background: var(--nadi-gradient-dark) !important;
@@ -508,12 +522,15 @@
             border-color: transparent;
         }
 
-        .sub-title, .sub-heading {
+        .sub-title,
+        .sub-heading {
             display: inline-block;
             padding: 10px 28px !important;
             line-height: 1.2;
-            background: rgba(0, 210, 255, 0.1); /* Lighter cyan tint */
-            color: var(--nadi-accent) !important; /* Vibrant Cyan */
+            background: rgba(0, 210, 255, 0.1);
+            /* Lighter cyan tint */
+            color: var(--nadi-accent) !important;
+            /* Vibrant Cyan */
             border-radius: 50px;
             font-weight: 700;
             font-size: 13px;
@@ -524,7 +541,9 @@
             backdrop-filter: blur(4px);
             vertical-align: middle;
         }
-        .sub-title .line, .sub-heading .line {
+
+        .sub-title .line,
+        .sub-heading .line {
             display: none !important;
         }
 
@@ -803,17 +822,20 @@
             }
         }
 
-        .theme-btn.style-one .text-flip{
+        .theme-btn.style-one .text-flip {
             color: var(--nadi-accent);
         }
-        .agenko-footer .shape.shape-blur_one span{
+
+        .agenko-footer .shape.shape-blur_one span {
             background-color: var(--nadi-accent);
         }
-        .footer-widget .footer-content .footer-logo{
-            border:none !important;
+
+        .footer-widget .footer-content .footer-logo {
+            border: none !important;
             background-color: transparent !important;
             margin-bottom: 25px;
         }
+
         .footer-widget .footer-content .footer-logo img {
             max-width: 140px;
             height: auto;
@@ -826,6 +848,7 @@
             border-top: 1px solid var(--nadi-card-border);
             border-bottom: 1px solid var(--nadi-card-border);
         }
+
         .agk-company .company-item {
             display: flex !important;
             align-items: center;
@@ -834,27 +857,33 @@
             height: 120px;
             outline: none;
         }
+
         .agk-company .agk-image {
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
         }
+
         .agk-company .agk-image img {
             max-height: 65px;
             width: auto;
             max-width: 200px;
             object-fit: contain;
-            filter: none; /* Always colored */
+            filter: none;
+            /* Always colored */
             opacity: 1;
             transition: all 0.4s ease;
         }
+
         .agk-company .company-item:hover img {
             transform: scale(1.05);
         }
+
         .company-slider-wrapper {
             position: relative;
         }
+
         .company-slider-wrapper svg {
             width: 100%;
             opacity: 0.1;
@@ -868,29 +897,35 @@
                 align-items: center !important;
                 gap: 15px !important;
             }
+
             .hero-button .theme-btn {
                 margin-right: 0 !important;
                 width: 100% !important;
                 max-width: 300px !important;
                 text-align: center !important;
             }
-            
+
             /* Section Gap Reductions */
-            section, 
-            .agk-hero, 
-            .agk-company, 
-            .agk-about, 
-            .agk-services, 
+            section,
+            .agk-hero,
+            .agk-company,
+            .agk-about,
+            .agk-services,
             .agk-solutions,
             .agk-testimonial,
             .nadi-cta-section,
-            .pt-130, .pt-120, .pt-100 {
+            .pt-130,
+            .pt-120,
+            .pt-100 {
                 padding-top: 50px !important;
             }
-            .pb-100, .pb-90, .pb-80 {
+
+            .pb-100,
+            .pb-90,
+            .pb-80 {
                 padding-bottom: 40px !important;
             }
-            
+
             .hero-wrapper-three {
                 padding-top: 150px !important;
                 padding-bottom: 40px !important;
@@ -926,6 +961,7 @@
             .nadi-case-study {
                 padding: 35px 25px !important;
             }
+
             .quote-icon {
                 top: 20px !important;
                 right: 20px !important;
@@ -936,6 +972,7 @@
                 height: 90px !important;
                 padding: 0 20px !important;
             }
+
             .agk-company .agk-image img {
                 max-height: 45px !important;
             }
@@ -952,6 +989,7 @@
                 border-radius: 12px;
                 transition: all 0.3s ease;
             }
+
             .agenko-iconic-box.style-six:hover {
                 border-color: var(--nadi-primary);
                 transform: translateY(-5px);
@@ -964,6 +1002,7 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s ease;
         }
+
         .agenko-iconic-box.style-six:hover {
             border-color: rgba(0, 210, 255, 0.3);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -1019,6 +1058,7 @@
             z-index: 100;
             transition: all 0.3s ease;
             font-size: 18px;
+            opacity: 0;
         }
 
         .hero-slider-active .prev {
@@ -1038,6 +1078,7 @@
         }
 
         @media (max-width: 767px) {
+
             .hero-slider-active .prev,
             .hero-slider-active .next {
                 display: none !important;
@@ -1046,19 +1087,33 @@
 
         /* Hero Split Layout Refinements */
         .hero-content h1 {
-            font-size: 64px !important;
+            font-size: 48px !important;
             line-height: 1.1 !important;
             margin-bottom: 25px !important;
         }
+
         @media (max-width: 1199px) {
             .hero-content h1 {
                 font-size: 48px !important;
             }
         }
+
         @media (max-width: 767px) {
             .hero-content h1 {
                 font-size: 36px !important;
             }
+        }
+
+        .hero-content h4 {
+            font-size: 20px !important;
+            line-height: 1.5 !important;
+            margin-bottom: 20px !important;
+        }
+
+        .hero-content p {
+            font-size: 15px !important;
+            line-height: 1.7 !important;
+            margin-bottom: 30px !important;
         }
 
         .hero-image-box img {
@@ -1067,6 +1122,7 @@
             object-fit: cover !important;
             border-radius: 30px;
         }
+
         @media (max-width: 991px) {
             .hero-image-box img {
                 height: 400px !important;
@@ -1087,7 +1143,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: 
+            background-image:
                 linear-gradient(rgba(0, 210, 255, 0.05) 1px, transparent 1px),
                 linear-gradient(90deg, rgba(0, 210, 255, 0.05) 1px, transparent 1px);
             background-size: 50px 50px;
@@ -1100,6 +1156,516 @@
         .hero-slider-active {
             position: relative;
             z-index: 2;
+        }
+
+        /* NADI Bento Grid Section Styles */
+        .nadi-bento-section {
+            padding: 80px 0;
+            background: var(--nadi-dark);
+        }
+
+        .nadi-bento-grid {
+            display: grid;
+            grid-template-columns: 1.6fr 1fr;
+            gap: 24px;
+            min-height: 600px;
+        }
+
+        @media (max-width: 991px) {
+            .nadi-bento-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .bento-card {
+            border-radius: 24px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            padding: 45px;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            text-decoration: none !important;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .bento-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-large {
+            background: linear-gradient(135deg, #0B0F13 0%, #124036 100%);
+            grid-row: span 2;
+        }
+
+        .card-large::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 80%;
+            height: 80%;
+            background: radial-gradient(circle at bottom right, rgba(18, 196, 160, 0.15), transparent 70%);
+            pointer-events: none;
+        }
+
+        .card-small {
+            background: #0E1217;
+        }
+
+        .card-small.upgrade-card {
+            background: linear-gradient(135deg, #0B0F13 0%, #052A3F 100%);
+        }
+
+        .card-small.ai-card {
+            background: var(--nadi-gradient);
+        }
+
+        .bento-card h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #fff;
+            letter-spacing: -0.02em;
+            hyphens: auto;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 1199px) {
+            .bento-card h3 {
+                font-size: 26px;
+            }
+        }
+
+        .card-large h3 {
+            font-size: 56px;
+            line-height: 1;
+            background: linear-gradient(to right, #12C4A0, #00D2FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 767px) {
+            .card-large h3 {
+                font-size: 36px;
+            }
+
+            .bento-card {
+                padding: 30px;
+            }
+
+            .bento-card p {
+                font-size: 15px !important;
+                margin-bottom: 25px !important;
+            }
+        }
+
+        .bento-card p {
+            font-size: 18px;
+            color: var(--nadi-text-muted);
+            max-width: 440px;
+            margin-bottom: 35px;
+            line-height: 1.4;
+            position: relative;
+            z-index: 2;
+        }
+
+        .card-small p {
+            font-size: 16px;
+            max-width: 250px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .ai-card p {
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .bento-btn {
+            background: var(--nadi-primary);
+            color: #fff !important;
+            padding: 12px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 15px;
+            width: fit-content;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ai-card .bento-btn {
+            background: #0B0F13;
+        }
+
+        .bento-card:hover .bento-btn {
+            transform: scale(1.05);
+            background: var(--nadi-accent);
+        }
+
+        .bento-image {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1;
+            object-fit: cover;
+            transition: all 0.6s ease;
+        }
+
+        .bento-card:hover .bento-image {
+            transform: scale(1.05) translateY(-5px);
+        }
+
+        .large-chip-img {
+            bottom: 0;
+            right: -5%;
+            width: 65%;
+            max-height: 80%;
+            mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
+            -webkit-mask-image: radial-gradient(circle at center, black 40%, transparent 95%);
+            filter: drop-shadow(0 0 40px rgba(18, 196, 160, 0.3));
+        }
+
+        .upgrade-probe-img {
+            opacity: 0.5;
+            right: -12%;
+            bottom: -5%;
+            width: 70%;
+            mask-image: linear-gradient(to top left, black 60%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to top left, black 60%, transparent 100%);
+            filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.5));
+        }
+
+        .ai-dashboard-img {
+            opacity: 0.5;
+            right: -12%;
+            bottom: -5%;
+            width: 65%;
+            mask-image: linear-gradient(to top left, black 50%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to top left, black 50%, transparent 100%);
+            filter: drop-shadow(-20px 20px 40px rgba(0, 0, 0, 0.6));
+        }
+
+        .ai-logo {
+            width: 140px;
+            margin-bottom: 20px;
+        }
+
+        /* Radial Orbital Timeline Styles */
+        .nadi-timeline-section {
+            padding: 80px 0px 140px 0;
+            background: #000;
+            position: relative;
+            overflow: hidden;
+            min-height: 800px;
+        }
+
+        .timeline-container {
+            position: relative;
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .orbit-center {
+            position: relative;
+            width: 1px;
+            height: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sun-node {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            z-index: 50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 60px rgba(18, 196, 160, 0.4), inset 0 0 20px rgba(18, 196, 160, 0.2);
+            border: 1px solid rgba(18, 196, 160, 0.3);
+        }
+
+        .sun-logo {
+            width: 100px;
+            height: auto;
+            object-fit: contain;
+            z-index: 51;
+            filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5));
+            border-radius: 5px;
+        }
+
+        .sun-aura {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid var(--nadi-accent);
+            animation: sunPulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        @keyframes sunPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(2.5);
+                opacity: 0;
+            }
+        }
+
+        .orbit {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            pointer-events: none;
+            box-shadow: inset 0 0 30px rgba(18, 196, 160, 0.05);
+        }
+
+        .timeline-node {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: rgba(18, 196, 160, 0.1);
+            border: 1px solid rgba(18, 196, 160, 0.3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            z-index: 100;
+        }
+
+        .timeline-node:hover {
+            background: var(--nadi-primary);
+            box-shadow: 0 0 30px var(--nadi-primary);
+            transform: scale(1.2);
+        }
+
+        .timeline-node.active {
+            background: #fff;
+            color: #000;
+            box-shadow: 0 0 40px #fff, 0 0 80px rgba(255, 255, 255, 0.4);
+            border-color: #fff;
+            transform: scale(1.3);
+        }
+
+        .timeline-node .node-info {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            text-align: center;
+            transition: opacity 0.3s ease;
+        }
+
+        .timeline-node .node-info h4 {
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            color: #fff;
+        }
+
+        .timeline-node .node-info span {
+            font-size: 12px;
+            color: var(--nadi-text-muted);
+        }
+
+        .node-detail-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.9);
+            background: rgba(10, 15, 20, 0.98);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            width: 320px;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            backdrop-filter: blur(20px);
+            z-index: 300;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.02);
+            pointer-events: none;
+        }
+
+        .active-card .node-detail-card {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(-50%, -50%) scale(1);
+            pointer-events: auto;
+        }
+
+        .detail-status {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .status-completed {
+            background: rgba(18, 196, 160, 0.2);
+            color: #12C4A0;
+        }
+
+        .status-in-progress {
+            background: rgba(0, 210, 255, 0.2);
+            color: #00D2FF;
+        }
+
+        .status-pending {
+            background: rgba(255, 255, 255, 0.1);
+            color: #ccc;
+        }
+
+        .energy-bar-wrap {
+            height: 4px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 2px;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+
+        .energy-bar-fill {
+            height: 100%;
+            background: var(--nadi-gradient);
+            transition: width 1s ease;
+        }
+
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(rgba(18, 196, 160, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+            mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+        }
+
+        .related-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .related-btn:hover {
+            background: rgba(18, 196, 160, 0.2);
+            border-color: var(--nadi-primary);
+            color: var(--nadi-primary);
+        }
+
+        /*=== Case Study Section ===*/
+        .nadi-case-studies {
+            background: #000;
+        }
+
+        .case-study-card {
+            background: #111;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 20px;
+            height: 100%;
+            transition: all 0.4s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .case-study-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--nadi-primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .case-study-img {
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 25px;
+            aspect-ratio: 16/10;
+        }
+
+        .case-study-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .case-study-card:hover .case-study-img img {
+            transform: scale(1.1);
+        }
+
+        .case-study-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .badge-reg { background: rgba(0, 210, 255, 0.1); color: #00D2FF; }
+        .badge-supply { background: rgba(18, 196, 160, 0.1); color: #12C4A0; }
+        .badge-digital { background: rgba(255, 255, 255, 0.05); color: #fff; opacity: 0.8; }
+
+        .case-study-title {
+            font-size: 22px;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .case-study-desc {
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.6;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+
+        .case-study-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--nadi-primary);
+            font-weight: 700;
+            font-size: 15px;
+            transition: gap 0.3s ease;
+        }
+
+        .case-study-link:hover {
+            gap: 15px;
+            color: var(--nadi-accent);
         }
     </style>
 </head>
@@ -1125,20 +1691,44 @@
                         <!-- Slide 1: General Strategy -->
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
-                                <div class="container">
+                                <div class="container-fluid nadi-hero-bg">
                                     <div class="row align-items-center">
                                         <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
                                             <div class="hero-content mb-30 pf_fadeup text-start">
-                                                <h1 class="mb-20">Guiding the Pulse of <span>Progress</span></h1>
-                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">End-to-end healthcare solutions that integrate systems, innovate with technology, and ignite business growth.</h4>
-                                                <p class="mb-35">From regulatory compliance and market entry to digital transformation and sales acceleration, NADI Aksis empowers healthcare organizations to scale efficiently.</p>
+                                                <h1 class="mb-20">Elevating Healthcare Standards: Guiding the Pulse of
+                                                    <span>Progress</span>
+                                                </h1>
+                                                <h4 class="mb-25"
+                                                    style="color:var(--nadi-text-muted); font-weight: 500;">
+                                                    Comprehensive end-to-end
+                                                    healthcare solutions designed to integrate complex medical systems,
+                                                    pioneer innovation through
+                                                    advanced technology, and bridge the gap between quality care and
+                                                    business excellence.</h4>
+                                                <p class="mb-35">We specialize in navigating regulatory landscapes,
+                                                    facilitating seamless market entry,
+                                                    and driving digital transformation. By leveraging data-driven
+                                                    insights and AI-powered tools,
+                                                    NADI Aksis empowers healthcare providers and manufacturers to
+                                                    achieve sustainable growth and
+                                                    operational efficiency on a global scale.</p>
                                                 <div class="hero-button">
-                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-15">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span><span class="text" style="color: var(--nadi-text-main) !important;">Book a Consultation</span></span>
+                                                    <a href="contact-us.html"
+                                                        class="theme-btn style-one nadi-btn-primary mr-15">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Book a
+                                                                Consultation</span><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Book a
+                                                                Consultation</span></span>
                                                     </a>
-                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">Solutions</span></span>
+                                                    <a href="solutions.html"
+                                                        class="theme-btn style-one nadi-btn-primary"
+                                                        style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Solutions</span><span
+                                                                class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Solutions</span></span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1146,7 +1736,9 @@
                                         <div class="col-lg-6">
                                             <!--=== Hero Image ===-->
                                             <div class="hero-image-box text-end pf_fadeup">
-                                                <img src="new-assets/images/banner1.jpg" alt="NADI Aksis Healthcare Solutions" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                                <img src="new-assets/images/banner1.jpg"
+                                                    alt="NADI Aksis Healthcare Solutions"
+                                                    style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
                                             </div>
                                         </div>
                                     </div>
@@ -1157,20 +1749,41 @@
                         <!-- Slide 2: Digital Transformation & AI -->
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
-                                <div class="container">
+                                <div class="container-fluid nadi-hero-bg">
                                     <div class="row align-items-center">
                                         <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
                                             <div class="hero-content mb-30 text-start">
-                                                <h1 class="mb-20">Integrate. Innovate. <span>Ignite.</span></h1>
-                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">Transforming healthcare operations with intelligent platforms and AI-driven diagnostics.</h4>
-                                                <p class="mb-35">From our NADI Omnicare HIMS to smart supply chain management platforms, we provide the digital backbone for modern medical excellence.</p>
+                                                <h1 class="mb-20">Digital Transformation in Medicine: Integrate.
+                                                    Innovate. <span>Ignite.</span></h1>
+                                                <h4 class="mb-25"
+                                                    style="color:var(--nadi-text-muted); font-weight: 500;">
+                                                    Revolutionizing
+                                                    healthcare through intelligent digital platforms, AI-driven
+                                                    diagnostic tools, and integrated health information management
+                                                    systems built for the future.</h4>
+                                                <p class="mb-35">From our flagship NADI Omnicare HIMS to sophisticated
+                                                    supply chain
+                                                    management solutions, we provide the robust digital backbone
+                                                    required for modern
+                                                    medical excellence and enhanced patient outcomes.</p>
                                                 <div class="hero-button">
-                                                    <a href="products.html" class="theme-btn style-one nadi-btn-primary mr-15">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">View Our Platforms</span><span class="text" style="color: var(--nadi-text-main) !important;">View Our Platforms</span></span>
+                                                    <a href="products.html"
+                                                        class="theme-btn style-one nadi-btn-primary mr-15">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">View
+                                                                Our Platforms</span><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">View
+                                                                Our Platforms</span></span>
                                                     </a>
-                                                    <a href="solutions.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">AI Solutions</span><span class="text" style="color: var(--nadi-text-main) !important;">AI Solutions</span></span>
+                                                    <a href="solutions.html"
+                                                        class="theme-btn style-one nadi-btn-primary"
+                                                        style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">AI
+                                                                Solutions</span><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">AI
+                                                                Solutions</span></span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1178,7 +1791,8 @@
                                         <div class="col-lg-6">
                                             <!--=== Hero Image ===-->
                                             <div class="hero-image-box text-end">
-                                                <img src="new-assets/images/banner2.jpg" alt="NADI Aksis Digital Health" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                                <img src="new-assets/images/banner2.jpg" alt="NADI Aksis Digital Health"
+                                                    style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
                                             </div>
                                         </div>
                                     </div>
@@ -1189,20 +1803,39 @@
                         <!-- Slide 3: Regulatory & Market Access -->
                         <div class="single-hero-slide">
                             <div class="hero-wrapper-three">
-                                <div class="container">
+                                <div class="container-fluid nadi-hero-bg">
                                     <div class="row align-items-center">
                                         <div class="col-lg-6">
                                             <!--=== Hero Content ===-->
                                             <div class="hero-content mb-30 text-start">
-                                                <h1 class="mb-20">Gateway to <span>Global Markets</span></h1>
-                                                <h4 class="mb-25" style="color:var(--nadi-text-muted); font-weight: 500;">Specialized regulatory compliance and strategic market entry for medical manufacturers.</h4>
-                                                <p class="mb-35">Mastering MDA registration, GDPMD compliance, and tender procurement to help your healthcare innovations reach those who need them most.</p>
+                                                <h1 class="mb-20">Global Strategy & Growth: Your Gateway to <span>Global
+                                                        Markets</span></h1>
+                                                <h4 class="mb-25"
+                                                    style="color:var(--nadi-text-muted); font-weight: 500;">Unlocking
+                                                    global opportunities
+                                                    through specialized regulatory compliance, strategic market entry,
+                                                    and expert consultation
+                                                    for medical device manufacturers.</h4>
+                                                <p class="mb-35">Our team provides expert guidance on MDA registration,
+                                                    GDPMD compliance,
+                                                    and government tender procurement, ensuring your healthcare
+                                                    innovations reach the
+                                                    markets that need them most across Southeast Asia and beyond.</p>
                                                 <div class="hero-button">
-                                                    <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary mr-15">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">Get Regulatory Support</span><span class="text" style="color: var(--nadi-text-main) !important;">Get Regulatory Support</span></span>
+                                                    <a href="contact-us.html"
+                                                        class="theme-btn style-one nadi-btn-primary mr-15">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Get
+                                                                Regulatory Support</span><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">Get
+                                                                Regulatory Support</span></span>
                                                     </a>
-                                                    <a href="about.html" class="theme-btn style-one nadi-btn-primary" style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
-                                                        <span class="text-flip"><span class="text" style="color: var(--nadi-text-main) !important;">About</span><span class="text" style="color: var(--nadi-text-main) !important;">About</span></span>
+                                                    <a href="about.html" class="theme-btn style-one nadi-btn-primary"
+                                                        style="background: rgba(255,255,255,0.05) !important; border: 1px solid var(--nadi-card-border) !important;">
+                                                        <span class="text-flip"><span class="text"
+                                                                style="color: var(--nadi-text-main) !important;">About</span><span
+                                                                class="text"
+                                                                style="color: var(--nadi-text-main) !important;">About</span></span>
                                                     </a>
                                                 </div>
                                             </div>
@@ -1210,7 +1843,9 @@
                                         <div class="col-lg-6">
                                             <!--=== Hero Image ===-->
                                             <div class="hero-image-box text-end">
-                                                <img src="new-assets/images/banner3.jpg" alt="NADI Aksis Regulatory Compliance" style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+                                                <img src="new-assets/images/banner3.jpg"
+                                                    alt="NADI Aksis Regulatory Compliance"
+                                                    style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
                                             </div>
                                         </div>
                                     </div>
@@ -1221,38 +1856,76 @@
                 </section>
 
                 <!--====== Start Company Section (Marquee) ======-->
-                <section class="agk-company pt-100 pb-100" style="background:var(--gray-dark); padding-top: 70px !important; padding-bottom: 70px !important;">
+                <section class="agk-company pt-100 pb-100"
+                    style="background:var(--gray-dark); padding-top: 70px !important; padding-bottom: 70px !important;">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-10">
                                 <div class="section-title text-center mb-60 pf_fadeup">
                                     <span class="sub-heading">Global Trust</span>
                                     <h2>Trusted by Healthcare Leaders</h2>
-                                    <p class="mt-20" style="font-size:18px; color:var(--nadi-text-muted);">We collaborate with hospitals, healthcare providers, and global manufacturers to deliver reliable, compliant, and scalable solutions.</p>
-                                    <p class="mt-10" style="font-size:16px; color:var(--nadi-accent); display: inline-block;">
-                                        Our network spans across Italy, Germany, Turkey, India, China, the USA, and Malaysia—ensuring access to world-class healthcare technologies.
+                                    <p class="mt-20" style="font-size:18px; color:var(--nadi-text-muted);">We
+                                        collaborate with hospitals, healthcare providers, and global manufacturers to
+                                        deliver reliable, compliant, and scalable solutions.</p>
+                                    <p class="mt-10"
+                                        style="font-size:16px; color:var(--nadi-accent); display: inline-block;">
+                                        Our network spans across Italy, Germany, Turkey, India, China, the USA, and
+                                        Malaysia—ensuring access to world-class healthcare technologies.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="company-slider-wrapper pf_fadeup mb-60">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <!--=== Company Slider ===-->
                                     <div class="company-slider pt-10 pb-10">
                                         <!--=== Company Item ===-->
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client1.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client2.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client3.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client4.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client5.svg" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client6.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client7.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client8.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client9.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client10.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/client11.png" alt="Company"></div></div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client1.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client2.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client3.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client4.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client5.svg"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client6.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client7.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client8.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client9.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client10.png"
+                                                    alt="Company"></div>
+                                        </div>
+                                        <div class="company-item">
+                                            <div class="agk-image"><img src="new-assets/images/client11.png"
+                                                    alt="Company"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1263,7 +1936,8 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-10">
                                     <div class="text-center mb-50">
-                                        <h5 class="mb-30" style="color:var(--nadi-primary); font-weight: 700;">Partner</h5>
+                                        <h5 class="mb-30" style="color:var(--nadi-primary); font-weight: 700;">Partner
+                                        </h5>
                                     </div>
                                 </div>
                             </div>
@@ -1285,8 +1959,77 @@
                     </div>
                 </section>
 
+                <!--=== NADI INNOVATION SECTION ===-->
+                <section class="nadi-bento-section">
+                    <div class="container">
+                        <div class="nadi-bento-grid">
+                            <!-- Left: NADI OMNICARE -->
+                            <a href="solutions.html" class="bento-card card-large pf_fadeup">
+                                <h3>NADI OMNICARE™</h3>
+                                <p>The next generation of integrated health information systems built for the modern
+                                    care
+                                    era.</p>
+                                <div class="bento-btn">Explore Platform</div>
+                                <img src="new-assets/images/bento-hims.png" alt="Integrated HIMS"
+                                    class="bento-image large-chip-img">
+                            </a>
+
+                            <!-- Right Top: Regulatory Excellence -->
+                            <a href="services.html" class="bento-card card-small upgrade-card pf_fadeup">
+                                <h3>REGULATORY EXCELLENCE</h3>
+                                <p>Unlocking global healthcare markets with MDA & GDPMD expertise.</p>
+                                <div class="bento-btn">Market Access</div>
+                                <img src="new-assets/images/bento-reg.png" alt="Regulatory Compliance"
+                                    class="bento-image upgrade-probe-img">
+                            </a>
+
+                            <!-- Right Bottom: CORE AI -->
+                            <a href="solutions.html" class="bento-card card-small ai-card pf_fadeup">
+                                <h3 style="margin-bottom: 10px;">CORE AI™ INSIGHTS</h3>
+                                <p>Transforming complex medical data into actionable clinical intelligence.</p>
+                                <div class="bento-btn">View AI Tools</div>
+                                <img src="new-assets/images/bento-ai.png" alt="AI Insights"
+                                    class="bento-image ai-dashboard-img">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== RADIAL ORBITAL TIMELINE SECTION ===-->
+                <section class="nadi-timeline-section">
+                    <div class="bg-pattern"></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="section-title text-center mb-60 pf_fadeup">
+                                    <span class="sub-heading">Progress Pulse</span>
+                                    <h2>Our Visionary Journey</h2>
+                                    <p class="mt-20">Tracing the trajectory of innovation from initial blueprints to
+                                        global healthcare impact.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-container" id="timeline-container">
+                            <div class="orbit-center" id="orbital-root">
+                                <!-- Central detail card (moved out of node to center) -->
+                                <div id="central-detail-root"></div>
+
+                                <div class="sun-node">
+                                    <img src="new-assets/images/logo.png" alt="NADI Logo" class="sun-logo">
+                                    <div class="sun-aura"></div>
+                                    <div class="sun-aura" style="animation-delay: 1.5s;"></div>
+                                </div>
+                                <div class="orbit"></div>
+
+                                <!-- Nodes will be dynamically injected via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <!--=== SECTION 2: ABOUT US ===-->
-                <section class="agk-about pt-130 pb-80" id="nadi-about">
+                <section class="agk-about pt-80 pb-80" id="nadi-about">
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-xl-7">
@@ -1295,24 +2038,40 @@
                                         <span class="sub-title">Strategic Partner <span class="line"></span></span>
                                         <h2>Your Strategic Partner for Healthcare Growth</h2>
                                     </div>
-                                    <p class="mb-30">NADI Aksis delivers comprehensive solutions designed to support every stage of your healthcare business journey. We combine regulatory expertise, advanced technology, and market intelligence to help organizations enter, grow, and lead in competitive healthcare markets.</p>
+                                    <p class="mb-30">NADI Aksis delivers comprehensive solutions designed to support
+                                        every stage of your healthcare business journey. We combine regulatory
+                                        expertise, advanced technology, and market intelligence to help organizations
+                                        enter, grow, and lead in competitive healthcare markets.</p>
                                     <div class="nadi-key-points mb-40">
-                                        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
-                                            <div style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
-                                                <i class="flaticon-check" style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
-                                                <span style="font-weight:500; color:var(--nadi-text-main);">End-to-end support: registration, distribution, and growth</span>
+                                        <div
+                                            style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+                                            <div
+                                                style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
+                                                <i class="flaticon-check"
+                                                    style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
+                                                <span style="font-weight:500; color:var(--nadi-text-main);">End-to-end
+                                                    support: registration, distribution, and growth</span>
                                             </div>
-                                            <div style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
-                                                <i class="flaticon-check" style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
-                                                <span style="font-weight:500; color:var(--nadi-text-main);">Proven expertise in MDA & GDPMD compliance</span>
+                                            <div
+                                                style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
+                                                <i class="flaticon-check"
+                                                    style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
+                                                <span style="font-weight:500; color:var(--nadi-text-main);">Proven
+                                                    expertise in MDA & GDPMD compliance</span>
                                             </div>
-                                            <div style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
-                                                <i class="flaticon-check" style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
-                                                <span style="font-weight:500; color:var(--nadi-text-main);">Strong global network of manufacturers and partners</span>
+                                            <div
+                                                style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
+                                                <i class="flaticon-check"
+                                                    style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
+                                                <span style="font-weight:500; color:var(--nadi-text-main);">Strong
+                                                    global network of manufacturers and partners</span>
                                             </div>
-                                            <div style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
-                                                <i class="flaticon-check" style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
-                                                <span style="font-weight:500; color:var(--nadi-text-main);">Digital transformation powered by AI and smart systems</span>
+                                            <div
+                                                style="display:flex; align-items:flex-start; gap:12px; padding:15px; background:rgba(255,255,255,0.03); border:1px solid var(--nadi-card-border); border-radius:12px;">
+                                                <i class="flaticon-check"
+                                                    style="color:var(--nadi-primary); font-size:18px; margin-top:3px;"></i>
+                                                <span style="font-weight:500; color:var(--nadi-text-main);">Digital
+                                                    transformation powered by AI and smart systems</span>
                                             </div>
                                         </div>
                                     </div>
@@ -1429,7 +2188,8 @@
                             <div class="col-lg-6">
                                 <!--=== Text Box ===-->
                                 <div class="text-box mb-50 pf_fadeup">
-                                    <p>Our core philosophy drives every solution we provide, ensuring a holistic approach to healthcare excellence in the digital age.</p>
+                                    <p>Our core philosophy drives every solution we provide, ensuring a holistic
+                                        approach to healthcare excellence in the digital age.</p>
                                 </div>
                             </div>
                         </div>
@@ -1442,9 +2202,12 @@
                                     </div>
                                     <div class="content">
                                         <h4>Integrate</h4>
-                                        <p>We connect systems, products, and processes to create seamless healthcare operations. From regulatory approvals to supply chain management, we ensure everything works together efficiently.</p>
+                                        <p>We connect systems, products, and processes to create seamless healthcare
+                                            operations. From regulatory approvals to supply chain management, we ensure
+                                            everything works together efficiently.</p>
                                         <div class="agk-button">
-                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span
+                                                    class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1457,9 +2220,12 @@
                                     </div>
                                     <div class="content">
                                         <h4>Innovate</h4>
-                                        <p>We bring advanced healthcare technologies and digital solutions to modernize organizations. Our expertise includes AI-driven tools, telehealth systems, and full-scale IT integration.</p>
+                                        <p>We bring advanced healthcare technologies and digital solutions to modernize
+                                            organizations. Our expertise includes AI-driven tools, telehealth systems,
+                                            and full-scale IT integration.</p>
                                         <div class="agk-button">
-                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span
+                                                    class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1472,9 +2238,12 @@
                                     </div>
                                     <div class="content">
                                         <h4>Ignite</h4>
-                                        <p>We accelerate business growth through strategic consulting, sales enablement, and market expansion—helping healthcare companies scale sustainably and competitively.</p>
+                                        <p>We accelerate business growth through strategic consulting, sales enablement,
+                                            and market expansion—helping healthcare companies scale sustainably and
+                                            competitively.</p>
                                         <div class="agk-button">
-                                            <a href="solutions.html" class="theme-btn style-two"><span class="text">Learn More</span></a>
+                                            <a href="solutions.html" class="theme-btn style-two"><span
+                                                    class="text">Learn More</span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1500,7 +2269,8 @@
                             <div class="col-lg-6 col-md-6 mb-40 pf_fadeup">
                                 <div class="nadi-pillar-card" style="position:relative;z-index:1;">
                                     <div class="pillar-icon"><i class="fas fa-file-medical"></i></div>
-                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Healthcare Consulting & Compliance</h4>
+                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Healthcare
+                                        Consulting & Compliance</h4>
                                     <ul class="pillar-list">
                                         <li><i class="fas fa-check-circle"></i> Product registration (MDA, GDPMD)</li>
                                         <li><i class="fas fa-check-circle"></i> Market entry strategy</li>
@@ -1512,9 +2282,11 @@
                             <div class="col-lg-6 col-md-6 mb-40 pf_fadeup">
                                 <div class="nadi-pillar-card" style="position:relative;z-index:1;">
                                     <div class="pillar-icon"><i class="fas fa-microchip"></i></div>
-                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Digital Health & IT Solutions</h4>
+                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Digital
+                                        Health & IT Solutions</h4>
                                     <ul class="pillar-list">
-                                        <li><i class="fas fa-check-circle"></i> Hospital Information Systems (HIS, EMR)</li>
+                                        <li><i class="fas fa-check-circle"></i> Hospital Information Systems (HIS, EMR)
+                                        </li>
                                         <li><i class="fas fa-check-circle"></i> AI & telemedicine integration</li>
                                         <li><i class="fas fa-check-circle"></i> Cloud systems & cybersecurity</li>
                                     </ul>
@@ -1524,11 +2296,13 @@
                             <div class="col-lg-6 col-md-6 mb-40 pf_fadeup">
                                 <div class="nadi-pillar-card" style="position:relative;z-index:1;">
                                     <div class="pillar-icon"><i class="fas fa-chart-line"></i></div>
-                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Sales & Market Expansion</h4>
+                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Sales &
+                                        Market Expansion</h4>
                                     <ul class="pillar-list">
                                         <li><i class="fas fa-check-circle"></i> Sales strategy and team building</li>
                                         <li><i class="fas fa-check-circle"></i> Partner matchmaking</li>
-                                        <li><i class="fas fa-check-circle"></i> Distribution and channel development</li>
+                                        <li><i class="fas fa-check-circle"></i> Distribution and channel development
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -1536,7 +2310,8 @@
                             <div class="col-lg-6 col-md-6 mb-40 pf_fadeup">
                                 <div class="nadi-pillar-card" style="position:relative;z-index:1;">
                                     <div class="pillar-icon"><i class="fas fa-cogs"></i></div>
-                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">Operational Support</h4>
+                                    <h4 style="color:var(--nadi-primary);font-weight:700;margin-bottom:15px;">
+                                        Operational Support</h4>
                                     <ul class="pillar-list">
                                         <li><i class="fas fa-check-circle"></i> Supply chain optimization</li>
                                         <li><i class="fas fa-check-circle"></i> IT resource outsourcing</li>
@@ -1881,7 +2656,10 @@
                             <div class="col-lg-6">
                                 <!--=== Text Box ===-->
                                 <div class="text-box mb-45 pf_fadeup">
-                                    <p>Discover how NADI Aksis delivers impactful results through our commitment to <span>Integration, Innovation, and Ignition</span> across the healthcare landscape.</p>
+                                    <p>Discover how NADI Aksis delivers impactful results through our commitment to
+                                        <span>Integration, Innovation, and Ignition</span> across the healthcare
+                                        landscape.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -1890,7 +2668,8 @@
                                 <!--=== Agk Image Box ===-->
                                 <div class="agenko-image-box agenko-rotate-image mb-50 pf_fadeup">
                                     <div class="agenko-image">
-                                        <img style="width: 70%;" src="new-assets/images/testimonial.jpg" alt="Partner Testimonials">
+                                        <img style="width: 70%;" src="new-assets/images/testimonial.jpg"
+                                            alt="Partner Testimonials">
                                     </div>
                                 </div>
                             </div>
@@ -1908,7 +2687,15 @@
                                                 <li><i class="fas fa-star"></i></li>
                                                 <li><i class="fas fa-star"></i></li>
                                             </ul>
-                                            <p style="font-size: 18px;">"NADI Aksis has been a strategic consulting partner in the successful development of our cloud-based healthcare platform for mid-scale hospital systems. Their team provided end-to-end guidance — from system planning, workflow structuring, compliance alignment, and implementation strategy. Their deep understanding of healthcare operations and IT integration ensured that our platform was practical, scalable, and aligned with real hospital needs. We value their professionalism, technical insight, and commitment to delivering impactful digital healthcare solutions."</p>
+                                            <p style="font-size: 18px;">"NADI Aksis has been a strategic consulting
+                                                partner in the successful development of our cloud-based healthcare
+                                                platform for mid-scale hospital systems. Their team provided end-to-end
+                                                guidance — from system planning, workflow structuring, compliance
+                                                alignment, and implementation strategy. Their deep understanding of
+                                                healthcare operations and IT integration ensured that our platform was
+                                                practical, scalable, and aligned with real hospital needs. We value
+                                                their professionalism, technical insight, and commitment to delivering
+                                                impactful digital healthcare solutions."</p>
                                             <div class="author-item">
                                                 <div class="author-info">
                                                     <h4>Pn Nor Azliwati Binti Mohd Zam</h4>
@@ -1928,7 +2715,15 @@
                                                 <li><i class="fas fa-star"></i></li>
                                                 <li><i class="fas fa-star"></i></li>
                                             </ul>
-                                            <p style="font-size: 18px;">"We have been collaborating with NADI Aksis for nearly 8 years for the supply and distribution of medical devices to our Cardiology Department. Their team has consistently demonstrated professionalism, product reliability, and efficient delivery services that support our daily clinical operations without disruption. Over the years, our total procurement has reached approximately <strong>RM700,000</strong>, reflecting our continued trust and confidence in their service quality and commitment."</p>
+                                            <p style="font-size: 18px;">"We have been collaborating with NADI Aksis for
+                                                nearly 8 years for the supply and distribution of medical devices to our
+                                                Cardiology Department. Their team has consistently demonstrated
+                                                professionalism, product reliability, and efficient delivery services
+                                                that support our daily clinical operations without disruption. Over the
+                                                years, our total procurement has reached approximately
+                                                <strong>RM700,000</strong>, reflecting our continued trust and
+                                                confidence in their service quality and commitment."
+                                            </p>
                                             <div class="author-item">
                                                 <div class="author-info">
                                                     <h4>Pn Yusliati Pegawai</h4>
@@ -1948,7 +2743,16 @@
                                                 <li><i class="fas fa-star"></i></li>
                                                 <li><i class="fas fa-star"></i></li>
                                             </ul>
-                                            <p style="font-size: 18px;">"NADI Aksis has been instrumental in establishing and growing Technolyze in Malaysia. They successfully guided us through regulatory registration with the Medical Device Authority (MDA), managed our product importation from various countries, and supported our entry into the Malaysian healthcare market. Beyond compliance, NADI Aksis helped us build and structure our sales team, implement market strategies, and accelerate revenue growth. Within just 4 months, we successfully achieved over <strong>RM100,000</strong> in revenue, a strong testament to their effective market strategy and hands-on consulting support."</p>
+                                            <p style="font-size: 18px;">"NADI Aksis has been instrumental in
+                                                establishing and growing Technolyze in Malaysia. They successfully
+                                                guided us through regulatory registration with the Medical Device
+                                                Authority (MDA), managed our product importation from various countries,
+                                                and supported our entry into the Malaysian healthcare market. Beyond
+                                                compliance, NADI Aksis helped us build and structure our sales team,
+                                                implement market strategies, and accelerate revenue growth. Within just
+                                                4 months, we successfully achieved over <strong>RM100,000</strong> in
+                                                revenue, a strong testament to their effective market strategy and
+                                                hands-on consulting support."</p>
                                             <div class="author-item">
                                                 <div class="author-info">
                                                     <h4>Mr Zainal Zabidi</h4>
@@ -2040,11 +2844,76 @@
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
                                 <span class="badge-text">Book a Consultation</span>
-                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to build the future of healthcare?</h2>
-                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Partner with NADI Aksis to streamline operations, adopt cutting-edge technology, and unlock new growth opportunities.</p>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to build the future of
+                                    healthcare?</h2>
+                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Partner with NADI
+                                    Aksis to streamline operations, adopt cutting-edge technology, and unlock new growth
+                                    opportunities.</p>
                                 <div class="cta-btns">
                                     <a href="contact-us.html" class="theme-btn style-one">
-                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book a Consultation Today</span><span class="text">Book a Consultation Today</span></span>
+                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book
+                                                a Consultation Today</span><span class="text">Book a Consultation
+                                                Today</span></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== SECTION 11: CASE STUDIES ===-->
+                <section class="nadi-case-studies pt-100 pb-120">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="section-title text-center mb-60 pf_fadeup">
+                                    <span class="sub-heading">Success Stories</span>
+                                    <h2>Real-World Impact</h2>
+                                    <p class="mt-20">Explore how NADI Aksis empowers healthcare organizations to scale sustainably,
+                                        modernize operations, and achieve regulatory excellence through our strategic partnerships.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Case Study 1 -->
+                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup">
+                                <div class="case-study-card">
+                                    <div class="case-study-img">
+                                        <img src="new-assets/images/case-study-market.png" alt="Market Entry Case Study">
+                                    </div>
+                                    <div class="case-study-badge badge-reg">REGULATORY & MARKET STRATEGY</div>
+                                    <h3 class="case-study-title">Navigating Market Entry: Technolyze’s Strategic Growth in Malaysia</h3>
+                                    <p class="case-study-desc">A comprehensive look at how we supported Technolyze from MDA registration and importation to full-scale sales team establishment.</p>
+                                    <a href="#" class="case-study-link">
+                                        View Case Study <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Case Study 2 -->
+                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup">
+                                <div class="case-study-card">
+                                    <div class="case-study-img">
+                                        <img src="new-assets/images/case-study-supply.png" alt="Supply Chain Case Study">
+                                    </div>
+                                    <div class="case-study-badge badge-supply">SUPPLY CHAIN MANAGEMENT</div>
+                                    <h3 class="case-study-title">Excellence in Continuity: 8 Years of Uninterrupted Supply for PPUM</h3>
+                                    <p class="case-study-desc">How our team ensured zero operational disruptions for one of Malaysia's busiest cardiology departments through resilient logistics.</p>
+                                    <a href="#" class="case-study-link">
+                                        View Case Study <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Case Study 3 -->
+                            <div class="col-lg-4 col-md-6 mb-40 pf_fadeup" style="animation-delay: 0.2s;">
+                                <div class="case-study-card">
+                                    <div class="case-study-img">
+                                        <img src="new-assets/images/case-study-digital.png" alt="Digital Healthcare Case Study">
+                                    </div>
+                                    <div class="case-study-badge badge-digital">DIGITAL HEALTHCARE</div>
+                                    <h3 class="case-study-title">Transforming Clinical Workflows: The Awantra Digital Platform</h3>
+                                    <p class="case-study-desc">Consulting and design for a scalable hospital management platform bridging the gap between clinical needs and technical architecture.</p>
+                                    <a href="#" class="case-study-link">
+                                        View Case Study <i class="fas fa-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
@@ -2190,6 +3059,161 @@
                 if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
             });
         });
+    </script>
+    <!--=== Radial Orbital Timeline JS ===-->
+    <script>
+        const timelineData = [
+            { id: 1, title: "Planning", date: "Jan 2024", content: "Project planning and requirements gathering phase.", category: "Planning", icon: "fa-calendar-alt", status: "completed", energy: 100, related: [2] },
+            { id: 2, title: "Design", date: "Feb 2024", content: "UI/UX design and system architecture.", category: "Design", icon: "fa-pencil-ruler", status: "completed", energy: 90, related: [1, 3] },
+            { id: 3, title: "Development", date: "Mar 2024", content: "Core features implementation and testing.", category: "Development", icon: "fa-code", status: "in-progress", energy: 60, related: [2, 4] },
+            { id: 4, title: "Testing", date: "Apr 2024", content: "User testing and bug fixes.", category: "Testing", icon: "fa-user-check", status: "pending", energy: 30, related: [3, 5] },
+            { id: 5, title: "Release", date: "May 2024", content: "Final deployment and release.", category: "Release", icon: "fa-rocket", status: "pending", energy: 10, related: [4] }
+        ];
+
+        const orbitalRoot = document.getElementById('orbital-root');
+        const detailRoot = document.getElementById('central-detail-root');
+        const totalNodes = timelineData.length;
+        const radius = 300;
+        let rotationAngle = 0;
+        let autoRotate = true;
+        let activeNodeId = null;
+
+        // Create Nodes
+        timelineData.forEach((data, index) => {
+            const node = document.createElement('div');
+            node.className = 'timeline-node';
+            node.dataset.id = data.id;
+
+            node.innerHTML = `
+                <i class="fas ${data.icon}"></i>
+                <div class="node-info">
+                    <h4>${data.title}</h4>
+                    <span>${data.date}</span>
+                </div>
+            `;
+
+            node.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showNodeDetail(data, index);
+            });
+
+            orbitalRoot.appendChild(node);
+        });
+
+        function showNodeDetail(data, index) {
+            if (activeNodeId === data.id) {
+                closeDetail();
+                return;
+            }
+
+            activeNodeId = data.id;
+            autoRotate = false;
+
+            // Highlight node
+            document.querySelectorAll('.timeline-node').forEach(n => {
+                n.classList.toggle('active', parseInt(n.dataset.id) === data.id);
+            });
+
+            // Smoothly rotate clicked node to the top (270 degrees)
+            const nodeBaseAngle = (index / totalNodes) * 360;
+            rotationAngle = (270 - nodeBaseAngle);
+
+            const relatedButtons = data.related.map(id => {
+                const relatedNode = timelineData.find(n => n.id === id);
+                return `<button class="related-btn" onclick="navigateToNode(${id}, event)">${relatedNode.title} →</button>`;
+            }).join('');
+
+            detailRoot.innerHTML = `
+                <div class="active-card">
+                    <div class="node-detail-card">
+                        <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                            <span class="detail-status status-${data.status}">${data.status.replace('-', ' ')}</span>
+                            <span style="font-size:10px; color:rgba(255,255,255,0.4); font-weight:700;">${data.date}</span>
+                        </div>
+                        <h5 class="mb-10" style="color:#fff; font-size: 20px;">${data.title}</h5>
+                        <p style="font-size:14px; color:rgba(255,255,255,0.6); line-height:1.6; margin-bottom:20px;">${data.content}</p>
+                        
+                        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                            <span style="font-size:11px; color:rgba(255,255,255,0.8); font-weight:700;"><i class="fas fa-bolt" style="color:var(--nadi-primary); margin-right:5px;"></i> ENERGY LEVEL</span>
+                            <span style="font-size:12px; color:#fff; font-weight:700;">${data.energy}%</span>
+                        </div>
+                        <div class="energy-bar-wrap">
+                            <div class="energy-bar-fill" style="width: ${data.energy}%"></div>
+                        </div>
+
+                        <div style="margin-top:25px; border-top: 1px solid rgba(255,255,255,0.1); padding-top:20px;">
+                            <span style="font-size:11px; color:rgba(255,255,255,0.5); font-weight:700; display:block; margin-bottom:12px;"><i class="fas fa-link" style="margin-right:8px;"></i> CONNECTED NODES</span>
+                            <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                                ${relatedButtons}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Trigger animation
+            setTimeout(() => {
+                detailRoot.querySelector('.node-detail-card').parentElement.classList.add('active-card');
+            }, 10);
+        }
+
+        function closeDetail() {
+            activeNodeId = null;
+            autoRotate = true;
+            document.querySelectorAll('.timeline-node').forEach(n => n.classList.remove('active'));
+            detailRoot.innerHTML = '';
+        }
+
+        // Global click to resume auto-rotation
+        document.getElementById('timeline-container').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closeDetail();
+        });
+
+        function navigateToNode(id, event) {
+            event.stopPropagation();
+            const nodeData = timelineData.find(d => d.id === id);
+            const index = timelineData.indexOf(nodeData);
+            showNodeDetail(nodeData, index);
+        }
+
+        function updatePositions() {
+            const nodes = document.querySelectorAll('.timeline-node');
+            nodes.forEach((node, i) => {
+                const baseAngle = (i / totalNodes) * 360;
+                const currentAngle = (baseAngle + rotationAngle) % 360;
+                const radian = (currentAngle * Math.PI) / 180;
+
+                const x = radius * Math.cos(radian);
+                const y = radius * Math.sin(radian);
+
+                // Depth Simulation
+                const depthFactor = (Math.sin(radian) + 1) / 2; // 0 (back) to 1 (front)
+                const scale = 0.7 + (0.3 * depthFactor);
+                // Adjust opacity: No node should be "dull" at the top
+                const opacity = 0.5 + (0.5 * depthFactor);
+                const zIndex = 10 + Math.round(depthFactor * 100);
+
+                node.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+                node.style.opacity = opacity;
+                node.style.zIndex = zIndex;
+
+                // Keep everything upright
+                node.querySelector('i').style.transform = `scale(${1 / scale})`;
+                const info = node.querySelector('.node-info');
+                info.style.opacity = 0.7 + (0.3 * depthFactor);
+                info.style.transform = `translateX(-50%) scale(${1 / scale})`;
+            });
+        }
+
+        function animate() {
+            if (autoRotate) {
+                rotationAngle += 0.08;
+            }
+            updatePositions();
+            requestAnimationFrame(animate);
+        }
+
+        animate();
     </script>
 </body>
 
