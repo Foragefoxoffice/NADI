@@ -250,13 +250,13 @@
         }
 
         .node-1 {
-            top: 15%;
+            top: 20%;
             left: 8%;
             animation: float-slow 8s infinite ease-in-out;
         }
 
         .node-2 {
-            top: 10%;
+            top: 20%;
             right: 10%;
             animation: float-slow 10s infinite ease-in-out reverse;
         }
@@ -918,6 +918,178 @@
             transform: scale(1.1) rotate(-5deg);
             color: rgba(255, 255, 255, 0.04);
         }
+
+        /* CEO Message Section */
+        .ceo-section {
+            padding: 160px 0;
+            background: #040909;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ceo-message-wrap {
+            position: relative;
+            z-index: 2;
+        }
+
+        .ceo-philosophy-bg {
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            transform: translateY(-50%);
+            font-size: 180px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.02);
+            line-height: 0.8;
+            pointer-events: none;
+            z-index: 1;
+            text-transform: uppercase;
+            font-family: 'Outfit';
+        }
+
+        .ceo-content {
+            padding-right: 40px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .ceo-label {
+            display: inline-block;
+            padding: 8px 20px;
+            background: rgba(0, 114, 206, 0.1);
+            border: 1px solid rgba(0, 114, 206, 0.2);
+            border-radius: 30px;
+            color: var(--nadi-accent);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+        }
+
+        .ceo-text p {
+            font-size: 20px;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.8) !important;
+            margin-bottom: 30px;
+        }
+
+        .ceo-philosophy-list {
+            display: flex;
+            gap: 15px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .phil-item {
+            padding: 12px 25px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            font-weight: 700;
+            font-family: 'Outfit';
+            color: #fff;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .phil-item:hover {
+            border-color: var(--nadi-accent);
+            background: rgba(0, 114, 206, 0.05);
+            transform: translateY(-5px);
+        }
+
+        .ceo-tagline {
+            font-family: 'Outfit';
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            border-left: 4px solid var(--nadi-accent);
+            font-style: italic;
+        }
+
+        .ceo-signature {
+            margin-top: 50px;
+        }
+
+        .ceo-name {
+            font-family: 'Outfit';
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .ceo-title {
+            color: var(--nadi-accent);
+            font-weight: 600;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .ceo-portrait-wrap {
+            position: relative;
+            padding: 20px;
+            z-index: 2;
+        }
+
+        .ceo-portrait-frame {
+            position: relative;
+            border-radius: 40px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .ceo-portrait-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.8s ease;
+        }
+
+        .ceo-portrait-frame:hover img {
+            transform: scale(1.05);
+        }
+
+        .ceo-glass-accent {
+            position: absolute;
+            bottom: -30px;
+            right: -30px;
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(0, 114, 206, 0.2) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(50px);
+        }
+
+        @media (max-width: 991px) {
+            .ceo-section {
+                padding: 100px 0;
+            }
+
+            .ceo-content {
+                padding-right: 0;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+
+            .ceo-tagline {
+                border-left: none;
+                border-top: 4px solid var(--nadi-accent);
+                padding: 20px 0 0;
+            }
+
+            .ceo-philosophy-list {
+                justify-content: center;
+            }
+
+            .ceo-philosophy-bg {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -1043,6 +1215,56 @@
                                         region—bridging
                                         global innovation with local market expertise to shape the future of healthcare
                                         ecosystems.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--=== CEO MESSAGE SECTION ===-->
+                <section class="ceo-section">
+                    <div class="ceo-philosophy-bg">IGNITE</div>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="ceo-content pf_fadeup">
+                                    <span class="ceo-label">Message from Leadership</span>
+                                    <div class="ceo-text">
+                                        <p>At Nadi Aksis, we are shaping the future of healthcare in Malaysia. Our
+                                            vision is simple yet powerful — to elevate the medical industry through
+                                            advanced technology, intelligent solutions, and purposeful leadership. We
+                                            believe that no hospital or clinic should be left behind in the journey of
+                                            progress.</p>
+                                        <p>Guided by our core philosophy — <strong>Integrate, Innovate, Ignite</strong>
+                                            — we connect systems, introduce cutting-edge solutions, and empower the
+                                            healthcare ecosystem to thrive in the era of Artificial Intelligence.</p>
+                                        <p>Beyond business, we are committed to building a healthcare system that is
+                                            inclusive, patient-centered, and driven by excellence — while championing
+                                            the role of women as leaders and changemakers in this transformation.</p>
+                                    </div>
+
+                                    <div class="ceo-philosophy-list">
+                                        <div class="phil-item">INTEGRATE</div>
+                                        <div class="phil-item">INNOVATE</div>
+                                        <div class="phil-item">IGNITE</div>
+                                    </div>
+
+                                    <div class="ceo-tagline">
+                                        “Guiding the Pulse of Progress”
+                                    </div>
+
+                                    <div class="ceo-signature">
+                                        <div class="ceo-name">Pameela Nadarajan</div>
+                                        <div class="ceo-title">Founder & CEO, Nadi Aksis Sdn Bhd</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="ceo-portrait-wrap pf_zoomIn">
+                                    <div class="ceo-portrait-frame">
+                                        <img src="new-assets/images/CEO.jpeg" alt="Pameela Nadarajan">
+                                    </div>
+                                    <div class="ceo-glass-accent"></div>
                                 </div>
                             </div>
                         </div>
