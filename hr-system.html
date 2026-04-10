@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description"
-        content="NADI SCM Sales Platform. Advanced supply chain and sales management tailored for medical distributors, ensuring real-time inventory tracking.">
+        content="NADI HR System. Comprehensive human capital and personnel management tailored for healthcare organizations, ensuring streamlined payroll and onboarding.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>SCM Sales Platform | NADI Aksis - Guiding the Pulse of Progress</title>
+    <title>HR System | NADI Aksis - Guiding the Pulse of Progress</title>
     <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
@@ -62,54 +62,6 @@
             margin-bottom: 25px;
             backdrop-filter: blur(4px);
             vertical-align: middle;
-        }
-
-        .nadi-solution-card {
-            background: var(--nadi-card-bg);
-            border: 1px solid var(--nadi-card-border);
-            border-radius: 20px;
-            padding: 40px;
-            transition: all 0.4s;
-            height: 100%;
-        }
-
-        .nadi-solution-card:hover {
-            border-color: var(--nadi-accent);
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.06);
-        }
-
-        .agenko-counter-box.style-stats {
-            text-align: center;
-            padding: 40px 30px;
-            background: rgba(0, 82, 212, 0.05);
-            border-radius: 20px;
-            border: 1px solid rgba(0, 210, 255, 0.1);
-            transition: all 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100%;
-        }
-
-        .agenko-counter-box.style-stats:hover {
-            background: rgba(0, 82, 212, 0.1);
-            border-color: var(--nadi-accent);
-        }
-
-        .agenko-counter-box.style-stats h2 {
-            color: var(--nadi-accent) !important;
-            font-size: 42px;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .agenko-counter-box.style-stats h2 i {
-            display: block;
-            margin-bottom: 5px;
         }
 
         /* Unique Hero Section Styling */
@@ -225,65 +177,22 @@
             position: relative;
         }
 
-        .omni-bento-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            margin-top: 50px;
-        }
-
         .omni-bento-card {
             background: #ffffff;
             border: 1px solid rgba(0, 0, 0, 0.05);
             border-radius: 24px;
-            padding: 30px;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-            position: relative;
-            overflow: hidden;
+            padding: 40px;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
         }
 
         .omni-bento-card:hover {
-            border-color: rgba(0, 210, 255, 0.4);
             transform: translateY(-8px);
-            box-shadow: 0 30px 60px rgba(0, 210, 255, 0.1);
-        }
-
-        .omni-bento-card.bento-large {
-            grid-column: span 2;
-            background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
-        }
-
-        .bento-icon {
-            font-size: 32px;
-            color: var(--nadi-accent);
-            margin-bottom: 25px;
-            width: 64px;
-            height: 64px;
-            background: rgba(0, 210, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 16px;
-        }
-
-        .bento-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-        }
-
-        .bento-pill {
-            background: #f0f4f8;
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 12px;
-            color: #555;
-            border: 1px solid rgba(0, 0, 0, 0.05);
+            box-shadow: 0 30px 60px rgba(0, 210, 255, 0.15);
+            border-color: var(--nadi-accent);
         }
 
         /* Scm Refined Layout Styling (Light) */
@@ -381,18 +290,6 @@
             margin-bottom: 0;
         }
 
-        @media (max-width: 991px) {
-            .scm-feature-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .scm-feature-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
         /* Impact Section Modern Styling */
         .agk-impact-modern {
             background: #0E1217 !important;
@@ -404,7 +301,7 @@
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 24px;
-            padding: 40px 30px;
+            padding: 30px 40px 30px !important;
             text-align: center;
             transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
             min-height: 100% !important;
@@ -474,10 +371,6 @@
         }
 
         @media (max-width: 991px) {
-            .omni-bento-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
             .floating-tech-card {
                 display: none;
             }
@@ -485,15 +378,15 @@
             .agk-solutions-hero {
                 padding: 180px 0 100px !important;
             }
+
+            .scm-feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 767px) {
-            .omni-bento-grid {
+            .scm-feature-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .omni-bento-card.bento-large {
-                grid-column: span 1;
             }
 
             section,
@@ -542,92 +435,93 @@
                     <div class="hero-pulse-bg"></div>
 
                     <!-- Floating Elements -->
-                    <div class="floating-tech-card tech-card-1"><i class="fas fa-boxes"></i> Inventory Ready</div>
-                    <div class="floating-tech-card tech-card-2"><i class="fas fa-hand-holding-usd"></i> Sales Optimized
-                    </div>
-                    <div class="floating-tech-card tech-card-3"><i class="fas fa-globe"></i> Global Reach</div>
-                    <div class="floating-tech-card tech-card-4"><i class="fas fa-truck-loading"></i> Logistics Live
-                    </div>
+                    <div class="floating-tech-card tech-card-1"><i class="fas fa-user-check"></i> Talent First</div>
+                    <div class="floating-tech-card tech-card-2"><i class="fas fa-file-invoice-dollar"></i> Seamless
+                        Payroll</div>
+                    <div class="floating-tech-card tech-card-3"><i class="fas fa-shield-alt"></i> Compliance Hub</div>
+                    <div class="floating-tech-card tech-card-4"><i class="fas fa-id-card-alt"></i> Employee Portal</div>
 
                     <div class="container text-center" style="position: relative; z-index: 10;">
                         <div class="hero-content pf_fadeup">
-                            <span class="sub-heading"><i class="fas fa-shopping-cart"></i> SCM Sales Platform</span>
+                            <span class="sub-heading"><i class="fas fa-users"></i> HR System</span>
                             <h1 style="font-size: 72px; line-height: 1.1; margin-bottom: 30px; font-weight: 800;">
-                                Optimized Supply Chain & <br>
-                                <span class="hero-gradient-text">Sales Management</span>
+                                Unified Human Capital & <br>
+                                <span class="hero-gradient-text">Personnel Management</span>
                             </h1>
                             <p
                                 style="font-size: 21px; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.7) !important; line-height: 1.6;">
-                                NADI SCM is an advanced platform tailored for medical distributors,
-                                empowering them with real-time inventory tracking and streamlined sales workflows.
+                                NADI HR is a comprehensive personnel management portal designed for healthcare
+                                excellence,
+                                streamlining recruitment, payroll, and regulatory compliance.
                             </p>
                             <div class="hero-btns mt-50">
                                 <a href="contact-us.html" class="theme-btn style-one">
                                     <span class="text-flip" style="color: #fff !important;"><span class="text">Optimize
-                                            Your Chain</span><span class="text">Optimize Your Chain</span></span>
+                                            Your Workforce</span><span class="text">Optimize Your
+                                            Workforce</span></span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <!--=== CAPABILITIES & USE CASES (Modern Bento) ===-->
+                <!--=== CAPABILITIES & USE CASES ===-->
                 <section class="omni-modern-section">
                     <div class="container">
                         <div class="section-title text-center mb-60 pf_fadeup">
-                            <span class="sub-heading"><i class="fas fa-layer-group"></i> SCM Capabilities</span>
-                            <h2 style="font-size: 52px; margin-bottom: 20px; color: #080a0d !important;">Visibility
-                                Across the Chain</h2>
+                            <span class="sub-heading"><i class="fas fa-layer-group"></i> HR Capabilities</span>
+                            <h2 style="font-size: 52px; margin-bottom: 20px; color: #080a0d !important;">Empowering Your
+                                People</h2>
                             <p style="max-width: 700px; margin: 0 auto; color: #555 !important;">
-                                Unified control over your entire supply chain, from procurement to fulfillment.
+                                Unified management for your medical staff, administrative teams, and external workforce.
                             </p>
                         </div>
 
                         <div class="row gy-4">
-                            <!-- Left: Target Users -->
+                            <!-- Left: Target Sectors -->
                             <div class="col-lg-5">
                                 <div class="omni-bento-card pf_fadeup">
-                                    <h4 class="scm-card-title"><i class="fas fa-hospital-alt"></i> Target Users</h4>
+                                    <h4 class="scm-card-title"><i class="fas fa-building"></i> Target Sectors</h4>
                                     <div class="scm-cases-list">
                                         <div class="scm-case-pill">
                                             <i class="fas fa-check-circle"></i>
-                                            <span>Medical Supply Distributors</span>
+                                            <span>Hospitals & Specialty Clinics</span>
                                         </div>
                                         <div class="scm-case-pill">
                                             <i class="fas fa-check-circle"></i>
-                                            <span>Pharmaceutical Wholesalers</span>
+                                            <span>Corporate Healthcare Chains</span>
                                         </div>
                                         <div class="scm-case-pill">
                                             <i class="fas fa-check-circle"></i>
-                                            <span>Multi-vendor Healthcare Networks</span>
+                                            <span>Healthcare Staffing Agencies</span>
                                         </div>
                                         <div class="scm-case-pill">
                                             <i class="fas fa-check-circle"></i>
-                                            <span>Diagnostic & Imaging Centers</span>
+                                            <span>Medical Training Institutions</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Right: Platform Value -->
+                            <!-- Right: Why NADI HR -->
                             <div class="col-lg-7">
                                 <div class="omni-bento-card pf_fadeup">
-                                    <h4 class="scm-card-title"><i class="fas fa-star-of-life"></i> Why NADI SCM</h4>
+                                    <h4 class="scm-card-title"><i class="fas fa-bolt"></i> Why NADI HR</h4>
                                     <div class="scm-feature-grid">
                                         <div class="scm-feature-box">
-                                            <div class="scm-feature-icon"><i class="fas fa-sync"></i></div>
-                                            <h5>Synchronized</h5>
-                                            <p>Inventory and sales in one seamless ecosystem.</p>
+                                            <div class="scm-feature-icon"><i class="fas fa-magic"></i></div>
+                                            <h5>Automated</h5>
+                                            <p>Streamline onboarding and payroll workflows instantly.</p>
                                         </div>
                                         <div class="scm-feature-box">
-                                            <div class="scm-feature-icon"><i class="fas fa-chart-line"></i></div>
-                                            <h5>Scalable</h5>
-                                            <p>Grow your distribution network effortlessly.</p>
+                                            <div class="scm-feature-icon"><i class="fas fa-balance-scale"></i></div>
+                                            <h5>Compliant</h5>
+                                            <p>Unified regulatory and labor law tracking for peace of mind.</p>
                                         </div>
                                         <div class="scm-feature-box">
-                                            <div class="scm-feature-icon"><i class="fas fa-lock"></i></div>
-                                            <h5>Secure</h5>
-                                            <p>Ensuring end-to-end data integrity.</p>
+                                            <div class="scm-feature-icon"><i class="fas fa-user-shield"></i></div>
+                                            <h5>Empowering</h5>
+                                            <p>Dedicated self-service portals for all healthcare staff.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -636,18 +530,18 @@
                     </div>
                 </section>
 
-                <!--=== IMPACT & BENEFITS (Modern Cards) ===-->
+                <!--=== IMPACT & BENEFITS ===-->
                 <section class="agk-impact-modern">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <div class="section-title text-center mb-60 pf_fadeup">
-                                    <span class="sub-heading"><i class="fas fa-chart-line"></i> Business Impact &
+                                    <span class="sub-heading"><i class="fas fa-chart-line"></i> Workforce Impact &
                                         Benefits</span>
-                                    <h2 style="font-size: 52px; margin-bottom: 20px;">Efficiency Redefined</h2>
+                                    <h2 style="font-size: 52px; margin-bottom: 20px;">Productivity Unleashed</h2>
                                     <p
                                         style="max-width: 700px; margin: 0 auto; color: rgba(255,255,255,0.6) !important;">
-                                        Tangible improvements in fulfillment and operational overhead.
+                                        Tangible reductions in administrative overhead and improved staff satisfaction.
                                     </p>
                                 </div>
                             </div>
@@ -655,38 +549,38 @@
                         <div class="row gy-4">
                             <div class="col-lg-3 col-md-6">
                                 <div class="impact-card pf_fadeup">
-                                    <div class="impact-icon-box"><i class="fas fa-rocket"></i></div>
-                                    <div class="impact-stat">40%</div>
-                                    <h5 class="impact-title">Faster Fulfillment</h5>
-                                    <p class="impact-desc">Optimized order processing and delivery paths across all
-                                        channels.</p>
+                                    <div class="impact-icon-box"><i class="fas fa-running"></i></div>
+                                    <div class="impact-stat">50%</div>
+                                    <h5 class="impact-title">Faster Onboarding</h5>
+                                    <p class="impact-desc">Get your medical staff ready for service in record time with
+                                        automated flows.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="impact-card pf_fadeup">
-                                    <div class="impact-icon-box"><i class="fas fa-coins"></i></div>
+                                    <div class="impact-icon-box"><i class="fas fa-clock"></i></div>
                                     <div class="impact-stat">30%</div>
-                                    <h5 class="impact-title">Cost Savings</h5>
-                                    <p class="impact-desc">Significant reduction in inventory carrying costs and waste
-                                        through smart scaling.</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="impact-card pf_fadeup">
-                                    <div class="impact-icon-box"><i class="fas fa-eye"></i></div>
-                                    <div class="impact-stat">100%</div>
-                                    <h5 class="impact-title">Inventory Visibility</h5>
-                                    <p class="impact-desc">Total real-time control over stock levels and expiration
-                                        dates unified.</p>
+                                    <h5 class="impact-title">Time Savings</h5>
+                                    <p class="impact-desc">Significant reduction in manual administrative tasks and
+                                        payroll processing.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="impact-card pf_fadeup">
                                     <div class="impact-icon-box"><i class="fas fa-clipboard-check"></i></div>
+                                    <div class="impact-stat">100%</div>
+                                    <h5 class="impact-title">Compliance</h5>
+                                    <p class="impact-desc">Total adherence to global healthcare labor regulations and
+                                        local mandates.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <div class="impact-card pf_fadeup">
+                                    <div class="impact-icon-box"><i class="fas fa-smile"></i></div>
                                     <div class="impact-stat">Enhanced</div>
-                                    <h5 class="impact-title">Order Accuracy</h5>
-                                    <p class="impact-desc">Drastic reduction in shipping errors through automated
-                                        compliance checks.</p>
+                                    <h5 class="impact-title">Retention</h5>
+                                    <p class="impact-desc">Improved employee experience leading to higher retention in
+                                        clinical roles.</p>
                                 </div>
                             </div>
                         </div>
@@ -699,11 +593,11 @@
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
                                 <span class="badge-text">Book a Consultation</span>
-                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to modernize your healthcare
-                                    operations?</h2>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to modernize your workforce?
+                                </h2>
                                 <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Take the first step
-                                    towards a fully integrated, scalable healthcare ecosystem. Book a consultation with
-                                    NADI Aksis today.</p>
+                                    towards a fully automated, scalable healthcare personnel ecosystem. Book a
+                                    consultation today.</p>
                                 <div class="cta-btns">
                                     <a href="contact-us.html" class="theme-btn style-one">
                                         <span class="text-flip" style="color: #fff !important;"><span class="text">Book

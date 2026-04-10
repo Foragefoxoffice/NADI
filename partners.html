@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Partners & Alliances | NADI Aksis</title>
     <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
@@ -28,10 +27,12 @@
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
+
         .company-slider .company-item {
             text-align: center;
             padding: 0 15px;
         }
+
         .company-slider .company-item img {
             max-height: 50px;
             width: auto;
@@ -39,12 +40,176 @@
             margin: 0 auto;
             transition: all 0.3s ease;
         }
+
         .company-slider .company-item:hover img {
             transform: scale(1.05);
         }
-        .slick-track{
+
+        .slick-track {
             display: flex;
             align-items: center;
+        }
+
+        /* Partners Hero: Global Synergy */
+        .synergy-hero-wrap {
+            position: relative;
+            padding: 220px 0 160px;
+            background: #040909;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .synergy-mesh-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 140%;
+            height: 140%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle at center, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+            filter: blur(80px);
+            z-index: -1;
+            animation: mesh-pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes mesh-pulse {
+
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.6;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 1;
+            }
+        }
+
+        .synergy-glass-card {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(25px);
+            -webkit-backdrop-filter: blur(25px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 40px;
+            padding: 80px 60px;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(255, 255, 255, 0.02);
+        }
+
+        .synergy-glass-card .sub-heading {
+            font-size: 14px;
+            color: var(--nadi-accent);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+
+        .synergy-glass-card h1 {
+            font-size: 64px;
+            font-family: 'Outfit';
+            line-height: 1.1;
+            margin-bottom: 35px;
+            background: linear-gradient(135deg, #fff 0%, rgba(255, 255, 255, 0.7) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .synergy-glass-card p {
+            font-size: 20px;
+            color: rgba(255, 255, 255, 0.7) !important;
+            max-width: 850px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+
+        /* Tech Nodes */
+        .synergy-node {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: var(--nadi-accent);
+            z-index: 1;
+            transition: 0.5s;
+            animation: node-float 6s ease-in-out infinite;
+        }
+
+        .synergy-node i {
+            opacity: 0.6;
+        }
+
+        .synergy-node:hover {
+            background: var(--nadi-accent);
+            color: #000;
+            border-color: var(--nadi-accent);
+            box-shadow: 0 0 40px var(--nadi-accent);
+            transform: scale(1.1);
+        }
+
+        .synergy-node:hover i {
+            opacity: 1;
+        }
+
+        @keyframes node-float {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .node-1 {
+            top: 10%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .node-2 {
+            top: 15%;
+            right: 8%;
+            animation-delay: 1s;
+        }
+
+        .node-3 {
+            bottom: 12%;
+            left: 12%;
+            animation-delay: 2s;
+        }
+
+        .node-4 {
+            bottom: 8%;
+            right: 5%;
+            animation-delay: 3s;
+        }
+
+        @media (max-width: 991px) {
+            .synergy-glass-card h1 {
+                font-size: 44px;
+            }
+
+            .synergy-glass-card {
+                padding: 60px 30px;
+            }
+
+            .synergy-node {
+                display: none;
+            }
         }
     </style>
 
@@ -67,15 +232,38 @@
         <div id="smooth-content">
             <main>
                 <!--=== HERO SECTION ===-->
-                <section class="agk-hero pt-200 pb-120" style="background: var(--nadi-gradient-dark); position: relative;">
+                <section class="synergy-hero-wrap">
+                    <div class="synergy-mesh-bg"></div>
+
+                    <!-- Decorative Synergy Nodes -->
+                    <div class="synergy-node node-1"><i class="fas fa-network-wired"></i></div>
+                    <div class="synergy-node node-2"><i class="fas fa-globe-americas"></i></div>
+                    <div class="synergy-node node-3"><i class="fas fa-microchip"></i></div>
+                    <div class="synergy-node node-4"><i class="fas fa-handshake"></i></div>
+
                     <div class="container">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="partners-hero-card pf_fadeup">
-                                    <span class="sub-heading"><i class="fas fa-handshake"></i> Partners & Alliances</span>
-                                    <h1 style="font-size: 56px; line-height: 1.1; margin-bottom: 30px;">Building Strong Partnerships to Power Healthcare Growth</h1>
-                                    <p style="font-size: 19px; max-width: 750px; margin: 0 auto 30px;">At NADI Aksis, our strength lies in our ability to connect the right partners across the healthcare ecosystem. We collaborate with global manufacturers, technology providers, and logistics networks to deliver seamless, end-to-end solutions.</p>
-                                    <p style="font-size: 17px; max-width: 750px; margin: 0 auto;">Our alliances enable us to bring innovative healthcare technologies, operational excellence, and market access to our clients.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-11">
+                                <div class="synergy-glass-card pf_fadeup">
+                                    <span class="sub-heading"><i class="fas fa-link"></i> Global Synergy</span>
+                                    <h1>Building Strong Partnerships to Power Healthcare Growth</h1>
+                                    <p>At NADI Aksis, our strength lies in our ability to connect the right partners
+                                        across the healthcare ecosystem. We collaborate with global manufacturers,
+                                        technology providers, and logistics networks to deliver seamless, end-to-end
+                                        solutions.</p>
+                                    <div class="hero-meta mt-40"
+                                        style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap;">
+                                        <div class="meta-item" style="color: rgba(255,255,255,0.5); font-size: 14px;">
+                                            <i class="fas fa-check-circle"
+                                                style="color: var(--nadi-accent); margin-right: 8px;"></i> Exclusive
+                                            Strategic Distributorship
+                                        </div>
+                                        <div class="meta-item" style="color: rgba(255,255,255,0.5); font-size: 14px;">
+                                            <i class="fas fa-check-circle"
+                                                style="color: var(--nadi-accent); margin-right: 8px;"></i> Global
+                                            Technical Enablement
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -83,217 +271,345 @@
                 </section>
 
                 <div class="company-slider-wrapper pf_fadeup mb-60">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!--=== Company Slider ===-->
-                                    <div class="company-slider pt-10 pb-10">
-                                        <!--=== Company Item ===-->
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part1.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part2.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part3.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part4.png" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part5.jpg" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part6.jpg" alt="Company"></div></div>
-                                        <div class="company-item"><div class="agk-image"><img src="new-assets/images/part7.png" alt="Company"></div></div>
-                                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <!--=== Company Slider ===-->
+                            <div class="company-slider pt-10 pb-10">
+                                <!--=== Company Item ===-->
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part1.png" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part2.png" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part3.png" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part4.png" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part5.jpg" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part6.jpg" alt="Company"></div>
+                                </div>
+                                <div class="company-item">
+                                    <div class="agk-image"><img src="new-assets/images/part7.png" alt="Company"></div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
                 <!--=== GLOBAL ECOSYSTEM ===-->
                 <section class="agk-ecosystem pt-130 pb-100" style="background: var(--nadi-dark);">
 
                     <!-- â•â• MARQUEE FLAG STYLES â•â• -->
                     <style>
-                    /* â”€â”€ Wrapper â”€â”€ */
-                    .gec-marquee-wrapper {
-                        display: flex;
-                        gap: 18px;
-                        height: 420px;
-                        overflow: hidden;
-                        position: relative;
-                        -webkit-mask-image: linear-gradient(to bottom,
-                            transparent 0%,
-                            black 14%,
-                            black 86%,
-                            transparent 100%);
-                        mask-image: linear-gradient(to bottom,
-                            transparent 0%,
-                            black 14%,
-                            black 86%,
-                            transparent 100%);
-                    }
-                    .gec-marquee-wrapper:hover .gec-track { animation-play-state: paused !important; }
+                        /* â”€â”€ Wrapper â”€â”€ */
+                        .gec-marquee-wrapper {
+                            display: flex;
+                            gap: 18px;
+                            height: 420px;
+                            overflow: hidden;
+                            position: relative;
+                            -webkit-mask-image: linear-gradient(to bottom,
+                                    transparent 0%,
+                                    black 14%,
+                                    black 86%,
+                                    transparent 100%);
+                            mask-image: linear-gradient(to bottom,
+                                    transparent 0%,
+                                    black 14%,
+                                    black 86%,
+                                    transparent 100%);
+                        }
 
-                    /* â”€â”€ Column â”€â”€ */
-                    .gec-col { flex: 1; min-width: 0; overflow: hidden; }
+                        .gec-marquee-wrapper:hover .gec-track {
+                            animation-play-state: paused !important;
+                        }
 
-                    /* â”€â”€ Scrolling track â€“ duplicated for seamless loop â”€â”€ */
-                    .gec-track {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 14px;
-                        will-change: transform;
-                    }
-                    .gec-track--up   { animation: gecScrollUp   14s linear infinite; }
-                    .gec-track--down { animation: gecScrollDown 14s linear infinite; }
+                        /* â”€â”€ Column â”€â”€ */
+                        .gec-col {
+                            flex: 1;
+                            min-width: 0;
+                            overflow: hidden;
+                        }
 
-                    @keyframes gecScrollUp {
-                        0%   { transform: translateY(0); }
-                        100% { transform: translateY(-50%); }
-                    }
-                    @keyframes gecScrollDown {
-                        0%   { transform: translateY(-50%); }
-                        100% { transform: translateY(0); }
-                    }
+                        /* â”€â”€ Scrolling track â€“ duplicated for seamless loop â”€â”€ */
+                        .gec-track {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 14px;
+                            will-change: transform;
+                        }
 
-                    /* â”€â”€ Flag card â”€â”€ */
-                    .gec-card {
-                        display: flex;
-                        align-items: center;
-                        gap: 14px;
-                        background: rgba(255,255,255,0.04);
-                        backdrop-filter: blur(14px);
-                        -webkit-backdrop-filter: blur(14px);
-                        border: 1px solid rgba(0, 195, 255, 0.18);
-                        border-radius: 16px;
-                        padding: 14px 18px;
-                        position: relative;
-                        overflow: hidden;
-                        cursor: default;
-                        transition: border-color 0.35s, box-shadow 0.35s, transform 0.35s;
-                        box-shadow: 0 4px 24px rgba(0,0,0,0.35);
-                    }
-                    .gec-card:hover {
-                        border-color: rgba(0,212,255,0.65);
-                        box-shadow: 0 0 28px rgba(0,200,255,0.22), 0 8px 32px rgba(0,0,0,0.4);
-                        transform: scale(1.03);
-                        z-index: 2;
-                    }
+                        .gec-track--up {
+                            animation: gecScrollUp 14s linear infinite;
+                        }
 
-                    /* Shimmer sweep */
-                    .gec-card::before {
-                        content: '';
-                        position: absolute;
-                        top: 0; left: -120%;
-                        width: 70%;
-                        height: 100%;
-                        background: linear-gradient(100deg,
-                            transparent 20%,
-                            rgba(0,210,255,0.07) 50%,
-                            transparent 80%);
-                        animation: gecShimmer 4s ease-in-out infinite;
-                        pointer-events: none;
-                    }
-                    @keyframes gecShimmer {
-                        0%   { left: -120%; }
-                        100% { left: 200%; }
-                    }
+                        .gec-track--down {
+                            animation: gecScrollDown 14s linear infinite;
+                        }
 
-                    /* Top-left accent corner */
-                    .gec-card::after {
-                        content: '';
-                        position: absolute;
-                        top: 0; left: 0;
-                        width: 40%; height: 1px;
-                        background: linear-gradient(90deg, rgba(0,212,255,0.6), transparent);
-                        border-radius: 0 0 0 16px;
-                    }
+                        @keyframes gecScrollUp {
+                            0% {
+                                transform: translateY(0);
+                            }
 
-                    /* â”€â”€ Flag thumbnail â”€â”€ */
-                    .gec-flag {
-                        width: 64px;
-                        height: 42px;
-                        border-radius: 9px;
-                        overflow: hidden;
-                        flex-shrink: 0;
-                        border: 1.5px solid rgba(0,200,255,0.25);
-                        box-shadow: 0 0 10px rgba(0,180,255,0.2);
-                        position: relative;
-                    }
-                    .gec-flag img { width: 100%; height: 100%; object-fit: cover; display: block; }
+                            100% {
+                                transform: translateY(-50%);
+                            }
+                        }
 
-                    /* Gloss on flag */
-                    .gec-flag::after {
-                        content: '';
-                        position: absolute;
-                        inset: 0;
-                        background: linear-gradient(140deg,rgba(255,255,255,0.18) 0%,transparent 55%);
-                        pointer-events: none;
-                    }
+                        @keyframes gecScrollDown {
+                            0% {
+                                transform: translateY(-50%);
+                            }
 
-                    /* â”€â”€ Text block â”€â”€ */
-                    .gec-info { flex: 1; min-width: 0; }
-                    .gec-country {
-                        font-size: 13px;
-                        font-weight: 700;
-                        color: #e8f4ff;
-                        letter-spacing: 0.3px;
-                        line-height: 1.2;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                    }
-                    .gec-role {
-                        font-size: 10.5px;
-                        color: rgba(0,200,255,0.7);
-                        margin-top: 3px;
-                        white-space: nowrap;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        font-weight: 500;
-                        letter-spacing: 0.2px;
-                    }
+                            100% {
+                                transform: translateY(0);
+                            }
+                        }
 
-                    /* â”€â”€ Network dot on right â”€â”€ */
-                    .gec-dot {
-                        width: 8px; height: 8px;
-                        border-radius: 50%;
-                        background: #00d4ff;
-                        flex-shrink: 0;
-                        box-shadow: 0 0 8px rgba(0,212,255,0.8);
-                        animation: gecDotPulse 2s ease-in-out infinite;
-                    }
-                    @keyframes gecDotPulse {
-                        0%,100% { opacity: 1; transform: scale(1); }
-                        50%     { opacity: 0.4; transform: scale(0.6); }
-                    }
-                    /* Stagger dots per card */
-                    .gec-card:nth-child(2) .gec-dot { animation-delay: 0.3s; }
-                    .gec-card:nth-child(3) .gec-dot { animation-delay: 0.6s; }
-                    .gec-card:nth-child(4) .gec-dot { animation-delay: 0.9s; }
+                        /* â”€â”€ Flag card â”€â”€ */
+                        .gec-card {
+                            display: flex;
+                            align-items: center;
+                            gap: 14px;
+                            background: rgba(255, 255, 255, 0.04);
+                            backdrop-filter: blur(14px);
+                            -webkit-backdrop-filter: blur(14px);
+                            border: 1px solid rgba(0, 195, 255, 0.18);
+                            border-radius: 16px;
+                            padding: 14px 18px;
+                            position: relative;
+                            overflow: hidden;
+                            cursor: default;
+                            transition: border-color 0.35s, box-shadow 0.35s, transform 0.35s;
+                            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+                        }
 
-                    /* â”€â”€ Shimmer stagger per card â”€â”€ */
-                    .gec-card:nth-child(2)::before { animation-delay: 0.8s; }
-                    .gec-card:nth-child(3)::before { animation-delay: 1.6s; }
-                    .gec-card:nth-child(4)::before { animation-delay: 2.4s; }
+                        .gec-card:hover {
+                            border-color: rgba(0, 212, 255, 0.65);
+                            box-shadow: 0 0 28px rgba(0, 200, 255, 0.22), 0 8px 32px rgba(0, 0, 0, 0.4);
+                            transform: scale(1.03);
+                            z-index: 2;
+                        }
 
-                    /* â”€â”€ Responsive â”€â”€ */
-                    @media (max-width: 991px) {
-                        .gec-marquee-wrapper { height: 340px; }
-                        .gec-flag { width: 50px; height: 34px; }
-                        .gec-country { font-size: 12px; }
-                    }
-                    @media (max-width: 575px) {
-                        .gec-marquee-wrapper { height: 280px; gap: 10px; margin-top: 30px; }
-                        .gec-card { padding: 10px 12px; gap: 10px; border-radius: 12px; }
-                        .gec-flag { width: 40px; height: 26px; }
-                        .gec-country { font-size: 11px; }
-                        .gec-role { display: none; }
-                    }
+                        /* Shimmer sweep */
+                        .gec-card::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: -120%;
+                            width: 70%;
+                            height: 100%;
+                            background: linear-gradient(100deg,
+                                    transparent 20%,
+                                    rgba(0, 210, 255, 0.07) 50%,
+                                    transparent 80%);
+                            animation: gecShimmer 4s ease-in-out infinite;
+                            pointer-events: none;
+                        }
+
+                        @keyframes gecShimmer {
+                            0% {
+                                left: -120%;
+                            }
+
+                            100% {
+                                left: 200%;
+                            }
+                        }
+
+                        /* Top-left accent corner */
+                        .gec-card::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 40%;
+                            height: 1px;
+                            background: linear-gradient(90deg, rgba(0, 212, 255, 0.6), transparent);
+                            border-radius: 0 0 0 16px;
+                        }
+
+                        /* â”€â”€ Flag thumbnail â”€â”€ */
+                        .gec-flag {
+                            width: 64px;
+                            height: 42px;
+                            border-radius: 9px;
+                            overflow: hidden;
+                            flex-shrink: 0;
+                            border: 1.5px solid rgba(0, 200, 255, 0.25);
+                            box-shadow: 0 0 10px rgba(0, 180, 255, 0.2);
+                            position: relative;
+                        }
+
+                        .gec-flag img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: block;
+                        }
+
+                        /* Gloss on flag */
+                        .gec-flag::after {
+                            content: '';
+                            position: absolute;
+                            inset: 0;
+                            background: linear-gradient(140deg, rgba(255, 255, 255, 0.18) 0%, transparent 55%);
+                            pointer-events: none;
+                        }
+
+                        /* â”€â”€ Text block â”€â”€ */
+                        .gec-info {
+                            flex: 1;
+                            min-width: 0;
+                        }
+
+                        .gec-country {
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: #e8f4ff;
+                            letter-spacing: 0.3px;
+                            line-height: 1.2;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .gec-role {
+                            font-size: 10.5px;
+                            color: rgba(0, 200, 255, 0.7);
+                            margin-top: 3px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-weight: 500;
+                            letter-spacing: 0.2px;
+                        }
+
+                        /* â”€â”€ Network dot on right â”€â”€ */
+                        .gec-dot {
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: #00d4ff;
+                            flex-shrink: 0;
+                            box-shadow: 0 0 8px rgba(0, 212, 255, 0.8);
+                            animation: gecDotPulse 2s ease-in-out infinite;
+                        }
+
+                        @keyframes gecDotPulse {
+
+                            0%,
+                            100% {
+                                opacity: 1;
+                                transform: scale(1);
+                            }
+
+                            50% {
+                                opacity: 0.4;
+                                transform: scale(0.6);
+                            }
+                        }
+
+                        /* Stagger dots per card */
+                        .gec-card:nth-child(2) .gec-dot {
+                            animation-delay: 0.3s;
+                        }
+
+                        .gec-card:nth-child(3) .gec-dot {
+                            animation-delay: 0.6s;
+                        }
+
+                        .gec-card:nth-child(4) .gec-dot {
+                            animation-delay: 0.9s;
+                        }
+
+                        /* â”€â”€ Shimmer stagger per card â”€â”€ */
+                        .gec-card:nth-child(2)::before {
+                            animation-delay: 0.8s;
+                        }
+
+                        .gec-card:nth-child(3)::before {
+                            animation-delay: 1.6s;
+                        }
+
+                        .gec-card:nth-child(4)::before {
+                            animation-delay: 2.4s;
+                        }
+
+                        /* â”€â”€ Responsive â”€â”€ */
+                        @media (max-width: 991px) {
+                            .gec-marquee-wrapper {
+                                height: 340px;
+                            }
+
+                            .gec-flag {
+                                width: 50px;
+                                height: 34px;
+                            }
+
+                            .gec-country {
+                                font-size: 12px;
+                            }
+                        }
+
+                        @media (max-width: 575px) {
+                            .gec-marquee-wrapper {
+                                height: 280px;
+                                gap: 10px;
+                                margin-top: 30px;
+                            }
+
+                            .gec-card {
+                                padding: 10px 12px;
+                                gap: 10px;
+                                border-radius: 12px;
+                            }
+
+                            .gec-flag {
+                                width: 40px;
+                                height: 26px;
+                            }
+
+                            .gec-country {
+                                font-size: 11px;
+                            }
+
+                            .gec-role {
+                                display: none;
+                            }
+                        }
                     </style>
 
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-5">
                                 <div class="section-title mb-50 pf_fadeup">
-                                    <span class="sub-title"><i class="fas fa-globe-americas"></i> Our Global Ecosystem</span>
+                                    <span class="sub-title"><i class="fas fa-globe-americas"></i> Our Global
+                                        Ecosystem</span>
                                     <h2>Connecting Healthcare Across Borders</h2>
-                                    <p class="mt-25">NADI Aksis operates within a robust international network spanning key healthcare innovation hubs. This global ecosystem allows us to source advanced medical technologies and accelerate market entry.</p>
+                                    <p class="mt-25">NADI Aksis operates within a robust international network spanning
+                                        key healthcare innovation hubs. This global ecosystem allows us to source
+                                        advanced medical technologies and accelerate market entry.</p>
                                     <ul class="check-list mt-30" style="list-style:none; padding:0;">
-                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Source advanced medical technologies</span></li>
-                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Enable cross-border partnerships</span></li>
-                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Accelerate market entry and expansion</span></li>
+                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Source advanced medical technologies</span>
+                                        </li>
+                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Enable cross-border partnerships</span>
+                                        </li>
+                                        <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Accelerate market entry and expansion</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -309,44 +625,76 @@
                                             <div class="gec-track gec-track--up">
                                                 <!-- original set -->
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/it.png" alt="Italy"></div>
-                                                    <div class="gec-info"><div class="gec-country">Italy</div><div class="gec-role">Medical Devices</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/it.png"
+                                                            alt="Italy"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Italy</div>
+                                                        <div class="gec-role">Medical Devices</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/de.png" alt="Germany"></div>
-                                                    <div class="gec-info"><div class="gec-country">Germany</div><div class="gec-role">Biotech &amp; Pharma</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/de.png"
+                                                            alt="Germany"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Germany</div>
+                                                        <div class="gec-role">Biotech &amp; Pharma</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/tr.png" alt="Turkey"></div>
-                                                    <div class="gec-info"><div class="gec-country">Turkey</div><div class="gec-role">Distribution Hub</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/tr.png"
+                                                            alt="Turkey"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Turkey</div>
+                                                        <div class="gec-role">Distribution Hub</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/in.png" alt="India"></div>
-                                                    <div class="gec-info"><div class="gec-country">India</div><div class="gec-role">Tech Innovation</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/in.png"
+                                                            alt="India"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">India</div>
+                                                        <div class="gec-role">Tech Innovation</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <!-- duplicate for seamless loop -->
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/it.png" alt="Italy"></div>
-                                                    <div class="gec-info"><div class="gec-country">Italy</div><div class="gec-role">Medical Devices</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/it.png"
+                                                            alt="Italy"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Italy</div>
+                                                        <div class="gec-role">Medical Devices</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/de.png" alt="Germany"></div>
-                                                    <div class="gec-info"><div class="gec-country">Germany</div><div class="gec-role">Biotech &amp; Pharma</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/de.png"
+                                                            alt="Germany"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Germany</div>
+                                                        <div class="gec-role">Biotech &amp; Pharma</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/tr.png" alt="Turkey"></div>
-                                                    <div class="gec-info"><div class="gec-country">Turkey</div><div class="gec-role">Distribution Hub</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/tr.png"
+                                                            alt="Turkey"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Turkey</div>
+                                                        <div class="gec-role">Distribution Hub</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/in.png" alt="India"></div>
-                                                    <div class="gec-info"><div class="gec-country">India</div><div class="gec-role">Tech Innovation</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/in.png"
+                                                            alt="India"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">India</div>
+                                                        <div class="gec-role">Tech Innovation</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                             </div>
@@ -357,44 +705,76 @@
                                             <div class="gec-track gec-track--down">
                                                 <!-- original set -->
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/cn.png" alt="China"></div>
-                                                    <div class="gec-info"><div class="gec-country">China</div><div class="gec-role">Manufacturing</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/cn.png"
+                                                            alt="China"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">China</div>
+                                                        <div class="gec-role">Manufacturing</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/us.png" alt="USA"></div>
-                                                    <div class="gec-info"><div class="gec-country">United States</div><div class="gec-role">Healthcare AI</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/us.png"
+                                                            alt="USA"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">United States</div>
+                                                        <div class="gec-role">Healthcare AI</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/my.png" alt="Malaysia"></div>
-                                                    <div class="gec-info"><div class="gec-country">Malaysia</div><div class="gec-role">Regional HQ</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/my.png"
+                                                            alt="Malaysia"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Malaysia</div>
+                                                        <div class="gec-role">Regional HQ</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/gb.png" alt="UK"></div>
-                                                    <div class="gec-info"><div class="gec-country">United Kingdom</div><div class="gec-role">Research &amp; Dev</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/gb.png"
+                                                            alt="UK"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">United Kingdom</div>
+                                                        <div class="gec-role">Research &amp; Dev</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <!-- duplicate for seamless loop -->
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/cn.png" alt="China"></div>
-                                                    <div class="gec-info"><div class="gec-country">China</div><div class="gec-role">Manufacturing</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/cn.png"
+                                                            alt="China"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">China</div>
+                                                        <div class="gec-role">Manufacturing</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/us.png" alt="USA"></div>
-                                                    <div class="gec-info"><div class="gec-country">United States</div><div class="gec-role">Healthcare AI</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/us.png"
+                                                            alt="USA"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">United States</div>
+                                                        <div class="gec-role">Healthcare AI</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/my.png" alt="Malaysia"></div>
-                                                    <div class="gec-info"><div class="gec-country">Malaysia</div><div class="gec-role">Regional HQ</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/my.png"
+                                                            alt="Malaysia"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">Malaysia</div>
+                                                        <div class="gec-role">Regional HQ</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                                 <div class="gec-card">
-                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/gb.png" alt="UK"></div>
-                                                    <div class="gec-info"><div class="gec-country">United Kingdom</div><div class="gec-role">Research &amp; Dev</div></div>
+                                                    <div class="gec-flag"><img src="https://flagcdn.com/w80/gb.png"
+                                                            alt="UK"></div>
+                                                    <div class="gec-info">
+                                                        <div class="gec-country">United Kingdom</div>
+                                                        <div class="gec-role">Research &amp; Dev</div>
+                                                    </div>
                                                     <span class="gec-dot"></span>
                                                 </div>
                                             </div>
@@ -415,43 +795,62 @@
                             <div class="col-lg-8 text-center">
                                 <span class="badge-text"><i class="fas fa-laptop-code"></i> Technology Partners</span>
                                 <h2 style="margin-top: 15px;">Driving Digital Transformation</h2>
-                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">We collaborate with leading technology providers to deliver cutting-edge digital health solutions and integrated IT systems, ensuring healthcare providers are future-ready.</p>
+                                <p
+                                    style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">
+                                    We collaborate with leading technology providers to deliver cutting-edge digital
+                                    health solutions and integrated IT systems, ensuring healthcare providers are
+                                    future-ready.</p>
                             </div>
                         </div>
                         <div class="row gy-4 pf_fadeup mb-80">
                             <div class="col-lg-4">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-hospital-alt"></i></div>
+                                    <div class="icon"
+                                        style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i
+                                            class="fas fa-hospital-alt"></i></div>
                                     <h4 style="margin-bottom: 15px;">Healthcare IT</h4>
-                                    <p>Comprehensive systems (HIS, EMR, Telemedicine) built for modern hospital operations and integrated patient care.</p>
+                                    <p>Comprehensive systems (HIS, EMR, Telemedicine) built for modern hospital
+                                        operations and integrated patient care.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-microchip"></i></div>
+                                    <div class="icon"
+                                        style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i
+                                            class="fas fa-microchip"></i></div>
                                     <h4 style="margin-bottom: 15px;">AI Solutions</h4>
-                                    <p>AI-driven healthcare tools for enhanced diagnostics, clinical decision support, and operational automation.</p>
+                                    <p>AI-driven healthcare tools for enhanced diagnostics, clinical decision support,
+                                        and operational automation.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div class="icon" style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i class="fas fa-cloud"></i></div>
+                                    <div class="icon"
+                                        style="font-size: 44px; color: var(--nadi-accent); margin-bottom: 25px;"><i
+                                            class="fas fa-cloud"></i></div>
                                     <h4 style="margin-bottom: 15px;">Cloud Infrastructure</h4>
-                                    <p>Scalable cloud platforms and secure data management ensuring high availability and regulatory compliance.</p>
+                                    <p>Scalable cloud platforms and secure data management ensuring high availability
+                                        and regulatory compliance.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row pf_fadeup">
                             <div class="col-lg-12">
-                                <div class="nadi-highlight-box" style="background: rgba(0, 210, 255, 0.05); border-radius: 30px; border: 1px solid rgba(0, 210, 255, 0.2); padding: 60px;">
+                                <div class="nadi-highlight-box"
+                                    style="background: rgba(0, 210, 255, 0.05); border-radius: 30px; border: 1px solid rgba(0, 210, 255, 0.2); padding: 60px;">
                                     <div class="row align-items-center">
                                         <div class="col-lg-8">
-                                            <h3 style="color:var(--nadi-accent); margin-bottom: 20px;">The Strategic Advantage</h3>
-                                            <p style="font-size: 18px; line-height: 1.8;">By partnering with global tech leaders, NADI Aksis provides healthcare providers with future-ready infrastructure. Our collective expertise ensures faster deployment, minimal disruption, and maximum scalability for growing operations.</p>
+                                            <h3 style="color:var(--nadi-accent); margin-bottom: 20px;">The Strategic
+                                                Advantage</h3>
+                                            <p style="font-size: 18px; line-height: 1.8;">By partnering with global tech
+                                                leaders, NADI Aksis provides healthcare providers with future-ready
+                                                infrastructure. Our collective expertise ensures faster deployment,
+                                                minimal disruption, and maximum scalability for growing operations.</p>
                                         </div>
                                         <div class="col-lg-4 text-center">
-                                            <i class="fas fa-rocket" style="font-size: 120px; color: rgba(0, 210, 255, 0.1);"></i>
+                                            <i class="fas fa-rocket"
+                                                style="font-size: 120px; color: rgba(0, 210, 255, 0.1);"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -467,25 +866,45 @@
                             <div class="col-lg-8 text-center">
                                 <span class="badge-text"><i class="fas fa-industry"></i> Manufacture Partners</span>
                                 <h2 style="margin-top: 15px;">World-Class Medical Excellence</h2>
-                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">Bringing cutting-edge medical products to market through strategic distributorship, global sourcing, and technical training.</p>
+                                <p
+                                    style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">
+                                    Bringing cutting-edge medical products to market through strategic distributorship,
+                                    global sourcing, and technical training.</p>
                             </div>
                         </div>
 
                         <div class="row align-items-center mb-80 pf_fadeup">
                             <div class="col-lg-6">
-                                <div class="nadi-image-box" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.4);">
-                                    <img src="new-assets/images/strategic-sourcing.png" alt="Strategic Sourcing & Distribution">
+                                <div class="nadi-image-box"
+                                    style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.4);">
+                                    <img src="new-assets/images/strategic-sourcing.png"
+                                        alt="Strategic Sourcing & Distribution">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="manufacture-content" style="padding-left: 40px;">
                                     <h2 style="margin-bottom: 25px;">Strategic Sourcing & Distribution</h2>
-                                    <p class="mb-30" style="font-size: 18px;">At NADI Aksis, we align with top-tier manufacturers to bridge the gap between global innovations and local healthcare providers. We don't just distribute—we enable growth by providing product training and technical support.</p>
+                                    <p class="mb-30" style="font-size: 18px;">At NADI Aksis, we align with top-tier
+                                        manufacturers to bridge the gap between global innovations and local healthcare
+                                        providers. We don't just distribute—we enable growth by providing product
+                                        training and technical support.</p>
                                     <ul style="list-style: none; padding: 0;">
-                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Exclusive and Strategic Distributorship</span></li>
-                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Global Product Sourcing and Procurement</span></li>
-                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Technical Knowledge Transfer and Training</span></li>
-                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Full Lifecycle After-Sales Support</span></li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Exclusive and Strategic Distributorship</span>
+                                        </li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Global Product Sourcing and Procurement</span>
+                                        </li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Technical Knowledge Transfer and Training</span>
+                                        </li>
+                                        <li class="mb-15" style="display: flex; gap: 15px; align-items: center;"><i
+                                                class="fas fa-check-circle" style="color:var(--nadi-accent);"></i>
+                                            <span>Full Lifecycle After-Sales Support</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -493,21 +912,39 @@
 
                         <div class="row pf_fadeup">
                             <div class="col-lg-4 mb-30">
-                                <div class="nadi-solution-card" style="padding: 40px; border-radius: 20px; height: 100%;">
-                                    <h5 style="color:var(--nadi-accent); margin-bottom: 25px;">Key Product Categories</h5>
+                                <div class="nadi-solution-card"
+                                    style="padding: 40px; border-radius: 20px; height: 100%;">
+                                    <h5 style="color:var(--nadi-accent); margin-bottom: 25px;">Key Product Categories
+                                    </h5>
                                     <ul style="list-style:none; padding:0;">
-                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Catheters and procedural sets</li>
-                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Hemostats and suction tubes</li>
-                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Hospital beds and monitoring systems</li>
-                                        <li class="mb-10"><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Precision Infusion pumps</li>
-                                        <li><i class="fas fa-chevron-right" style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i> Surgical and diagnostic instruments</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right"
+                                                style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i>
+                                            Catheters and procedural sets</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right"
+                                                style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i>
+                                            Hemostats and suction tubes</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right"
+                                                style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i>
+                                            Hospital beds and monitoring systems</li>
+                                        <li class="mb-10"><i class="fas fa-chevron-right"
+                                                style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i>
+                                            Precision Infusion pumps</li>
+                                        <li><i class="fas fa-chevron-right"
+                                                style="font-size: 12px; color: var(--nadi-accent); margin-right: 15px;"></i>
+                                            Surgical and diagnostic instruments</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-lg-8 mb-30">
-                                <div style="background: var(--nadi-gradient); border-radius: 30px; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 50px; box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);">
-                                    <h3 style="color: #fff !important; margin-bottom: 25px;">Empowering Local Providers</h3>
-                                    <p style="color: #fff !important; font-size: 18px; line-height: 1.8;">Access to certified, high-quality medical products is non-negotiable. Through our manufacture partnerships, local clinics and hospitals gain access to world-class diagnostics at competitive prices, backed by technical excellence and consistent supply chains.</p>
+                                <div
+                                    style="background: var(--nadi-gradient); border-radius: 30px; height: 100%; display: flex; flex-direction: column; justify-content: center; padding: 50px; box-shadow: 0 40px 100px rgba(0, 0, 0, 0.3);">
+                                    <h3 style="color: #fff !important; margin-bottom: 25px;">Empowering Local Providers
+                                    </h3>
+                                    <p style="color: #fff !important; font-size: 18px; line-height: 1.8;">Access to
+                                        certified, high-quality medical products is non-negotiable. Through our
+                                        manufacture partnerships, local clinics and hospitals gain access to world-class
+                                        diagnostics at competitive prices, backed by technical excellence and consistent
+                                        supply chains.</p>
                                 </div>
                             </div>
                         </div>
@@ -519,44 +956,58 @@
                     <div class="container">
                         <div class="row justify-content-center mb-60 pf_fadeup">
                             <div class="col-lg-8 text-center">
-                                <span class="badge-text"><i class="fas fa-truck"></i> Logistics & Channel Partners</span>
+                                <span class="badge-text"><i class="fas fa-truck"></i> Logistics & Channel
+                                    Partners</span>
                                 <h2 style="margin-top: 15px;">Efficient Delivery Systems</h2>
-                                <p style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">Ensuring the seamless flow of medical technologies from global manufacturers to bedside clinics through high-efficiency distribution networks.</p>
+                                <p
+                                    style="font-size: 19px; color: var(--nadi-text-muted); max-width: 800px; margin: 20px auto 0;">
+                                    Ensuring the seamless flow of medical technologies from global manufacturers to
+                                    bedside clinics through high-efficiency distribution networks.</p>
                             </div>
                         </div>
 
                         <div class="row justify-content-center mb-60 pf_fadeup">
                             <div class="col-lg-8 text-center">
                                 <h3 style="margin-bottom: 20px;">Synchronized Supply Chain Management</h3>
-                                <p style="font-size: 18px;">Our logistics strategy is built on reliability, regulatory compliance, and speed, ensuring every product arrives in perfect condition, exactly when it's needed.</p>
+                                <p style="font-size: 18px;">Our logistics strategy is built on reliability, regulatory
+                                    compliance, and speed, ensuring every product arrives in perfect condition, exactly
+                                    when it's needed.</p>
                             </div>
                         </div>
 
                         <div class="row gy-4 pf_fadeup mb-100">
                             <div class="col-lg-3 col-md-6">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">01</div>
+                                    <div
+                                        style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">
+                                        01</div>
                                     <h5 style="margin-bottom: 15px;">Importation & Customs</h5>
                                     <p>Handling regulatory compliance and clear customs clearance.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">02</div>
+                                    <div
+                                        style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">
+                                        02</div>
                                     <h5 style="margin-bottom: 15px;">Freight Coordination</h5>
                                     <p>Optimized air, sea, and land logistics for sensitive cargo.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">03</div>
+                                    <div
+                                        style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">
+                                        03</div>
                                     <h5 style="margin-bottom: 15px;">Secure Warehousing</h5>
                                     <p>Advanced inventory management in strategic regional hubs.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
                                 <div class="nadi-solution-card text-center" style="height: 100%;">
-                                    <div style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">04</div>
+                                    <div
+                                        style="width: 45px; height: 45px; background: var(--nadi-gradient); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; margin: 0 auto 25px; box-shadow: 0 5px 15px rgba(18, 196, 160, 0.3);">
+                                        04</div>
                                     <h5 style="margin-bottom: 15px;">Nationwide Delivery</h5>
                                     <p>Point-to-point delivery ensuring reach across Malaysia.</p>
                                 </div>
@@ -565,16 +1016,23 @@
 
                         <div class="row pf_fadeup align-items-center">
                             <div class="col-lg-6">
-                                <div class="nadi-image-box" style="border-radius: 25px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.5);">
+                                <div class="nadi-image-box"
+                                    style="border-radius: 25px; overflow: hidden; box-shadow: 0 40px 80px rgba(0,0,0,0.5);">
                                     <img src="new-assets/images/partners2.jpg" alt="Distribution Network">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="logistic-content-box" style="padding-left: 40px;">
                                     <h3 style="margin-bottom: 25px;">Why Channel Partners Trust Us</h3>
-                                    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px;">We remove the complexity of healthcare logistics. Local distributors and providers gain a reliable partner with deep regulatory knowledge, ensuring that the critical last-mile delivery is as smooth as the first.</p>
-                                    <div style="background: rgba(0, 210, 255, 0.05); border-left: 4px solid var(--nadi-accent); padding: 25px; border-radius: 0 15px 15px 0;">
-                                        <p style="margin-bottom: 0; font-weight: 600; color: #fff !important;">"Seamlessly delivering value from manufacturer to patient—where reliability meets efficiency."</p>
+                                    <p style="font-size: 18px; line-height: 1.8; margin-bottom: 30px;">We remove the
+                                        complexity of healthcare logistics. Local distributors and providers gain a
+                                        reliable partner with deep regulatory knowledge, ensuring that the critical
+                                        last-mile delivery is as smooth as the first.</p>
+                                    <div
+                                        style="background: rgba(0, 210, 255, 0.05); border-left: 4px solid var(--nadi-accent); padding: 25px; border-radius: 0 15px 15px 0;">
+                                        <p style="margin-bottom: 0; font-weight: 600; color: #fff !important;">
+                                            "Seamlessly delivering value from manufacturer to patient—where reliability
+                                            meets efficiency."</p>
                                     </div>
                                 </div>
                             </div>
@@ -589,25 +1047,41 @@
                             <div class="col-lg-8 text-center mb-60 pf_fadeup">
                                 <span class="sub-title"><i class="fas fa-shield-alt"></i> Partnership Approach</span>
                                 <h2>Strategic Growth Through Alliance</h2>
-                                <p class="mt-20">At NADI Aksis, partnerships are not transactionalâ€”they are strategic investments in mutual long-term success.</p>
+                                <p class="mt-20">At NADI Aksis, partnerships are not transactionalâ€”they are strategic
+                                    investments in mutual long-term success.</p>
                             </div>
                         </div>
                         <div class="row pf_fadeup">
                             <div class="col-lg-12">
-                                <div style="background: var(--nadi-gradient-dark); padding: 50px; border-radius: 30px; border: 1px solid var(--nadi-card-border);">
+                                <div
+                                    style="background: var(--nadi-gradient-dark); padding: 50px; border-radius: 30px; border: 1px solid var(--nadi-card-border);">
                                     <div class="row gy-4">
                                         <div class="col-md-6">
-                                            <h4 style="color:var(--nadi-accent); margin-bottom: 25px;">Strategic Advantage</h4>
+                                            <h4 style="color:var(--nadi-accent); margin-bottom: 25px;">Strategic
+                                                Advantage</h4>
                                             <ul style="list-style: none; padding:0;">
-                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Accelerated market entry for global innovations</span></li>
-                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Mutually-driven technical excellence and support</span></li>
+                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                        class="fas fa-check-circle"
+                                                        style="color:var(--nadi-accent);"></i> <span>Accelerated market
+                                                        entry for global innovations</span></li>
+                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                        class="fas fa-check-circle"
+                                                        style="color:var(--nadi-accent);"></i> <span>Mutually-driven
+                                                        technical excellence and support</span></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">
-                                            <h4 style="color:var(--nadi-accent); margin-bottom: 25px;">Ecosystem Value</h4>
+                                            <h4 style="color:var(--nadi-accent); margin-bottom: 25px;">Ecosystem Value
+                                            </h4>
                                             <ul style="list-style: none; padding:0;">
-                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Scalable distribution and logistics networks</span></li>
-                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i class="fas fa-check-circle" style="color:var(--nadi-accent);"></i> <span>Sustainable growth across the healthcare lifecycle</span></li>
+                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                        class="fas fa-check-circle"
+                                                        style="color:var(--nadi-accent);"></i> <span>Scalable
+                                                        distribution and logistics networks</span></li>
+                                                <li class="mb-15" style="display:flex; gap:12px; align-items:center;"><i
+                                                        class="fas fa-check-circle"
+                                                        style="color:var(--nadi-accent);"></i> <span>Sustainable growth
+                                                        across the healthcare lifecycle</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -623,11 +1097,16 @@
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
                                 <span class="badge-text">Book a Consultation</span>
-                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to build the future together?</h2>
-                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Join our growing ecosystem of global healthcare leaders. Contact the NADI Aksis team to discuss partnership opportunities.</p>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to build the future together?
+                                </h2>
+                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Join our growing
+                                    ecosystem of global healthcare leaders. Contact the NADI Aksis team to discuss
+                                    partnership opportunities.</p>
                                 <div class="cta-btns">
                                     <a href="contact-us.html" class="theme-btn style-one">
-                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Become a Partner Today</span><span class="text">Become a Partner Today</span></span>
+                                        <span class="text-flip" style="color: #fff !important;"><span
+                                                class="text">Become a Partner Today</span><span class="text">Become a
+                                                Partner Today</span></span>
                                     </a>
                                 </div>
                             </div>
@@ -658,4 +1137,3 @@
 </body>
 
 </html>
-

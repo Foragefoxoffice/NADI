@@ -48,8 +48,8 @@ Version: 1.0
   --text-color: #9E9FA0;
   --border-color: #313131;
   --gray-dark: #18191B;
-  --heading-font: "Source Sans 3", serif;
-  --body-font: "Roboto", serif;
+  --heading-font: "Outfit", sans-serif;
+  --body-font: "Inter", sans-serif;
 
   /* NADI Extended Theme */
   --nadi-primary: #12C4A0;
@@ -60,7 +60,7 @@ Version: 1.0
   --nadi-text-muted: #A0AEC0;
   --nadi-card-bg: rgba(255, 255, 255, 0.03);
   --nadi-card-border: rgba(255, 255, 255, 0.08);
-  --nadi-gradient: linear-gradient(135deg, #12C4A0 0%, #00D2FF 100%);
+  --nadi-gradient: #0C5BA4;
   --nadi-gradient-dark: linear-gradient(135deg, #0B0F13 0%, #1A202C 100%);
 }
 

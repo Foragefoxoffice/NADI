@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>OmniCare Platform | NADI Aksis - Guiding the Pulse of Progress</title>
     <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
@@ -25,13 +24,30 @@
             color: var(--nadi-text-main) !important;
         }
 
-        h1, h2, h3, h4, h5, h6 { color: var(--nadi-text-main) !important; }
-        p { color: var(--nadi-text-muted) !important; }
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--nadi-text-main) !important;
+        }
 
-        .gray-dark { background: #0E1217 !important; }
-        section { background: var(--nadi-dark); overflow: hidden; }
+        p {
+            color: var(--nadi-text-muted) !important;
+        }
 
-        .sub-title, .sub-heading {
+        .gray-dark {
+            background: #0E1217 !important;
+        }
+
+        section {
+            background: var(--nadi-dark);
+            overflow: hidden;
+        }
+
+        .sub-title,
+        .sub-heading {
             display: inline-block;
             padding: 10px 28px !important;
             line-height: 1.2;
@@ -96,14 +112,370 @@
             margin-bottom: 5px;
         }
 
+        /* Unique Hero Section Styling */
+        .agk-solutions-hero {
+            overflow: hidden;
+            position: relative;
+            background: #080a0d !important;
+            padding: 220px 0 140px !important;
+        }
+
+        .hero-pulse-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            height: 150%;
+            background: radial-gradient(circle at center, rgba(0, 210, 255, 0.08) 0%, rgba(8, 10, 13, 0) 70%);
+            z-index: 1;
+            pointer-events: none;
+            animation: pulse-glow 10s infinite alternate cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 1;
+            }
+        }
+
+        .hero-gradient-text {
+            background: linear-gradient(90deg, #fff 0%, var(--nadi-accent) 50%, #fff 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: text-shine 5s linear infinite;
+        }
+
+        @keyframes text-shine {
+            to {
+                background-position: 200% center;
+            }
+        }
+
+        .floating-tech-card {
+            position: absolute;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            z-index: 5;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            white-space: nowrap;
+        }
+
+        .floating-tech-card i {
+            color: var(--nadi-accent);
+        }
+
+        .tech-card-1 {
+            top: 20%;
+            left: 10%;
+            animation: float-slow 6s infinite ease-in-out;
+        }
+
+        .tech-card-2 {
+            top: 15%;
+            right: 12%;
+            animation: float-slow 8s infinite ease-in-out reverse;
+        }
+
+        .tech-card-3 {
+            bottom: 25%;
+            left: 15%;
+            animation: float-slow 7s infinite ease-in-out 1s;
+        }
+
+        .tech-card-4 {
+            bottom: 20%;
+            right: 18%;
+            animation: float-slow 9s infinite ease-in-out 0.5s;
+        }
+
+        @keyframes float-slow {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+        }
+
+        @media (max-width: 991px) {
+            .floating-tech-card {
+                display: none;
+            }
+
+            .agk-solutions-hero {
+                padding: 180px 0 100px !important;
+            }
+        }
+
+        /* Modern Light Section Styling */
+        .omni-modern-section {
+            background: #fdfdfd !important;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .omni-bento-card {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 24px;
+            padding: 40px;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .omni-bento-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px rgba(0, 210, 255, 0.15);
+            border-color: var(--nadi-accent);
+        }
+
+        .omni-card-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #080a0d !important;
+            margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .omni-card-title i {
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--nadi-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .omni-case-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            background: #f8faff;
+            border: 1px solid rgba(0, 0, 0, 0.03);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            width: 100%;
+            transition: all 0.3s;
+            color: #444 !important;
+            font-weight: 600;
+        }
+
+        .omni-case-pill:hover {
+            background: #f0f4f8;
+            color: var(--nadi-accent) !important;
+            border-color: var(--nadi-accent);
+        }
+
+        .omni-case-pill i {
+            color: var(--nadi-accent);
+        }
+
+        .omni-feature-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .omni-feature-box {
+            text-align: left;
+            padding: 20px;
+            border-radius: 16px;
+            background: #f8faff;
+            border: 1px solid transparent;
+            transition: all 0.3s;
+        }
+
+        .omni-feature-box:hover {
+            background: #f0f4f8;
+            border-color: rgba(0, 210, 255, 0.2);
+        }
+
+        .omni-feature-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--nadi-accent);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            font-size: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 210, 255, 0.3);
+        }
+
+        .omni-feature-box h5 {
+            color: #080a0d !important;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .omni-feature-box p {
+            color: #555 !important;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 991px) {
+            .omni-feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Impact Section Modern Styling (Dark) */
+        .agk-impact-modern {
+            background: #0E1217 !important;
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .impact-card {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 30px 40px 30px !important;
+            text-align: center;
+            transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            min-height: 100% !important;
+            height: auto !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            backdrop-filter: blur(10px);
+            overflow: visible !important;
+        }
+
+        .impact-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 40px 80px rgba(0, 210, 255, 0.2);
+            border-color: var(--nadi-accent);
+        }
+
+        .impact-icon-box {
+            width: 70px;
+            height: 70px;
+            background: rgba(0, 210, 255, 0.1);
+            color: var(--nadi-accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            font-size: 28px;
+            margin-bottom: 25px;
+            transition: all 0.3s;
+        }
+
+        .impact-card:hover .impact-icon-box {
+            background: var(--nadi-accent);
+            color: #fff;
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.4);
+        }
+
+        .impact-stat {
+            font-size: 48px;
+            font-weight: 800;
+            color: #fff !important;
+            margin-bottom: 8px;
+            font-family: 'Outfit', sans-serif;
+            background: linear-gradient(180deg, #fff 0%, var(--nadi-accent) 150%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+            padding: 10px 0;
+            display: block;
+        }
+
+        .impact-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff !important;
+            margin-bottom: 10px;
+        }
+
+        .impact-desc {
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
         /* Mobile Responsive Fixes */
         @media (max-width: 767px) {
-            section, .pt-130, .pt-120, .pt-100 { padding-top: 50px !important; }
-            .pb-100, .pb-90, .pb-80 { padding-bottom: 40px !important; }
-            .pt-200 { padding-top: 120px !important; }
-            h2 { font-size: 28px !important; line-height: 1.3 !important; }
-            .hero-content{
+
+            section,
+            .pt-130,
+            .pt-120,
+            .pt-100 {
+                padding-top: 50px !important;
+            }
+
+            .pb-100,
+            .pb-90,
+            .pb-80 {
+                padding-bottom: 40px !important;
+            }
+
+            .pt-200 {
+                padding-top: 120px !important;
+            }
+
+            h2 {
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+            }
+
+            .hero-content {
                 margin-top: 100px;
+            }
+
+            .omni-modern-section {
+                padding: 60px 0;
+            }
+
+            .agk-impact-modern {
+                padding: 80px 0;
+            }
+
+            .impact-card {
+                padding: 40px 20px;
+            }
+
+            .impact-stat {
+                font-size: 38px;
             }
         }
     </style>
@@ -126,49 +498,79 @@
         <div id="smooth-content">
             <main>
                 <!--=== PAGE HERO ===-->
-                <section class="agk-hero agk-solutions-hero" style="background: var(--nadi-gradient-dark); padding: 200px 0 100px; position: relative;">
-                    <div class="container text-center">
+                <section class="agk-solutions-hero">
+                    <div class="hero-pulse-bg"></div>
+
+                    <!-- Floating Elements -->
+                    <div class="floating-tech-card tech-card-1"><i class="fas fa-brain"></i> AI-Driven Intelligence
+                    </div>
+                    <div class="floating-tech-card tech-card-2"><i class="fas fa-cloud"></i> Cloud-Native Portal</div>
+                    <div class="floating-tech-card tech-card-3"><i class="fas fa-shield-alt"></i> HIPAA Compliant</div>
+                    <div class="floating-tech-card tech-card-4"><i class="fas fa-bolt"></i> Real-time Sync</div>
+
+                    <div class="container text-center" style="position: relative; z-index: 10;">
                         <div class="hero-content pf_fadeup">
                             <span class="sub-heading"><i class="fas fa-microchip"></i> OmniCare Platform</span>
-                            <h1 style="font-size: 64px; line-height: 1.1; margin-bottom: 30px;">A Unified Platform for Modern Healthcare</h1>
-                            <p style="font-size: 20px; max-width: 850px; margin: 0 auto;">NADI OmniCare is a comprehensive solution designed to streamline operations, enhance patient engagement, and support data-driven decision-making.</p>
+                            <h1 style="font-size: 72px; line-height: 1.1; margin-bottom: 30px; font-weight: 800;">
+                                A Unified Portal for <br>
+                                <span class="hero-gradient-text">Modern Healthcare</span>
+                            </h1>
+                            <p
+                                style="font-size: 21px; max-width: 800px; margin: 0 auto; color: rgba(255,255,255,0.7) !important; line-height: 1.6;">
+                                NADI OmniCare is a comprehensive solution designed to streamline clinical operations,
+                                enhance patient engagement, and support high-impact decision-making.
+                            </p>
+                            <div class="hero-btns mt-50">
+                                <a href="contact-us.html" class="theme-btn style-one">
+                                    <span class="text-flip" style="color: #fff !important;"><span class="text">Explore
+                                            the Platform</span><span class="text">Explore the Platform</span></span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
 
                 <!--=== CAPABILITIES & USE CASES ===-->
-                <section class="agk-omnicare-details pt-120 pb-100">
+                <section class="omni-modern-section">
                     <div class="container">
                         <div class="row align-items-center mb-80">
                             <div class="col-lg-6">
                                 <div class="agk-content-box pf_fadeup">
                                     <div class="section-title mb-40">
-                                        <span class="sub-title">Core Capabilities</span>
-                                        <h2>Intelligence at Scale</h2>
+                                        <span class="sub-heading">Core Capabilities</span>
+                                        <h2 style="color: #080a0d !important;">Intelligence at Scale</h2>
                                     </div>
                                     <div class="row gy-4">
                                         <div class="col-md-6">
-                                            <div class="feature-item" style="background: var(--nadi-card-bg); padding: 25px; border-radius: 15px; border: 1px solid var(--nadi-card-border);">
-                                                <i class="fas fa-users-cog" style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
-                                                <h5>Omnichannel Engagement</h5>
+                                            <div class="feature-item"
+                                                style="background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                                <i class="fas fa-users-cog"
+                                                    style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
+                                                <h5 style="color: #080a0d !important;">Omnichannel Engagement</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="feature-item" style="background: var(--nadi-card-bg); padding: 25px; border-radius: 15px; border: 1px solid var(--nadi-card-border);">
-                                                <i class="fas fa-project-diagram" style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
-                                                <h5>Integrated Workflows</h5>
+                                            <div class="feature-item"
+                                                style="background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                                <i class="fas fa-project-diagram"
+                                                    style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
+                                                <h5 style="color: #080a0d !important;">Integrated Workflows</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="feature-item" style="background: var(--nadi-card-bg); padding: 25px; border-radius: 15px; border: 1px solid var(--nadi-card-border);">
-                                                <i class="fas fa-cloud-upload-alt" style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
-                                                <h5>Cloud Data & Docs</h5>
+                                            <div class="feature-item"
+                                                style="background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                                <i class="fas fa-cloud-upload-alt"
+                                                    style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
+                                                <h5 style="color: #080a0d !important;">Cloud Data & Docs</h5>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="feature-item" style="background: var(--nadi-card-bg); padding: 25px; border-radius: 15px; border: 1px solid var(--nadi-card-border);">
-                                                <i class="fas fa-chart-bar" style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
-                                                <h5>Real-time Analytics</h5>
+                                            <div class="feature-item"
+                                                style="background: #ffffff; padding: 25px; border-radius: 15px; border: 1px solid rgba(0,0,0,0.05); box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+                                                <i class="fas fa-chart-bar"
+                                                    style="font-size: 30px; color: var(--nadi-accent); margin-bottom: 15px;"></i>
+                                                <h5 style="color: #080a0d !important;">Real-time Analytics</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -176,37 +578,54 @@
                             </div>
                             <div class="col-lg-6 mt-5 mt-lg-0">
                                 <div class="omnicare-visual pf_fadeup text-center">
-                                    <img src="new-assets/images/omni-care.jpg" alt="OmniCare Platform" style="border-radius: 30px; box-shadow: 0 40px 80px rgba(0,0,0,0.5);">
+                                    <img src="new-assets/images/omni-care.jpg" alt="OmniCare Platform"
+                                        style="border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row gy-4">
-                            <div class="col-lg-4">
-                                <div class="nadi-solution-card pf_fadeup" style="border-color: rgba(0, 210, 255, 0.2);">
-                                    <h4 style="margin-bottom: 20px;"><i class="fas fa-map-marker-alt" style="color:var(--nadi-accent);"></i> Use Cases</h4>
-                                    <ul class="check-list style-one" style="list-style: none; padding: 0;">
-                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Hospitals & Multi-specialty clinics</li>
-                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Healthcare distributors</li>
-                                        <li class="mb-10"><i class="fas fa-check" style="color:var(--nadi-accent);"></i> Mid-scale healthcare systems</li>
-                                    </ul>
+                        <div class="row gy-4 omni-bento-grid">
+                            <div class="col-lg-5">
+                                <div class="omni-bento-card pf_fadeup">
+                                    <h4 class="omni-card-title"><i class="fas fa-hospital-alt"></i> Use Cases</h4>
+                                    <div class="omni-cases-list">
+                                        <div class="omni-case-pill">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Hospitals & Multi-specialty clinics</span>
+                                        </div>
+                                        <div class="omni-case-pill">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Healthcare distributors</span>
+                                        </div>
+                                        <div class="omni-case-pill">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Mid-scale healthcare systems</span>
+                                        </div>
+                                        <div class="omni-case-pill">
+                                            <i class="fas fa-check-circle"></i>
+                                            <span>Diagnostic & Imaging Centers</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
-                                <div class="nadi-solution-card pf_fadeup" style="background: var(--nadi-gradient-dark);">
-                                    <h4 style="margin-bottom: 20px; color: #fff !important;"><i class="fas fa-star" style="color:#fff;"></i> Why OmniCare</h4>
-                                    <div class="row">
-                                        <div class="col-md-4 mb-20 text-center text-md-start">
-                                            <h5 style="color: #fff !important;"><i class="fas fa-shield-alt"></i> Centralized</h5>
-                                            <p style="color: rgba(255,255,255,0.7) !important;">Full control across your entire operations.</p>
+                            <div class="col-lg-7">
+                                <div class="omni-bento-card pf_fadeup">
+                                    <h4 class="omni-card-title"><i class="fas fa-wind"></i> Why OmniCare</h4>
+                                    <div class="omni-feature-grid">
+                                        <div class="omni-feature-box">
+                                            <div class="omni-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                                            <h5>Centralized</h5>
+                                            <p>Unified control across your entire clinical and business operations.</p>
                                         </div>
-                                        <div class="col-md-4 mb-20 text-center text-md-start">
-                                            <h5 style="color: #fff !important;"><i class="fas fa-bolt"></i> Efficient</h5>
-                                            <p style="color: rgba(255,255,255,0.7) !important;">Improved coordination and productivity.</p>
+                                        <div class="omni-feature-box">
+                                            <div class="omni-feature-icon"><i class="fas fa-bolt"></i></div>
+                                            <h5>Efficient</h5>
+                                            <p>Optimized coordination that maximizes team productivity and output.</p>
                                         </div>
-                                        <div class="col-md-4 mb-20 text-center text-md-start">
-                                            <h5 style="color: #fff !important;"><i class="fas fa-smile"></i> Patient-First</h5>
-                                            <p style="color: rgba(255,255,255,0.7) !important;">Enhanced experience and outcomes.</p>
+                                        <div class="omni-feature-box">
+                                            <div class="omni-feature-icon"><i class="fas fa-heart"></i></div>
+                                            <h5>Patient-First</h5>
+                                            <p>Enhanced patient experiences that lead to better healthcare outcomes.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -216,51 +635,52 @@
                 </section>
 
                 <!--=== IMPACT & BENEFITS ===-->
-                <section class="agk-impact pt-120 pb-100 gray-dark">
+                <section class="agk-impact-modern">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-12">
                                 <div class="section-title text-center mb-60 pf_fadeup">
-                                    <span class="sub-title"><i class="fas fa-chart-line"></i> Business Impact & Benefits</span>
-                                    <h2>Delivering Measurable Results</h2>
+                                    <span class="sub-title"><i class="fas fa-chart-line"></i> Business Impact &
+                                        Benefits</span>
+                                    <h2 style="color: #fff !important;">Delivering Measurable Results</h2>
                                 </div>
                             </div>
                         </div>
                         <div class="row gy-4">
                             <div class="col-lg-3 col-md-6">
-                                <div class="agenko-counter-box style-stats pf_fadeup">
-                                    <div class="content">
-                                        <h2 class="mb-10"><i class="fas fa-rocket"></i> Up to 50%</h2>
-                                        <h5 style="margin-bottom: 15px;">Revenue Growth</h5>
-                                        <p style="font-size: 14px;">Faster product adoption and improved market reach.</p>
-                                    </div>
+                                <div class="impact-card pf_fadeup">
+                                    <div class="impact-icon-box"><i class="fas fa-rocket"></i></div>
+                                    <div class="impact-stat">50%</div>
+                                    <h5 class="impact-title">Revenue Growth</h5>
+                                    <p class="impact-desc">Faster product adoption and significantly improved market
+                                        reach across all channels.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="agenko-counter-box style-stats pf_fadeup">
-                                    <div class="content">
-                                        <h2 class="mb-10"><i class="fas fa-coins"></i> Up to 25%</h2>
-                                        <h5 style="margin-bottom: 15px;">Cost Reduction</h5>
-                                        <p style="font-size: 14px;">Optimized workflows and significant waste reduction.</p>
-                                    </div>
+                                <div class="impact-card pf_fadeup">
+                                    <div class="impact-icon-box"><i class="fas fa-coins"></i></div>
+                                    <div class="impact-stat">25%</div>
+                                    <h5 class="impact-title">Cost Reduction</h5>
+                                    <p class="impact-desc">Optimized clinical workflows and significant waste reduction
+                                        through intelligent scaling.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="agenko-counter-box style-stats pf_fadeup">
-                                    <div class="content">
-                                        <h2 class="mb-10"><i class="fas fa-user-friends"></i> Reduced</h2>
-                                        <h5 style="margin-bottom: 15px;">Manpower Needs</h5>
-                                        <p style="font-size: 14px;">Automation of repetitive tasks and process streamlining.</p>
-                                    </div>
+                                <div class="impact-card pf_fadeup">
+                                    <div class="impact-icon-box"><i class="fas fa-user-shield"></i></div>
+                                    <div class="impact-stat">Reduced</div>
+                                    <h5 class="impact-title">Risk & Errors</h5>
+                                    <p class="impact-desc">Centralized data governance and automated compliance checks
+                                        to ensure patient safety.</p>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6">
-                                <div class="agenko-counter-box style-stats pf_fadeup">
-                                    <div class="content">
-                                        <h2 class="mb-10"><i class="fas fa-heart"></i> Enhanced</h2>
-                                        <h5 style="margin-bottom: 15px;">Patient Satisfaction</h5>
-                                        <p style="font-size: 14px;">Faster service delivery and better care coordination.</p>
-                                    </div>
+                                <div class="impact-card pf_fadeup">
+                                    <div class="impact-icon-box"><i class="fas fa-heart"></i></div>
+                                    <div class="impact-stat">Enhanced</div>
+                                    <h5 class="impact-title">Patient Loyalty</h5>
+                                    <p class="impact-desc">Superior patient experiences through faster delivery and
+                                        personalized care coordination.</p>
                                 </div>
                             </div>
                         </div>
@@ -273,11 +693,16 @@
                         <div class="nadi-partner-cta pf_fadeup">
                             <div class="container-inner">
                                 <span class="badge-text">Book a Consultation</span>
-                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to modernize your healthcare operations?</h2>
-                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Take the first step towards a fully integrated, scalable healthcare ecosystem. Book a consultation with NADI Aksis today.</p>
+                                <h2 style="font-size: 52px; margin-bottom: 20px;">Ready to modernize your healthcare
+                                    operations?</h2>
+                                <p style="max-width: 800px; margin: 0 auto 35px; font-size: 18px;">Take the first step
+                                    towards a fully integrated, scalable healthcare ecosystem. Book a consultation with
+                                    NADI Aksis today.</p>
                                 <div class="cta-btns">
                                     <a href="contact-us.html" class="theme-btn style-one">
-                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book a Consultation Today</span><span class="text">Book a Consultation Today</span></span>
+                                        <span class="text-flip" style="color: #fff !important;"><span class="text">Book
+                                                a Consultation Today</span><span class="text">Book a Consultation
+                                                Today</span></span>
                                     </a>
                                 </div>
                             </div>

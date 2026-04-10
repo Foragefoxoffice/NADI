@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>NADI Aksis - Guiding the Pulse of Progress | Healthcare Solutions</title>
     <link rel="shortcut icon" href="new-assets/images/logo.png" type="image/png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/fonts/flaticon/flaticon_agenko.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
@@ -1000,18 +999,40 @@
             }
         }
 
-        /* Premium Partner Section Redesign */
+        /* Premium Partner Section Redesign - Light Theme */
         .agk-company.premium-partners {
-            background: linear-gradient(180deg, #0B0F13 0%, #0E1217 100%) !important;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            background: #ffffff !important;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
             padding: 80px 0;
+            color: #0B0F13 !important;
+        }
+
+        .agk-company.premium-partners .section-title h2,
+        .agk-company.premium-partners h1,
+        .agk-company.premium-partners h2,
+        .agk-company.premium-partners h3,
+        .agk-company.premium-partners h4 {
+            color: #0B0F13 !important;
+        }
+
+        .agk-company.premium-partners .section-title p {
+            color: #4B5563 !important;
+        }
+
+        .agk-company.premium-partners p {
+            color: #4B5563 !important;
+        }
+
+        .agk-company.premium-partners h5 {
+            color: #12C4A0 !important;
+            opacity: 1 !important;
         }
 
         .partner-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 10px;
+            background: #f8f9fa;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
             padding: 35px 25px;
             height: 120px;
             display: flex;
@@ -1037,10 +1058,10 @@
         }
 
         .partner-card:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(18, 196, 160, 0.3);
+            background: #ffffff;
+            border-color: var(--nadi-primary);
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
         }
 
         .partner-card:hover::before {
@@ -1051,8 +1072,7 @@
             max-height: 55px;
             width: auto;
             max-width: 100%;
-            filter: grayscale(1) brightness(1.5) contrast(0.8);
-            opacity: 0.5;
+            filter: grayscale(1) opacity(0.6);
             transition: all 0.4s ease;
             position: relative;
             z-index: 1;
@@ -1090,7 +1110,69 @@
             }
         }
 
-        /* Typewriter Animation Styles */
+        /* Marquee Ticker */
+        .marquee-wrapper {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+            mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+        }
+
+        .marquee-track {
+            display: flex;
+            gap: 20px;
+            width: max-content;
+            animation: marquee-scroll 30s linear infinite;
+        }
+
+        .marquee-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes marquee-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .marquee-card {
+            flex-shrink: 0;
+            width: 160px;
+            height: 100px;
+            background: #f8f9fa;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 15px;
+            transition: all 0.3s ease;
+        }
+
+        .marquee-card:hover {
+            background: #fff;
+            border-color: var(--nadi-primary);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transform: translateY(-4px);
+        }
+
+        .marquee-card img {
+            max-height: 50px;
+            max-width: 120px;
+            width: auto;
+            filter: grayscale(1) opacity(0.6);
+            transition: all 0.3s ease;
+        }
+
+        .marquee-card:hover img {
+            filter: none;
+        }
+
         .typewriter-text {
             color: var(--nadi-accent);
             font-weight: 700;
@@ -1329,7 +1411,7 @@
         }
 
         .card-small.ai-card {
-            background: var(--nadi-gradient);
+            background: linear-gradient(rgb(28, 28, 46), rgb(24, 24, 92));
         }
 
         .bento-card h3 {
@@ -2220,6 +2302,12 @@
                 display: none;
             }
         }
+        .agenko-experince-box.style-one{
+            background-color: #0C5BA4;
+        }
+        .agenko-rotate-image .agenko-image img{
+            transform: none;
+        }
     </style>
 </head>
 
@@ -2309,9 +2397,8 @@
                             <div class="col-lg-10">
                                 <div class="section-title text-center mb-70 pf_fadeup">
                                     <span class="trust-label">Global Strategic Network</span>
-                                    <h2 class="mb-25">Trusted by Healthcare Leaders</h2>
-                                    <p
-                                        style="font-size:20px; color:rgba(255,255,255,0.7); max-width: 800px; margin: 0 auto 15px;">
+                                    <h2 class="mb-25" style="color: #0B0F13;">Trusted by Healthcare Leaders</h2>
+                                    <p style="font-size:20px; color: #4B5563; max-width: 800px; margin: 0 auto 15px;">
                                         Collaborating with world-class hospitals, healthcare providers, and global
                                         manufacturers
                                         to deliver reliable, compliant, and scalable medical solutions.
@@ -2325,61 +2412,55 @@
                         </div>
 
                         <div class="row pf_fadeup align-items-center">
-                            <!-- Care / Healthcare Provider Group -->
+                            <!-- Healthcare Providers Marquee -->
                             <div class="col-12 mb-50">
                                 <h5 class="mb-35 text-center"
-                                    style="color:var(--nadi-primary); opacity: 0.8; letter-spacing: 1px; font-weight: 600;">
+                                    style="color:var(--nadi-primary); letter-spacing: 1px; font-weight: 600;">
                                     HEALTHCARE PROVIDERS</h5>
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client1.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client2.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client3.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client4.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client5.svg" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client6.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client7.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client8.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client9.png" alt="Healthcare Leader">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2 col-md-3 col-6">
-                                        <div class="partner-card">
-                                            <img src="new-assets/images/client10.png" alt="Healthcare Leader">
-                                        </div>
+                                <div class="marquee-wrapper">
+                                    <div class="marquee-track">
+                                        <!-- Original set -->
+                                        <div class="marquee-card"><img src="new-assets/images/client1.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client2.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client3.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client4.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client5.svg"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client6.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client7.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client8.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client9.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client10.png"
+                                                alt="Healthcare Leader"></div>
+                                        <!-- Duplicate set for seamless loop -->
+                                        <div class="marquee-card"><img src="new-assets/images/client1.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client2.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client3.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client4.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client5.svg"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client6.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client7.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client8.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client9.png"
+                                                alt="Healthcare Leader"></div>
+                                        <div class="marquee-card"><img src="new-assets/images/client10.png"
+                                                alt="Healthcare Leader"></div>
                                     </div>
                                 </div>
                             </div>
@@ -2422,7 +2503,7 @@
                 </section>
 
                 <!--=== PROJECT SHOWCASE SECTION ===-->
-                <section class="nadi-selected-work">
+                <!-- <section class="nadi-selected-work">
                     <div class="container">
                         <div class="nadi-showcase-section">
                             <div class="showcase-title-wrap pf_fadeup">
@@ -2431,7 +2512,6 @@
                             </div>
 
                             <div class="showcase-list">
-                                <!-- Ozell -->
                                 <a href="solutions.html" class="showcase-item pf_fadeup" data-index="0">
                                     <div class="item-bg"></div>
                                     <div class="item-content">
@@ -2446,8 +2526,6 @@
                                         <span class="year">2024</span>
                                     </div>
                                 </a>
-
-                                <!-- Guidewire -->
                                 <a href="solutions.html" class="showcase-item pf_fadeup" data-index="1">
                                     <div class="item-bg"></div>
                                     <div class="item-content">
@@ -2463,7 +2541,6 @@
                                     </div>
                                 </a>
 
-                                <!-- Vedkang -->
                                 <a href="solutions.html" class="showcase-item pf_fadeup" data-index="2">
                                     <div class="item-bg"></div>
                                     <div class="item-content">
@@ -2481,7 +2558,7 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
                 <!--=== NADI INNOVATION SECTION ===-->
                 <section class="nadi-bento-section">
@@ -2489,30 +2566,32 @@
                         <div class="nadi-bento-grid">
                             <!-- Left: NADI OMNICARE -->
                             <a href="solutions.html" class="bento-card card-large pf_fadeup">
-                                <h3>NADI OMNICARE™</h3>
-                                <p>The next generation of integrated health information systems built for the modern
+                                <h3>Ozell</h3>
+                                <p>High-performance medical sterilization and disinfection systems designed for modern
                                     care
-                                    era.</p>
-                                <div class="bento-btn">Explore Platform</div>
-                                <img src="new-assets/images/bento-hims.png" alt="Integrated HIMS"
+                                    clinical environments.</p>
+                                <div class="bento-btn">Explore Ozell</div>
+                                <img src="new-assets/images/bento-hims.png" alt="Ozell"
                                     class="bento-image large-chip-img">
                             </a>
 
                             <!-- Right Top: Regulatory Excellence -->
                             <a href="services.html" class="bento-card card-small upgrade-card pf_fadeup">
-                                <h3>REGULATORY EXCELLENCE</h3>
-                                <p>Unlocking global healthcare markets with MDA & GDPMD expertise.</p>
-                                <div class="bento-btn">Market Access</div>
-                                <img src="new-assets/images/bento-reg.png" alt="Regulatory Compliance"
+                                <h3>Guidewire</h3>
+                                <p>Precision-engineered coronary and peripheral vascular solutions that elevate surgical
+                                    success rates.</p>
+                                <div class="bento-btn">Explore Guidewire</div>
+                                <img src="new-assets/images/bento-reg.png" alt="Guidewire"
                                     class="bento-image upgrade-probe-img">
                             </a>
 
                             <!-- Right Bottom: CORE AI -->
                             <a href="solutions.html" class="bento-card card-small ai-card pf_fadeup">
-                                <h3 style="margin-bottom: 10px;">CORE AI™ INSIGHTS</h3>
-                                <p>Transforming complex medical data into actionable clinical intelligence.</p>
-                                <div class="bento-btn">View AI Tools</div>
-                                <img src="new-assets/images/bento-ai.png" alt="AI Insights"
+                                <h3 style="margin-bottom: 10px;">Vedkang</h3>
+                                <p>Advanced endoscopic accessories for minimally invasive therapies, distributed to more
+                                    than 80 countries worldwide.</p>
+                                <div class="bento-btn">Explore Vedkang</div>
+                                <img src="new-assets/images/bento-ai.png" alt="Vedkang"
                                     class="bento-image ai-dashboard-img">
                             </a>
                         </div>
@@ -3223,7 +3302,7 @@
                             <div class="col-lg-6">
                                 <!--=== Agk Image Box ===-->
                                 <div class="agenko-image-box agenko-rotate-image mb-50 pf_fadeup">
-                                    <div class="agenko-image">
+                                    <div class="agenko-image" style="text-align: left;">
                                         <img style="width: 70%;" src="new-assets/images/testimonial.jpg"
                                             alt="Partner Testimonials">
                                     </div>
