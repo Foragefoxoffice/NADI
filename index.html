@@ -1124,6 +1124,7 @@
             gap: 20px;
             width: max-content;
             animation: marquee-scroll 30s linear infinite;
+            margin-top:10px;
         }
 
         .marquee-track:hover {
@@ -1556,7 +1557,7 @@
         .timeline-container {
             position: relative;
             width: 100%;
-            height: 600px;
+            height: 800px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1617,8 +1618,8 @@
 
         .orbit {
             position: absolute;
-            width: 600px;
-            height: 600px;
+            width: 800px;
+            height: 800px;
             border-radius: 50%;
             border: 1px solid rgba(255, 255, 255, 0.15);
             pointer-events: none;
@@ -1688,6 +1689,9 @@
             border-radius: 20px;
             padding: 30px;
             width: 320px;
+            min-height: 480px;
+            display: flex;
+            flex-direction: column;
             opacity: 0;
             visibility: hidden;
             transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1695,6 +1699,10 @@
             z-index: 300;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(255, 255, 255, 0.02);
             pointer-events: none;
+        }
+
+        .node-detail-card p {
+            flex-grow: 1;
         }
 
         .active-card .node-detail-card {
@@ -1776,8 +1784,8 @@
         /* Responsive Orbital Timeline */
         @media (max-width: 991px) {
             .orbit {
-                width: 450px;
-                height: 450px;
+                width: 600px;
+                height: 600px;
             }
 
             .sun-logo {
@@ -1797,8 +1805,8 @@
 
         @media (max-width: 767px) {
             .orbit {
-                width: 300px;
-                height: 300px;
+                width: 400px;
+                height: 400px;
             }
 
             .timeline-container {
@@ -1808,6 +1816,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                margin-top: 40px;
             }
 
             .sun-logo {
@@ -2343,18 +2352,10 @@
                                                 </h1>
                                                 <h4 class="mb-25"
                                                     style="color:var(--nadi-text-muted); font-weight: 500;">
-                                                    Comprehensive end-to-end
-                                                    healthcare solutions designed to integrate complex medical systems,
-                                                    pioneer innovation through
-                                                    advanced technology, and bridge the gap between quality care and
-                                                    business excellence.</h4>
-                                                <p class="mb-35">We specialize in navigating regulatory landscapes,
-                                                    facilitating seamless market entry,
-                                                    and driving digital transformation. By leveraging data-driven
-                                                    insights and AI-powered tools,
-                                                    NADI Aksis empowers healthcare providers and manufacturers to
-                                                    achieve sustainable growth and
-                                                    operational efficiency on a global scale.</p>
+                                                    At Nadi Aksis Sdn Bhd, we are redefining the future of healthcare through quality-driven solutions that serve both society and the medical industry.</h4>
+                                                <p class="mb-35">We integrate medical devices, regulatory expertise, and intelligent healthcare technology into one seamless ecosystem ensuring safer, more efficient, and higher-quality patient care.</p>
+                                                <p class="mb-35">Beyond solutions, we guide and collaborate with business leaders and entrepreneurs, empowering them with the right knowledge, structure, and strategy to excel and grow within the healthcare industry together.</p>
+                                                <p>We are committed to uplifting the medical industry, improving standards of care, and creating a future where quality healthcare is accessible to all. Guiding the Pulse of Progress.</p>
                                                 <div class="hero-button">
                                                     <a href="contact-us.html"
                                                         class="theme-btn style-one nadi-btn-primary mr-15">
@@ -2565,33 +2566,29 @@
                     <div class="container">
                         <div class="nadi-bento-grid">
                             <!-- Left: NADI OMNICARE -->
-                            <a href="solutions.html" class="bento-card card-large pf_fadeup">
+                            <a href="#" class="bento-card card-large pf_fadeup">
                                 <h3>Ozell</h3>
-                                <p>High-performance medical sterilization and disinfection systems designed for modern
-                                    care
-                                    clinical environments.</p>
+                                <p>A unique all-in-one POCT solution combining AI-powered morphology, immunoassay, and biochemistry. Features 37+ parameter reporting and a 60% reduced lab footprint for decentralized testing.</p>
                                 <div class="bento-btn">Explore Ozell</div>
-                                <img src="new-assets/images/bento-hims.png" alt="Ozell"
+                                <img src="new-assets/images/ozelle.png" alt="Ozell"
                                     class="bento-image large-chip-img">
                             </a>
 
                             <!-- Right Top: Regulatory Excellence -->
-                            <a href="services.html" class="bento-card card-small upgrade-card pf_fadeup">
+                            <a href="new-assets/Guidewire.pdf" download class="bento-card card-small upgrade-card pf_fadeup">
                                 <h3>Guidewire</h3>
-                                <p>Precision-engineered coronary and peripheral vascular solutions that elevate surgical
-                                    success rates.</p>
+                                <p>Interventional devices with high radiopacity and nitinol cores for kink resistance. Features hydrophilic surfaces for reduced friction during endourological procedures.</p>
                                 <div class="bento-btn">Explore Guidewire</div>
                                 <img src="new-assets/images/bento-reg.png" alt="Guidewire"
                                     class="bento-image upgrade-probe-img">
                             </a>
 
                             <!-- Right Bottom: CORE AI -->
-                            <a href="solutions.html" class="bento-card card-small ai-card pf_fadeup">
-                                <h3 style="margin-bottom: 10px;">Vedkang</h3>
-                                <p>Advanced endoscopic accessories for minimally invasive therapies, distributed to more
-                                    than 80 countries worldwide.</p>
-                                <div class="bento-btn">Explore Vedkang</div>
-                                <img src="new-assets/images/bento-ai.png" alt="Vedkang"
+                            <a href="new-assets/Vedkang.pdf" download class="bento-card card-small ai-card pf_fadeup">
+                                <h3 style="margin-bottom: 10px;">Endoscopy products</h3>
+                                <p>Advanced endoscopic accessories for minimally invasive therapies. High-performance tools for diagnostic and therapeutic gastrointestinal procedures.</p>
+                                <div class="bento-btn">Explore Endoscopy</div>
+                                <img src="new-assets/images/vedkang.png" alt="Vedkang"
                                     class="bento-image ai-dashboard-img">
                             </a>
                         </div>
@@ -3720,14 +3717,14 @@
         const detailRoot = document.getElementById('central-detail-root');
         const totalNodes = timelineData.length;
 
-        let radius = window.innerWidth < 768 ? 150 : (window.innerWidth < 992 ? 225 : 300);
+        let radius = window.innerWidth < 768 ? 200 : (window.innerWidth < 992 ? 300 : 400);
         let rotationAngle = 0;
         let autoRotate = true;
         let activeNodeId = null;
 
         // Update radius on resize
         window.addEventListener('resize', () => {
-            radius = window.innerWidth < 768 ? 150 : (window.innerWidth < 992 ? 225 : 300);
+            radius = window.innerWidth < 768 ? 200 : (window.innerWidth < 992 ? 300 : 400);
         });
 
         // Create Nodes

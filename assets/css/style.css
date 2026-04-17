@@ -1329,7 +1329,7 @@ label {
 }
 
 .header-navigation .main-menu ul>li:hover>a {
-  color: var(--primary-color);
+  color: white !important;
   background-color: #18191B;
 }
 

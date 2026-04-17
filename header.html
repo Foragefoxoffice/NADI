@@ -35,7 +35,66 @@
         left: 0;
         width: 100%;
         z-index: 1005;
-        transition: all 0.3s;
+        transition: background 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    /* Scrolled state */
+    .header-navigation.sticky {
+        background: #ffffff;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+    }
+
+    .header-navigation.sticky .main-menu ul li a {
+        color: #1a1a1a;
+    }
+
+    .header-navigation.sticky,
+    .header-navigation.sticky .main-menu ul li.current-menu-item > a,
+    .header-navigation.sticky .main-menu ul li.current_page_item > a {
+        color: #fff !important;
+    }
+    .main-menu ul li.active > a{
+        color: #0C5BA4 !important;
+    }
+    .header-navigation.sticky .main-menu ul li a:hover {
+        color: var(--butterfly-blue);
+    }
+
+    .header-navigation.sticky .btn-contact,
+    .header-navigation.sticky .theme-btn.nadi-btn-primary {
+        background: var(--butterfly-blue);
+        color: #fff;
+    }
+
+    .header-navigation.sticky .header-search input {
+        background: rgba(0, 0, 0, 0.05);
+        border-color: rgba(0, 0, 0, 0.12);
+        color: #1a1a1a;
+    }
+
+    .header-navigation.sticky .header-search .search-icon {
+        color: rgba(0, 0, 0, 0.4);
+    }
+
+    .header-navigation.sticky .mobile-search-toggle,
+    .header-navigation.sticky .navbar-toggler span {
+        color: #1a1a1a;
+    }
+
+    .header-navigation.sticky .navbar-toggler span {
+        background: #1a1a1a;
+    }
+
+    .header-navigation.sticky .site-branding .brand-logo img {
+        filter: none;
+    }
+
+    .header-navigation:not(.sticky) .site-branding .brand-logo img {
+        filter: brightness(0) invert(1);
+    }
+
+    .header-navigation .site-branding .brand-logo img {
+        transition: filter 0.35s ease;
     }
 
     body.mobile-menu-active {
@@ -236,15 +295,16 @@
     }
 
     .mega-menu-title {
-        font-size: 10px !important;
+        font-size: 13px !important;
         text-transform: uppercase;
-        letter-spacing: 1.5px;
-        color: #8e8e93 !important;
-        margin-bottom: 20px;
-        font-weight: 700 !important;
-        padding-bottom: 12px;
-        border-bottom: 1px solid #f0f0f0;
+        letter-spacing: 1.2px;
+        color: #1a1a1a !important;
+        margin-bottom: 25px;
+        font-weight: 800 !important;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
         display: block;
+        font-family: 'Outfit', sans-serif;
     }
 
     .mega-menu-grid {
@@ -271,12 +331,12 @@
     .mega-icon {
         width: 64px;
         height: 64px;
-        background: #000;
+        background: #0072CE;
         border-radius: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #0072CE;
+        color: #ffffff;
         font-size: 22px;
         flex-shrink: 0;
         overflow: hidden;
@@ -590,11 +650,11 @@
                             <div class="mega-menu-column">
                                 <h4 class="mega-menu-title">About Products</h4>
                                 <div class="mega-menu-intro">
-                                    NADI Aksis is dedicated to transforming the healthcare landscape through
-                                    innovative digital platforms and precision medical hardware. Our solutions
-                                    empower clinicians with the tools they need to deliver exceptional patient care
-                                    in a rapidly evolving medical environment.
+                                    We provide healthcare IT products and a strong medical device distribution network. Our IT solutions integrate clinical, administrative, and imaging systems to improve efficiency and decision-making. We specialize in sourcing and distributing high-quality medical devices through a reliable global supply chain. All products meet strict regulatory standards, ensuring safety, consistency, and performance. Together, we deliver seamless end-to-end solutions that enhance operations and patient care.
                                 </div>
+                                <a href="products.html" class="theme-btn style-one mt-4"
+                                    style="display: block; width: 100%; text-align: center; background: #005eb8; color: #fff; padding: 16px; border-radius: 50px; font-weight: 700; font-size: 14px; box-shadow: 0 4px 15px rgba(0, 94, 184, 0.2);">Explore
+                                    Products</a>
                             </div>
                             <div class="mega-menu-column">
                                 <h4 class="mega-menu-title">Hardware</h4>
@@ -808,7 +868,7 @@
             <input type="text" placeholder="Search...">
         </div>
         <div class="header-actions">
-            <a href="contact.html" class="theme-btn style-one nadi-btn-primary">Contact Us</a>
+            <a href="contact-us.html" class="theme-btn style-one nadi-btn-primary">Contact Us</a>
         </div>
         <div class="mobile-search-toggle" id="mobileSearchToggle">
             <i class="fas fa-search"></i>
@@ -946,6 +1006,8 @@
                 });
             }
         }
+
+
 
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initNav);
