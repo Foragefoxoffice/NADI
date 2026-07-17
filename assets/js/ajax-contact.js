@@ -44,5 +44,40 @@ $(function() {
 			}
 		});
 	});
+	// Subscribe form 1
+	$('#subscribe-form').submit(function(e) {
+		e.preventDefault();
+		var formData = $(this).serialize();
+		$.ajax({
+			type: 'POST',
+			url: $(this).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			$('.subscribe-message').text(response).css('color', 'green');
+			$('#subscribe-form input').val('');
+		})
+		.fail(function(data) {
+			$('.subscribe-message').text(data.responseText || 'Error occurred').css('color', 'red');
+		});
+	});
+
+	// Subscribe form 2
+	$('#subscribe-form-2').submit(function(e) {
+		e.preventDefault();
+		var formData = $(this).serialize();
+		$.ajax({
+			type: 'POST',
+			url: $(this).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			$('.subscribe-message-2').text(response).css('color', 'green');
+			$('#subscribe-form-2 input').val('');
+		})
+		.fail(function(data) {
+			$('.subscribe-message-2').text(data.responseText || 'Error occurred').css('color', 'red');
+		});
+	});
 
 });

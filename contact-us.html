@@ -293,35 +293,38 @@
                                         <h3 style="font-size: 32px; margin-bottom: 15px;">Get in Touch with Our Experts</h3>
                                         <p style="color: var(--nadi-text-muted); margin-bottom: 35px; font-size: 16px;">Fill out the form below and our team will get back to you within 24 hours.</p>
                                         
-                                        <form>
+                                        <form id="contact-form" action="contact.php" method="POST">
                                             <div class="row">
                                                 <div class="col-md-6 mb-25">
-                                                    <input type="text" class="form_control" placeholder="Full Name *" required>
+                                                    <input type="text" class="form_control" placeholder="Full Name *" name="name" required>
                                                 </div>
                                                 <div class="col-md-6 mb-25">
-                                                    <input type="text" class="form_control" placeholder="Company Name *" required>
+                                                    <input type="text" class="form_control" placeholder="Company Name *" name="company" required>
                                                 </div>
                                                 <div class="col-md-6 mb-25">
-                                                    <input type="email" class="form_control" placeholder="Email Address *" required>
+                                                    <input type="email" class="form_control" placeholder="Email Address *" name="email" required>
                                                 </div>
                                                 <div class="col-md-6 mb-25">
-                                                    <input type="tel" class="form_control" placeholder="Phone Number">
+                                                    <input type="tel" class="form_control" placeholder="Phone Number" name="phone">
                                                 </div>
                                                 <div class="col-md-12 mb-25">
-                                                    <input type="text" class="form_control" placeholder="Country / Location">
+                                                    <input type="text" class="form_control" placeholder="Country / Location" name="location">
                                                 </div>
                                                 <div class="col-md-12 mb-25">
-                                                    <select class="form_control" required>
+                                                    <select class="form_control" name="subject" required>
                                                         <option value="" disabled selected hidden>Select Inquiry Category *</option>
-                                                        <option value="product-registration">Product Registration (MDA / GDPMD)</option>
-                                                        <option value="it-solutions">IT Solutions & Digital Transformation</option>
-                                                        <option value="distribution">Distribution & Supply Chain</option>
-                                                        <option value="partnership">Partnership Opportunities</option>
-                                                        <option value="general">General Inquiry</option>
+                                                        <option value="Product Registration (MDA / GDPMD)">Product Registration (MDA / GDPMD)</option>
+                                                        <option value="IT Solutions & Digital Transformation">IT Solutions & Digital Transformation</option>
+                                                        <option value="Distribution & Supply Chain">Distribution & Supply Chain</option>
+                                                        <option value="Partnership Opportunities">Partnership Opportunities</option>
+                                                        <option value="General Inquiry">General Inquiry</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-md-12 mb-35">
-                                                    <textarea class="form_control" placeholder="Message / Requirements *" required></textarea>
+                                                    <textarea class="form_control" placeholder="Message / Requirements *" name="message" required></textarea>
+                                                </div>
+                                                <div class="col-md-12 mb-15">
+                                                    <div class="form-message"></div>
                                                 </div>
                                                 <div class="col-md-12">
                                                     <button type="submit" class="theme-btn style-one nadi-btn-primary" style="width: 100%; padding: 18px; border-radius: 12px; font-size: 15px;">
